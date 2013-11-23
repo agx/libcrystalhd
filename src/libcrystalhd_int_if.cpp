@@ -1462,16 +1462,6 @@ static void fast_memcpy(uint8_t *dst, const uint8_t *src, uint32_t count)
 		*dst++ = *src++;
 }
 
-// this is not good.
-// if we have 3 buffers, we cannot assume V is after U
-static BC_STATUS DtsCopy422ToYV12(uint8_t *dstY, uint8_t *dstUV, const uint8_t *srcY, uint32_t srcWidth, uint32_t dstWidth, uint32_t height, uint32_t strideY, uint32_t strideUV)
-{ // copy YUY2 to YV12
-	// TODO
-	// NOTE: if we want to support this porperly, we will need to add a Vbuffer pointer
-	// if we have 3 destination buffers, there's no guarantee that V buffer is derivable from UV pointer.
-	return BC_STS_INV_ARG;
-}
-
 // this is just a memcpy
 static BC_STATUS DtsCopy422ToYUY2(uint8_t *dstY, uint8_t *dstUV, const uint8_t *srcY, uint32_t srcWidth, uint32_t dstWidth, uint32_t height, uint32_t strideY, uint32_t strideUV)
 { // copy YUY2 to YUY2
@@ -1664,15 +1654,6 @@ static BC_STATUS DtsCopy422ToNV12(uint8_t *dstY, uint8_t *dstUV, const uint8_t *
 	return BC_STS_SUCCESS;
 }
 
-
-// this is not good.
-// if we have 3 textures, we cannot assume V is after U
-static BC_STATUS DtsCopy420ToYV12(uint8_t *dstY, uint8_t *dstUV, const uint8_t *srcY, const uint8_t *srcUV, uint32_t srcWidth, uint32_t dstWidth, uint32_t height, uint32_t strideY, uint32_t strideUV)
-{
-	// TODO
-	// NOTE: if we want to support this porperly, we will need to add a Vbuffer pointer
-	return BC_STS_INV_ARG;
-}
 
 static BC_STATUS DtsCopy420ToYUY2(uint8_t *dstY, uint8_t *dstUV, const uint8_t *srcY, const uint8_t *srcUV, uint32_t srcWidth, uint32_t dstWidth, uint32_t height, uint32_t strideY, uint32_t strideUV)
 {
