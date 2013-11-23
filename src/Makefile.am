@@ -2,7 +2,7 @@ AM_CPPFLAGS = \
 	-D__LINUX_USER__ \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)/include/link \
-	-O2 -Wall -fPIC -shared -fstrict-aliasing -msse2
+	-O2 -Wall -fstrict-aliasing -msse2
 
 lib_LTLIBRARIES = libcrystalhd.la
 libcrystalhd_la_LDFLAGS = \
