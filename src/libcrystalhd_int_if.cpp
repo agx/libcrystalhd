@@ -874,7 +874,7 @@ DtsDevMemWr(
 					pIoctlData,
 					AllocSz,
 					(LPDWORD)&BytesReturned,
-					NULL))
+					false))
 	{
 		DebugLog_Trace(LDIL_DBG,"DtsDevMemWr: DeviceIoControl Failed\n");
 		return BC_STS_ERROR;
