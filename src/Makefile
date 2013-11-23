@@ -13,7 +13,7 @@ AT   = @
 ECHO = ${AT} echo
 BCGCC = g++
 
-ROOTDIR = ../..
+ROOTDIR = ..
 
 INCLUDES = -I./ -I/usr/include -I$(ROOTDIR)/include
 INCLUDES += -I$(ROOTDIR)/include/link
