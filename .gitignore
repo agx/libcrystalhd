@@ -12,6 +12,7 @@ TAGS
 *.la
 *.lo
 *.o
+*.pc
 *~
 autom4te.cache/
 build-aux/

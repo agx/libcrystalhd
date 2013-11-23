@@ -41,5 +41,7 @@ m4_ifndef([LT_INIT], [
 AM_PROG_CC_C_O
 AM_PROG_LD
 
-AC_CONFIG_FILES([Makefile src/Makefile])
+PKG_PROG_PKG_CONFIG
+
+AC_CONFIG_FILES([Makefile src/Makefile libcrystalhd.pc])
 AC_OUTPUT
