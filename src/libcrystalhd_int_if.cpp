@@ -738,7 +738,7 @@ DtsDevMemRd(
     )
 {
 	uint8_t					*pXferBuff;
-	uint32_t					IOcCode,size_in_dword;
+	uint32_t size_in_dword;
 	BC_IOCTL_DATA		*pIoctlData;
 	BC_CMD_DEV_MEM		*pMemAccessRd;
 	uint32_t					BytesReturned,AllocSz;
@@ -782,7 +782,6 @@ DtsDevMemRd(
 	memset(pXferBuff,'a',BuffSz);
 	/* The size is passed in Bytes*/
 	pMemAccessRd->NumDwords = size_in_dword;
-	IOcCode = BCM_IOC_MEM_RD;
 	if(!DtsDrvIoctl(hDevice,
 					BCM_IOC_MEM_RD,
 					pIoctlData,
@@ -821,7 +820,7 @@ DtsDevMemWr(
     )
 {
 	uint8_t					*pXferBuff;
-	uint32_t					IOcCode,size_in_dword;
+	uint32_t size_in_dword;
 	BC_IOCTL_DATA		*pIoctlData;
 	BC_CMD_DEV_MEM		*pMemAccessRd;
 	uint32_t					BytesReturned,AllocSz;
@@ -868,7 +867,6 @@ DtsDevMemWr(
 	memcpy(pXferBuff,Buffer,BuffSz);
 	/* The size is passed in Bytes*/
 	pMemAccessRd->NumDwords = size_in_dword;
-	IOcCode = BCM_IOC_MEM_WR;
 	if(!DtsDrvIoctl(hDevice,
 					BCM_IOC_MEM_WR,
 					pIoctlData,
@@ -1215,7 +1213,7 @@ DtsCopyRawDataToOutBuff(DTS_LIB_CONTEXT	*Ctx,
 	uint32_t	y,lDestStride=0;
 	uint8_t	*pSrc = NULL, *pDest=NULL;
 	uint32_t	dstWidthInPixels, dstHeightInPixels;
-	uint32_t srcWidthInPixels = 0, srcHeightInPixels;
+	uint32_t srcWidthInPixels = 0;
 	BC_STATUS	Sts = BC_STS_SUCCESS;
 
 	if ( (Sts = DtsChkYUVSizes(Ctx,Vout,Vin)) != BC_STS_SUCCESS)
@@ -1240,7 +1238,6 @@ DtsCopyRawDataToOutBuff(DTS_LIB_CONTEXT	*Ctx,
 		}
 #endif
 		srcWidthInPixels = Ctx->HWOutPicWidth;
-		srcHeightInPixels = dstHeightInPixels;
 	} else {
 		dstWidthInPixels = Vin->PicInfo.width;
 		dstHeightInPixels = Vin->PicInfo.height;
@@ -1280,7 +1277,7 @@ BC_STATUS DtsCopyNV12ToYV12(DTS_LIB_CONTEXT	*Ctx, BC_DTS_PROC_OUT *Vout, BC_DTS_
 	uint32_t	x,y,lDestStrideY=0, lDestStrideUV=0;
 	uint8_t	*pSrc = NULL, *pDest=NULL;
 	uint32_t	dstWidthInPixels, dstHeightInPixels;
-	uint32_t srcWidthInPixels, srcHeightInPixels;
+	uint32_t srcWidthInPixels;
 
 
 	if ( (Sts = DtsChkYUVSizes(Ctx,Vout,Vin)) != BC_STS_SUCCESS)
@@ -1308,7 +1305,6 @@ BC_STATUS DtsCopyNV12ToYV12(DTS_LIB_CONTEXT	*Ctx, BC_DTS_PROC_OUT *Vout, BC_DTS_
 			return BC_STS_IO_XFR_ERROR;
 		}
 		srcWidthInPixels = Ctx->HWOutPicWidth;
-		srcHeightInPixels = dstHeightInPixels;
 
 		//copy luma
 		pDest = Vout->Ybuff;
@@ -1363,7 +1359,7 @@ BC_STATUS DtsCopyNV12(DTS_LIB_CONTEXT *Ctx, BC_DTS_PROC_OUT *Vout, BC_DTS_PROC_O
 	uint32_t y,lDestStrideY=0,lDestStrideUV=0;
 	uint8_t	*pSrc = NULL, *pDest=NULL;
 	uint32_t dstWidthInPixels, dstHeightInPixels;
-	uint32_t srcWidthInPixels=0, srcHeightInPixels;
+	uint32_t srcWidthInPixels=0;
 
 	BC_STATUS	Sts = BC_STS_SUCCESS;
 
@@ -1387,7 +1383,6 @@ BC_STATUS DtsCopyNV12(DTS_LIB_CONTEXT *Ctx, BC_DTS_PROC_OUT *Vout, BC_DTS_PROC_O
 			(Vout->UVBuffDoneSz < (dstWidthInPixels * dstHeightInPixels/2 / 4)))
 			return BC_STS_IO_XFR_ERROR;
 		srcWidthInPixels = Ctx->HWOutPicWidth;
-		srcHeightInPixels = dstHeightInPixels;
 	} else {
 		dstWidthInPixels = Vin->PicInfo.width;
 		dstHeightInPixels = Vin->PicInfo.height;

@@ -539,9 +539,6 @@ BC_STATUS DtsAddH264SCode(HANDLE hDevice, uint8_t **ppBuffer, uint32_t *pUlDataS
 	uint32_t lDataRemained = 0;
 	//unused uint64_t timestamp = *pTimeStamp;
 
-	uint8_t *pNALU = NULL;
-	uint32_t ulNalSize = 0;
-
 	int sts;
 
 	if(Ctx->PESConvParams.lPendBufferSize < (*pUlDataSize*2))
@@ -655,11 +652,6 @@ BC_STATUS DtsAddH264SCode(HANDLE hDevice, uint8_t **ppBuffer, uint32_t *pUlDataS
 			else if(Ctx->PESConvParams.m_lStartCodeDataSize < *pUlDataSize)
 			{
 				//Succeeded
-
-				//Check NAL Unit Type
-				pNALU = pStart + Ctx->VidParams.StartCodeSz;
-				ulNalSize = Ctx->PESConvParams.m_lStartCodeDataSize;
-
 				//BRCM Start Code
 				//Pre-Update Size
 				lPendActualSize = lPendActualSize + BRCM_START_CODE_SIZE;
