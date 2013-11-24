@@ -43,15 +43,15 @@
 //  x = Major release.      1 = Dozer, 2 = Dozer + Link
 //  y = Minor release.      Should increase +1 per "real" release.
 //  z = Branch release.     0 for main branch.  This is +1 per branch release.
-//  a = Build number	+1 per candidate release.  Reset to 0 every "real" release.
+//  a = Build number    +1 per candidate release.  Reset to 0 every "real" release.
 //
 //
 // Enabling Check-In rules enforcement 08092007
 //
-#define INVALID_VERSION		0xFFFF
+#define INVALID_VERSION        0xFFFF
 
 /*========================== Common For All Components =================================*/
-#define BRCM_MAJOR_VERSION	3
+#define BRCM_MAJOR_VERSION    3
 
 // Note: the driver doesn't currently use these defines, it has its own
 // version information (which should match) stored in bc_dts_glob_lnx.h
@@ -62,21 +62,21 @@
 #define RC_FILE_VERSION             STRINGIFY_VERSION(DRIVER_MAJOR_VERSION,DRIVER_MINOR_VERSION,DRIVER_REVISION) ".0"
 
 /*======================= Device Interface Library ========================*/
-#define DIL_MAJOR_VERSION	BRCM_MAJOR_VERSION
-#define DIL_MINOR_VERSION	22
-#define DIL_REVISION		0
+#define DIL_MAJOR_VERSION    BRCM_MAJOR_VERSION
+#define DIL_MINOR_VERSION    22
+#define DIL_REVISION        0
 
-#define DIL_RC_FILE_VERSION	STRINGIFY_VERSION(DIL_MAJOR_VERSION,DIL_MINOR_VERSION,DIL_REVISION)
+#define DIL_RC_FILE_VERSION    STRINGIFY_VERSION(DIL_MAJOR_VERSION,DIL_MINOR_VERSION,DIL_REVISION)
 
 /*========================== deconf utility ==============================*/
-#define DECONF_MAJOR_VERSION	BRCM_MAJOR_VERSION
-#define DECONF_MINOR_VERSION	9
-#define DECONF_REVISION		18
+#define DECONF_MAJOR_VERSION    BRCM_MAJOR_VERSION
+#define DECONF_MINOR_VERSION    9
+#define DECONF_REVISION        18
 #define DECONF_RC_FILE_VERSION  STRINGIFY_VERSION(DIL_MAJOR_VERSION,DIL_MINOR_VERSION,DIL_REVISION)
 
 /*========================== Firmware ==============================*/
 #define FW_MAJOR_VERSION        BRCM_MAJOR_VERSION
 #define FW_MINOR_VERSION        60
-#define FW_REVISION		39
+#define FW_REVISION        39
 
 #endif

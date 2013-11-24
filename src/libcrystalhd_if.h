@@ -32,7 +32,7 @@
 #include "bc_dts_defs.h"
 #include "bc_dts_types.h"
 
-#define FLEA_MAX_TRICK_MODE_SPEED	6
+#define FLEA_MAX_TRICK_MODE_SPEED    6
 
 #ifdef __cplusplus
 extern "C" {
@@ -484,7 +484,7 @@ Return:
 *****************************************************************************/
 DRVIFLIB_API BC_STATUS
 DtsSetInputFormat(
-    HANDLE  			hDevice,
+    HANDLE              hDevice,
     BC_INPUT_FORMAT   *pInputFormat
     );
 
@@ -938,7 +938,7 @@ Parameters:
                 that is available in the buffer. If timestamp is present
                 (i.e. non-zero), then this will be reflected in the output
                 sample (picture) produced from the contents of this buffer.
-				Timestamp should be in units of 100 ns.
+                Timestamp should be in units of 100 ns.
     Encrypted   Flag to indicate that the data transfer is not in the clear
                 and that the decoder needs to decrypt before it can decode
                 the data.  Note that due to complexity, it is preferred that
@@ -1019,8 +1019,8 @@ Parameters:
                     2   Flushes all the decoder buffers, input, decoded and
                         to be decoded.
                     3   Cancels the pending TX Request from the DIL/driver
-					4	Flushes all the decoder buffers, input, decoded and
-						to be decoded data. Also flushes the drivers buffers
+                    4    Flushes all the decoder buffers, input, decoded and
+                        to be decoded data. Also flushes the drivers buffers
 
 Return:
 
@@ -1250,11 +1250,11 @@ Parameters:
     hDevice     Handle to device. This is obtained via a prior call to
                 DtsDeviceOpen.
     422Mode     Mode is defined by BC_OUTPUT_FORMAT as follows -
-				OUTPUT_MODE420		= 0x0,
-				OUTPUT_MODE422_YUY2	= 0x1,
-				OUTPUT_MODE422_UYVY	= 0x2,
-				OUTPUT_MODE_INVALID	= 0xFF
-				Valid values for this API are OUTPUT_MODE422_YUY2 and OUTPUT_MODE422_UYVY
+                OUTPUT_MODE420        = 0x0,
+                OUTPUT_MODE422_YUY2    = 0x1,
+                OUTPUT_MODE422_UYVY    = 0x2,
+                OUTPUT_MODE_INVALID    = 0xFF
+                Valid values for this API are OUTPUT_MODE422_YUY2 and OUTPUT_MODE422_UYVY
 
 Return:
 
@@ -1392,7 +1392,7 @@ Return:
 DRVIFLIB_API BC_STATUS
 DtsGetDriverStatus(
     HANDLE          hDevice,
-	BC_DTS_STATUS   *pStatus
+    BC_DTS_STATUS   *pStatus
     );
 
 /*****************************************************************************
@@ -1421,9 +1421,9 @@ Return:
 *****************************************************************************/
 DRVIFLIB_API BC_STATUS
 DtsGetCapabilities (
-	HANDLE  hDevice,
-	PBC_HW_CAPS	pCapsBuffer
-	);
+    HANDLE  hDevice,
+    PBC_HW_CAPS    pCapsBuffer
+    );
 
 /*****************************************************************************
 
@@ -1449,9 +1449,9 @@ Return:
 *****************************************************************************/
 DRVIFLIB_API BC_STATUS
 DtsSetScaleParams (
-	HANDLE  hDevice,
-	PBC_SCALING_PARAMS pScaleParams
-	);
+    HANDLE  hDevice,
+    PBC_SCALING_PARAMS pScaleParams
+    );
 
 /*****************************************************************************
 
@@ -1477,7 +1477,7 @@ Return:
 DRVIFLIB_API BC_STATUS
 DtsIsEndOfStream(
     HANDLE  hDevice,
-    uint8_t*	bEOS
+    uint8_t*    bEOS
 );
 
 /*****************************************************************************
@@ -1496,7 +1496,7 @@ Parameters:
 
     bCrystalInfo   Pointer to structure to fill in with information
 
-	device = 0 for BCM70012, 1 for BCM70015
+    device = 0 for BCM70012, 1 for BCM70015
 
 Return:
 

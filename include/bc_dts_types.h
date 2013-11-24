@@ -31,39 +31,39 @@
 #endif
 
 #ifndef PVOID
-typedef void	*PVOID;
+typedef void    *PVOID;
 #endif
 
 #ifndef BOOL
-typedef int	BOOL;
+typedef int    BOOL;
 #endif
 
-//#ifdef __LINUX_USER__	/* Don't include these for KERNEL */
+//#ifdef __LINUX_USER__    /* Don't include these for KERNEL */
 #if !defined(__KERNEL__)
-typedef uint32_t	ULONG;
-typedef int32_t		LONG;
-typedef void		*HANDLE;
+typedef uint32_t    ULONG;
+typedef int32_t        LONG;
+typedef void        *HANDLE;
 #ifndef VOID
-typedef void		VOID;
+typedef void        VOID;
 #endif
-typedef void		*LPVOID;
-typedef uint32_t	DWORD;
-typedef uint32_t	UINT32;
-typedef uint32_t	*LPDWORD;
-typedef unsigned char	*PUCHAR;
+typedef void        *LPVOID;
+typedef uint32_t    DWORD;
+typedef uint32_t    UINT32;
+typedef uint32_t    *LPDWORD;
+typedef unsigned char    *PUCHAR;
 
 #ifndef TRUE
-	#define TRUE		1
+    #define TRUE        1
 #endif
 
 #ifndef FALSE
-	#define FALSE		0
+    #define FALSE        0
 #endif
 
 #else /* !__KERNEL__ */
 
 /* For Kernel usage.. */
-typedef bool	bc_bool_t;
+typedef bool    bc_bool_t;
 #endif /* __KERNEL__ */
 
 #endif
