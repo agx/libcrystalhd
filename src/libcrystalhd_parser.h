@@ -26,8 +26,8 @@
  *
  *******************************************************************/
 
-#ifndef CPARSE
-#define CPARSE
+#ifndef __LIBCRYSTALHD_PARSER_H__
+#define __LIBCRYSTALHD_PARSER_H__
 
 #include <sys/types.h>
 
@@ -161,4 +161,5 @@ BC_STATUS DtsSymbIntSiBuffer (HANDLE hDevice, uint8_t* pInputBuffer, uint32_t ul
 
 void PTS2MakerBit5Bytes(uint8_t *pMakerBit, int64_t llPTS);
 uint16_t WORD_SWAP(uint16_t x);
-#endif
+
+#endif /* __LIBCRYSTALHD_PARSER_H__ */

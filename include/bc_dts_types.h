@@ -22,8 +22,8 @@
  * along with this header.  If not, see <http://www.gnu.org/licenses/>.
  *******************************************************************/
 
-#ifndef _BC_DTS_TYPES_H_
-#define _BC_DTS_TYPES_H_
+#ifndef __BC_DTS_TYPES_H__
+#define __BC_DTS_TYPES_H__
 
 //#ifdef __LINUX_USER__  /* Don't include these for KERNEL.. */
 #include <stdint.h>
@@ -56,5 +56,4 @@ typedef unsigned char    *PUCHAR;
     #define FALSE        0
 #endif
 
-#endif
-
+#endif /* __BC_DTS_TYPES_H__ */

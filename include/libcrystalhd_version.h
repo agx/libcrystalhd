@@ -22,8 +22,8 @@
  * along with this header.  If not, see <http://www.gnu.org/licenses/>.
  *******************************************************************/
 
-#ifndef _LIBCRYSTALHD_VERSION_H_
-#define _LIBCRYSTALHD_VERSION_H_
+#ifndef __LIBCRYSTALHD_VERSION_H__
+#define __LIBCRYSTALHD_VERSION_H__
 //
 // The version format that we are adopting is
 // MajorVersion.MinorVersion.Revision
@@ -79,4 +79,4 @@
 #define FW_MINOR_VERSION        60
 #define FW_REVISION        39
 
-#endif
+#endif /* __LIBCRYSTALHD_VERSION_H__ */

@@ -18,8 +18,8 @@
  * along with this header.  If not, see <http://www.gnu.org/licenses/>.
  ***************************************************************************/
 
-#ifndef MACFILE_H__
-#define MACFILE_H__
+#ifndef __BCM_70012_REGS_H__
+#define __BCM_70012_REGS_H__
 
 /**
  * m = memory, c = core, r = register, f = field, d = data.
@@ -12293,6 +12293,4 @@
 /****************************************************************************
  * Datatype Definitions.
  ***************************************************************************/
-#endif /* #ifndef MACFILE_H__ */
-
-/* End of File */
+#endif /* __BCM_70012_REGS_H__ */

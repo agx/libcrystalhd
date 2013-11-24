@@ -25,8 +25,8 @@
  * along with this header.  If not, see <http://www.gnu.org/licenses/>.
  *******************************************************************/
 
-#ifndef _BC_DTS_GLOB_LNX_H_
-#define _BC_DTS_GLOB_LNX_H_
+#ifndef __BC_DTS_GLOB_LNX_H__
+#define __BC_DTS_GLOB_LNX_H__
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -321,4 +321,4 @@ enum _crystalhd_kmod_ver{
 };
 
 
-#endif
+#endif /* __BC_DTS_GLOB_LNX_H__ */

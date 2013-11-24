@@ -26,8 +26,8 @@
  *
  *******************************************************************/
 
-#ifndef _libcrystalhd_FWLOAD_IF_
-#define _libcrystalhd_FWLOAD_IF_
+#ifndef __LIBCRYSTALHD_FWLOAD_IF_H__
+#define __LIBCRYSTALHD_FWLOAD_IF_H__
 
 #ifndef __APPLE__
 #include "bc_dts_glob_lnx.h"
@@ -54,4 +54,4 @@ DtsPushFwToFlea(HANDLE hDevice, char *FwBinFile);
 
 DRVIFLIB_INT_API BC_STATUS dec_write_fw_Sig(HANDLE hndl,uint32_t* Sig);
 
-#endif
+#endif /* __LIBCRYSTALHD_FWLOAD_IF_H__ */

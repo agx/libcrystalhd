@@ -98,8 +98,8 @@
  * along with this header.  If not, see <http://www.gnu.org/licenses/>.
  ***************************************************************************/
 
-#ifndef __INC_C011API_H__
-#define __INC_C011API_H__
+#ifndef __7411_H__
+#define __7411_H__
 
 #include "vdec_info.h"
 
@@ -2433,4 +2433,4 @@ typedef struct {
    DecRspChannelSingleField,
 
    DecRspChannelUnknownCmd;
-#endif // __INC_C011API_H__
+#endif /* __7411_H__ */

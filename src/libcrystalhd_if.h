@@ -26,8 +26,8 @@
  *
  ****************************************************************************/
 
-#ifndef _BCM_LDIL_IF_H_
-#define _BCM_LDIL_IF_H_
+#ifndef __LIBCRYSTALHD_IF_H__
+#define __LIBCRYSTALHD_IF_H__
 
 #include "bc_dts_defs.h"
 #include "bc_dts_types.h"
@@ -1537,4 +1537,4 @@ DtsTxFreeSize(
 }
 #endif
 
-#endif
+#endif /* __LIBCRYSTALHD_IF_H__ */

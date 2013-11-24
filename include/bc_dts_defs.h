@@ -23,8 +23,8 @@
  * along with this header.  If not, see <http://www.gnu.org/licenses/>.
  *******************************************************************/
 
-#ifndef _BC_DTS_DEFS_H_
-#define _BC_DTS_DEFS_H_
+#ifndef __BC_DTS_DEFS_H__
+#define __BC_DTS_DEFS_H__
 
 /* BIT Mask */
 #define BC_BIT(_x)        (1 << (_x))
@@ -632,4 +632,4 @@ typedef struct _BC_INFO_CRYSTAL_ {
     uint32_t Reserved2; /* For future expansion */
 } BC_INFO_CRYSTAL, *PBC_INFO_CRYSTAL;
 
-#endif    /* _BC_DTS_DEFS_H_ */
+#endif /* __BC_DTS_DEFS_H__ */

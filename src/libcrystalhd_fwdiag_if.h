@@ -26,8 +26,8 @@
  *
  *******************************************************************/
 
-#ifndef _libcrystalhd_FWDIAG_IF_
-#define _libcrystalhd_FWDIAG_IF_
+#ifndef __LIBCRYSTALHD_FWDIAG_IF_H__
+#define __LIBCRYSTALHD_FWDIAG_IF_H__
 
 #define BC_HOST_CMD_ADDR            0x00000100
 
@@ -98,4 +98,4 @@ DRVIFLIB_INT_API BC_STATUS
 DtsClearFWDiagCommBlock(HANDLE hDevice);
 
 
-#endif
+#endif /* __LIBCRYSTALHD_FWDIAG_IF__ */

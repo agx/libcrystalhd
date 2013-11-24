@@ -25,8 +25,8 @@
  * along with this library.  If not, see <http://www.gnu.org/licenses/>.
  *
  *******************************************************************/
-#ifndef _BCM_FWCMDS_H_
-#define _BCM_FWCMDS_H_
+#ifndef __LIBCRYSTALHD_FWCMDS_H__
+#define __LIBCRYSTALHD_FWCMDS_H__
 
 #include "libcrystalhd_priv.h"
 
@@ -190,4 +190,4 @@ DtsFWDrop(
     uint32_t    Pictures
     );
 
-#endif //_BCM_FWCMDS_H
+#endif /* __LIBCRYSTALHD_FWCMDS_H__ */

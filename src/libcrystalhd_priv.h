@@ -26,8 +26,8 @@
  *
  *******************************************************************/
 
-#ifndef _BCM_DRV_IF_PRIV_
-#define _BCM_DRV_IF_PRIV_
+#ifndef __LIBCRYSTALHD_PRIV_H__
+#define __LIBCRYSTALHD_PRIV_H__
 
 #include <semaphore.h>
 #include "bc_dts_glob_lnx.h"
@@ -420,5 +420,4 @@ BC_STATUS DtsUpdateVidParams(DTS_LIB_CONTEXT *Ctx, BC_DTS_PROC_OUT *pOut);
 }
 #endif
 
-#endif
-
+#endif /* __LIBCRYSTALHD_PRIV_H__ */

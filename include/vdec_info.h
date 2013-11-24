@@ -16,8 +16,8 @@
  * along with this header.  If not, see <http://www.gnu.org/licenses/>.
  ***************************************************************************/
 
-#ifndef __INC_VDEC_INFO_H__
-#define __INC_VDEC_INFO_H__
+#ifndef __VDEC_INFO_H__
+#define __VDEC_INFO_H__
 
 #include "bc_dts_types.h"
 #pragma pack (1)
@@ -350,4 +350,4 @@ typedef struct {
 
 #pragma pack ()
 
-#endif // __INC_VDEC_INFO_H__
+#endif /* __VDEC_INFO_H__ */

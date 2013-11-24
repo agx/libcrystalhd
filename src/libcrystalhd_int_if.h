@@ -26,8 +26,8 @@
  *
  *******************************************************************/
 
-#ifndef _BCM_DRV_INT_H_
-#define _BCM_DRV_INT_H_
+#ifndef __LIBCRYSTALHD_INT_IF_H__
+#define __LIBCRYSTALHD_INT_IF_H__
 
 
 #include "bc_dts_glob_lnx.h"
@@ -286,4 +286,4 @@ void DumpInputSampleToFile(uint8_t *buff, uint32_t buffsize);
 }
 #endif
 
-#endif
+#endif /* __LIBCRYSTALHD_INT_IF_H__ */

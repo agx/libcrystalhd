@@ -22,8 +22,8 @@
  * along with this header.  If not, see <http://www.gnu.org/licenses/>.
  *******************************************************************/
 
-#ifndef _BC_DEFINES_
-#define _BC_DEFINES_
+#ifndef __BC_DEFINES_H__
+#define __BC_DEFINES_H__
 //The AES and DCI H/W engines are big endian and hence the DATA needs to be
 //byte swapped when loading the data registers in this block
 #define rotr32_1(x,n)   (((x) >> n) | ((x) << (32 - n)))
@@ -45,4 +45,4 @@
 #define AES_WRITE_DONE            (0x1<<12)
 #define AES_RANDOM_READY          (0x1<<20)
 
-#endif
+#endif /* __BC_DEFINES_H__ */

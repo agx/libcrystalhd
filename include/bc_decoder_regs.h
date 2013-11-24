@@ -23,8 +23,8 @@
  * along with this header.  If not, see <http://www.gnu.org/licenses/>.
  *******************************************************************/
 
-#ifndef _INCLUDE_DECO_REGS_H_
-#define _INCLUDE_DECO_REGS_H_
+#ifndef __BC_DECODER_REGS_H__
+#define __BC_DECODER_REGS_H__
 
 #include "bc_dts_types.h"
 
@@ -206,4 +206,4 @@ typedef union _DDR_DRIVER_CTL_REG_
     (a & FULL_BIT)
 
 
-#endif
+#endif /* __BC_DECODER_REGS_H__ */
