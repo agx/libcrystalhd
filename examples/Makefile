@@ -1,5 +1,4 @@
 CPP := g++
-CPPFLAGS += -D__LINUX_USER__
 LDFLAGS += -lcrystalhd -lpthread
 INCLUDES += -I../include/ -I../linux_lib/libcrystalhd/
 

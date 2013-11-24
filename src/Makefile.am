@@ -1,5 +1,4 @@
 AM_CPPFLAGS = \
-	-D__LINUX_USER__ \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)/include/link \
 	-O2 -Wall -fstrict-aliasing -msse2

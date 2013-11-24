@@ -28,7 +28,6 @@
 #ifndef _BC_DTS_GLOB_LNX_H_
 #define _BC_DTS_GLOB_LNX_H_
 
-#if !defined(__KERNEL__)
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -45,8 +44,6 @@
 #include <sys/select.h>
 
 #define DRVIFLIB_INT_API
-
-#endif
 
 #include "bc_dts_defs.h"
 #include "bcm_70012_regs.h"    /* Link Register defs */
@@ -220,11 +217,7 @@ enum _DECOUT_COMPLETION_FLAGS{
 
 typedef struct _BC_DEC_OUT_BUFF{
     BC_DEC_YUV_BUFFS    OutPutBuffs;
-#if !defined(__KERNEL__)
     C011_PIB        PibInfo;
-#else
-    struct C011_PIB PibInfo;
-#endif
     uint32_t        Flags;
     uint32_t        BadFrCnt;
 } BC_DEC_OUT_BUFF;

@@ -26,9 +26,7 @@
 #define _BC_DTS_TYPES_H_
 
 //#ifdef __LINUX_USER__  /* Don't include these for KERNEL.. */
-#if !defined(__KERNEL__)
 #include <stdint.h>
-#endif
 
 #ifndef PVOID
 typedef void    *PVOID;
@@ -38,8 +36,6 @@ typedef void    *PVOID;
 typedef int    BOOL;
 #endif
 
-//#ifdef __LINUX_USER__    /* Don't include these for KERNEL */
-#if !defined(__KERNEL__)
 typedef uint32_t    ULONG;
 typedef int32_t        LONG;
 typedef void        *HANDLE;
@@ -59,12 +55,6 @@ typedef unsigned char    *PUCHAR;
 #ifndef FALSE
     #define FALSE        0
 #endif
-
-#else /* !__KERNEL__ */
-
-/* For Kernel usage.. */
-typedef bool    bc_bool_t;
-#endif /* __KERNEL__ */
 
 #endif
 
