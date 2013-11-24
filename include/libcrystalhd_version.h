@@ -22,8 +22,8 @@
  * along with this header.  If not, see <http://www.gnu.org/licenses/>.
  *******************************************************************/
 
-#ifndef _BC_DTS_VERSION_LNX_
-#define _BC_DTS_VERSION_LNX_
+#ifndef _LIBCRYSTALHD_VERSION_H_
+#define _LIBCRYSTALHD_VERSION_H_
 //
 // The version format that we are adopting is
 // MajorVersion.MinorVersion.Revision
