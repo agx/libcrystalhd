@@ -629,8 +629,9 @@ BC_STATUS DtsAddH264SCode(HANDLE hDevice, uint8_t **ppBuffer, uint32_t *pUlDataS
         uint8_t *StartCode = pStart;
         if(lDataRemained > Ctx->VidParams.StartCodeSz)
         {
+	    uint32_t i;
             //Get Size
-            for(uint32_t i = 0;i < Ctx->VidParams.StartCodeSz;i++)
+            for(i = 0;i < Ctx->VidParams.StartCodeSz;i++)
             {
                 Ctx->PESConvParams.m_lStartCodeDataSize <<= 8;
                 Ctx->PESConvParams.m_lStartCodeDataSize += StartCode[i];
@@ -658,6 +659,7 @@ BC_STATUS DtsAddH264SCode(HANDLE hDevice, uint8_t **ppBuffer, uint32_t *pUlDataS
                 //Succeeded
                 //BRCM Start Code
                 //Pre-Update Size
+	        int i;
                 lPendActualSize = lPendActualSize + BRCM_START_CODE_SIZE;
 
                 //Check Copy Size
@@ -669,7 +671,7 @@ BC_STATUS DtsAddH264SCode(HANDLE hDevice, uint8_t **ppBuffer, uint32_t *pUlDataS
                 }
 
                 //Add to Pending Buffer
-                for(int i=0;i<BRCM_START_CODE_SIZE - 1;i++)
+                for(i=0;i<BRCM_START_CODE_SIZE - 1;i++)
                 {
                     pPendCurrentPos[i] = 0;
                 }

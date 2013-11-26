@@ -57,7 +57,7 @@ BC_STATUS DtsCreateShMem(int *shmem_id)
 {
     int shmid=-1;
     key_t shmkey=BC_DIL_SHMEM_KEY;
-    shmid_ds buf;
+    struct shmid_ds buf;
     uint32_t mode=0;
 
 
@@ -142,7 +142,7 @@ BC_STATUS DtsGetDilShMem(uint32_t shmid)
 BC_STATUS DtsDelDilShMem()
 {
     int shmid =0;
-    shmid_ds buf;
+    struct shmid_ds buf;
     //First dettach the shared mem segment
 
     if(shmdt(bc_dil_glob_ptr)==-1) {
@@ -356,7 +356,7 @@ void DtsGetFrameRate(DTS_LIB_CONTEXT *Ctx, BC_DTS_PROC_OUT *pOut)
 }
 
 
-uint32_t DtsGetHWOutputStride(DTS_LIB_CONTEXT *Ctx, C011_PIB *pPIBInfo)
+uint32_t DtsGetHWOutputStride(DTS_LIB_CONTEXT *Ctx, struct C011_PIB *pPIBInfo)
 {
     if (Ctx->DevId == BC_PCI_DEVID_FLEA)
     {
@@ -431,7 +431,7 @@ uint32_t DtsGetWidthfromResolution(DTS_LIB_CONTEXT *Ctx, uint32_t Resolution)
 
 static void DtsCopyAppPIB(DTS_LIB_CONTEXT *Ctx, BC_DEC_OUT_BUFF *decOut, BC_DTS_PROC_OUT *pOut)
 {
-    C011_PIB            *srcPib = &decOut->PibInfo;
+    struct C011_PIB *srcPib = &decOut->PibInfo;
     BC_PIC_INFO_BLOCK    *dstPib = &pOut->PicInfo;
     //uint16_t                    sNum = 0;
     //BC_STATUS            sts = BC_STS_SUCCESS;
@@ -847,7 +847,7 @@ static void DtsSetupProcOutInfo(DTS_LIB_CONTEXT *Ctx, BC_DTS_PROC_OUT *pOut, BC_
         }
         Ctx->HWOutPicHeight = pOut->PicInfo.height;
         // FW returns output picture's stride in PPB.resolution when Format changes.
-        Ctx->HWOutPicWidth = DtsGetHWOutputStride(Ctx,(C011_PIB *)&(pIo->u.DecOutData.PibInfo));
+        Ctx->HWOutPicWidth = DtsGetHWOutputStride(Ctx,(struct C011_PIB *)&(pIo->u.DecOutData.PibInfo));
 
         if (pOut->PicInfo.flags & VDEC_FLAG_BOTTOMFIELD)
             pOut->PicInfo.flags |= VDEC_FLAG_INTERLACED_SRC;

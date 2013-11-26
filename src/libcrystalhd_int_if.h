@@ -31,6 +31,7 @@
 
 
 #include "bc_dts_glob_lnx.h"
+#include "libcrystalhd_priv.h"
 
 #ifdef __cplusplus
 extern "C" {

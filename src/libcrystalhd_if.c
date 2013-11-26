@@ -757,8 +757,10 @@ DtsGetFWVersionFromFile(
 
     //There is 16k hole in the FW binary. Hnece start searching from 16k in the bin file
     uint8_t *pSearchStr = &buf[0x4000];
-    *StreamVer =0;
-    for(uint32_t i=0; i <(sizeRead-0x4000);i++){
+    uint32_t i;
+
+    *StreamVer = 0;
+    for(i=0; i <(sizeRead-0x4000);i++){
         if(NULL != strstr((char *)pSearchStr,(const char *)"Media_PC_FW_Rev")){
             //The actual FW versions are at searchstring - 4 bytes.
             *StreamVer = ((*(pSearchStr-4)) << 16) |
@@ -2414,13 +2416,13 @@ DtsSetRateChange(HANDLE  hDevice ,
     //Rate: Specifies the new rate x 10000
     //Rate is the inverse of speed. For example, if the playback speed is 2x, the rate is 1/2, so the Rate member is set to 5000.
 
-    float fRate = float(1) / ((float)rate / (float)10000);
+    float fRate = 1.0 / ((float)rate / 10000.0);
 
     //Mode Decision
     if(fRate < 1)
     {
         //Slow
-        LONG Rate = LONG(float(1) / fRate);
+        LONG Rate = (long)(1.0 / fRate);
 
         mode = eC011_SKIP_PIC_IPB_DECODE;
         HostTrickModeEnable = 1;
@@ -2562,10 +2564,10 @@ DtsSetFFRate(HANDLE  hDevice ,
     //Rate: Specifies the new rate x 10000
     //Rate is the inverse of speed. For example, if the playback speed is 2x, the rate is 1/2, so the Rate member is set to 5000.
 
-    float fRate = float(1) / ((float)rate / (float)10000);
+    float fRate = 1.0 / ((float)rate / 10000.0);
 
     //Mode Decision
-    if(fRate < 1)
+    if(fRate < 1.0)
     {
         //Error
         //Only for FF

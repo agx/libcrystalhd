@@ -1332,10 +1332,11 @@ BC_STATUS DtsCopyNV12ToYV12(DTS_LIB_CONTEXT    *Ctx, BC_DTS_PROC_OUT *Vout, BC_D
     }
     else
     {
+        uint32_t i;
         /* Y-Buff loop */
         buff = Vin->Ybuff;
         yv12buff = Vout->Ybuff;
-        for(uint32_t i = 0; i < Vin->YBuffDoneSz*4; i += 2) {
+        for(i = 0; i < Vin->YBuffDoneSz*4; i += 2) {
             yv12buff[i] = buff[i];
             yv12buff[i+1] = buff[i+1];
         }
@@ -1344,7 +1345,7 @@ BC_STATUS DtsCopyNV12ToYV12(DTS_LIB_CONTEXT    *Ctx, BC_DTS_PROC_OUT *Vout, BC_D
         buff = Vin->UVbuff;
         yv12buff = Vout->UVbuff;
         uvbase = (Vin->UVBuffDoneSz * 4/2);
-        for(uint32_t i = 0; i < Vin->UVBuffDoneSz*4; i += 2) {
+        for(i = 0; i < Vin->UVBuffDoneSz*4; i += 2) {
             yv12buff[i/2] = buff[i+1];
             yv12buff[uvbase + (i/2)] = buff[i];
         }
@@ -1539,7 +1540,10 @@ static BC_STATUS DtsCopy422ToNV12(uint8_t *dstY, uint8_t *dstUV, const uint8_t *
     strideY += dstWidth;
     strideUV += dstWidth;
 
-    static __m128i mask = _mm_set_epi16(0x00ff, 0x00ff, 0x00ff, 0x00ff, 0x00ff, 0x00ff, 0x00ff, 0x00ff);
+    static __m128i mask;
+
+    mask = _mm_set_epi16(0x00ff, 0x00ff, 0x00ff, 0x00ff,
+			 0x00ff, 0x00ff, 0x00ff, 0x00ff);
 
     for (__y = 0; __y < height; __y += 2)
     {

@@ -17,7 +17,7 @@ dnl License along with this library.  If not, see
 dnl <http://www.gnu.org/licenses/>.
 
 AC_INIT([libcrystalhd], [0.0.0], [agx@sigxcpu.org], [], [])
-AC_CONFIG_SRCDIR([src/libcrystalhd_if.cpp])
+AC_CONFIG_SRCDIR([src/libcrystalhd_if.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS([config.h])
@@ -29,7 +29,7 @@ LIBCRYSTALHD_VERSION_INFO="6:3:0"
 AC_SUBST([LIBCRYSTALHD_VERSION_INFO])
 
 dnl Checks for C compiler.
-AC_PROG_CXX
+AC_PROG_CC
 AC_PROG_INSTALL
 AC_PROG_CPP
 

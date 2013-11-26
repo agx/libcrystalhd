@@ -9,13 +9,13 @@ libcrystalhd_la_LDFLAGS = \
 	-pthread
 
 libcrystalhd_la_SOURCES = \
-	libcrystalhd_fwcmds.cpp \
-	libcrystalhd_fwdiag_if.cpp \
-	libcrystalhd_fwload_if.cpp \
-	libcrystalhd_if.cpp \
-	libcrystalhd_int_if.cpp \
-	libcrystalhd_parser.cpp \
-	libcrystalhd_priv.cpp \
+	libcrystalhd_fwcmds.c \
+	libcrystalhd_fwdiag_if.c \
+	libcrystalhd_fwload_if.c \
+	libcrystalhd_if.c \
+	libcrystalhd_int_if.c \
+	libcrystalhd_parser.c \
+	libcrystalhd_priv.c \
 	$(NULL)
 
 libcrystalhdincludedir=$(includedir)/libcrystalhd

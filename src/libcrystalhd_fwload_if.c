@@ -221,11 +221,12 @@ fwbinPushToFLEA(HANDLE hDevice, char *FwBinFile, uint32_t *bytesDnld)
 
 BC_STATUS dec_write_fw_Sig(HANDLE hndl, uint32_t* Sig)
 {
+    int reg_cnt;
     unsigned int *ptr = Sig;
     unsigned int DciSigDataReg = (unsigned int)DCI_SIGNATURE_DATA_7;
     BC_STATUS sts = BC_STS_ERROR;
 
-    for (int reg_cnt=0;reg_cnt<8;reg_cnt++)
+    for (reg_cnt=0;reg_cnt<8;reg_cnt++)
     {
         sts = DtsFPGARegisterWr(hndl, DciSigDataReg, bswap_32_1(*ptr));
 

@@ -26,6 +26,7 @@
 #define __BC_DTS_TYPES_H__
 
 #include <stdint.h>
+#include <stdbool.h>
 
 #ifndef PVOID
 typedef void *PVOID;
