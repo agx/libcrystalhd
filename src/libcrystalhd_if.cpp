@@ -51,7 +51,7 @@ inline bool memcpy_s(void *dest, size_t sizeInBytes, void *src, size_t count)
     memcpy(dest, src, count);
     status = true;
   }
-  return(status);
+  return status;
 }
 
 inline bool memmove_s(void *dest, size_t sizeInBytes, void *src, size_t count)
@@ -63,7 +63,7 @@ inline bool memmove_s(void *dest, size_t sizeInBytes, void *src, size_t count)
     memmove(dest, src, count);
     status = true;
   }
-  return(status);
+  return status;
 }
 #endif
 
