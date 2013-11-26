@@ -1728,30 +1728,6 @@ BC_STATUS DtsGetBCRegConfig(DTS_LIB_CONTEXT    *Ctx)
     return BC_STS_NOT_IMPL;
 }
 
-int dtscallback(struct dl_phdr_info *info, size_t size, void *data)
-{
-    int ret=0,dilpath_len=0;
-
-    //char* pSearchStr = (char*)info->dlpi_name;
-    char * temp=NULL;
-    //temp = strstr((char *)pSearchStr,(const char *)"/libdil.so");
-    if(NULL != (temp= (char *)strstr(info->dlpi_name,(const char *)"/libcrystal.so"))){
-        /*we found the loaded dil, set teh return value to non-zero so that
-         the callback won't be called anymore*/
-        ret = 1;
-
-    }
-
-    if(ret!=0){
-        dilpath_len = (temp-info->dlpi_name)+1; //we want the slash also to be copied
-        strncpy((char*)data, info->dlpi_name,dilpath_len);
-
-    }
-
-    return dilpath_len;
-}
-
-
 //------------------------------------------------------------------------
 // Name: DtsGetFirmwareFiles
 // Description: Setup Firmware Filenames.
