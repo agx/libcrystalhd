@@ -25,7 +25,6 @@
 #ifndef __BC_DTS_TYPES_H__
 #define __BC_DTS_TYPES_H__
 
-//#ifdef __LINUX_USER__  /* Don't include these for KERNEL.. */
 #include <stdint.h>
 
 #ifndef PVOID
