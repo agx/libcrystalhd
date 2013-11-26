@@ -33,12 +33,6 @@ noinst_HEADERS = \
 	libcrystalhd_int_if.h \
 	libcrystalhd_parser.h \
 	libcrystalhd_priv.h \
-	$(top_srcdir)/include/7411d.h \
-	$(top_srcdir)/include/bc_decoder_regs.h \
-	$(top_srcdir)/include/bc_dts_glob_lnx.h \
-	$(top_srcdir)/include/vdec_info.h \
-	$(top_srcdir)/include/link/bc_defines.h \
-	$(top_srcdir)/include/link/bcm_70012_regs.h \
 	$(NULL)
 
 libcrystalhd_la_CPPFLAGS = $(AM_CPPFLAGS)

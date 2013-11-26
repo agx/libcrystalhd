@@ -43,5 +43,9 @@ AM_PROG_LD
 
 PKG_PROG_PKG_CONFIG
 
-AC_CONFIG_FILES([Makefile src/Makefile libcrystalhd.pc])
+AC_CONFIG_FILES([Makefile
+    src/Makefile
+    include/Makefile
+    include/link/Makefile
+    libcrystalhd.pc])
 AC_OUTPUT
