@@ -337,7 +337,7 @@ void DtsRelIoctlData(DTS_LIB_CONTEXT *Ctx, BC_IOCTL_DATA *pIoData);
 BC_IOCTL_DATA *DtsAllocIoctlData(DTS_LIB_CONTEXT *Ctx);
 BC_STATUS DtsAllocMemPools(DTS_LIB_CONTEXT *Ctx);
 void DtsReleaseMemPools(DTS_LIB_CONTEXT *Ctx);
-BC_STATUS DtsAddOutBuff(DTS_LIB_CONTEXT *Ctx, PVOID buff, uint32_t BuffSz, uint32_t flags);
+BC_STATUS DtsAddOutBuff(DTS_LIB_CONTEXT *Ctx, uint8_t *buff, uint32_t BuffSz, uint32_t flags);
 BC_STATUS DtsRelRxBuff(DTS_LIB_CONTEXT *Ctx, BC_DEC_YUV_BUFFS *buff,BOOL SkipAddBuff);
 BC_STATUS DtsFetchOutInterruptible(DTS_LIB_CONTEXT *Ctx, BC_DTS_PROC_OUT *DecOut, uint32_t dwTimeout);
 BC_STATUS DtsCancelFetchOutInt(DTS_LIB_CONTEXT *Ctx);
