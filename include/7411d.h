@@ -104,28 +104,28 @@
 #include "vdec_info.h"
 
 // maximum number of host commands and responses
-#define C011_MAX_HST_CMDS       (16)
-#define C011_MAX_HST_RSPS       (16)
-#define C011_MAX_HST_CMDQ_SIZE  (64)
+#define C011_MAX_HST_CMDS      (16)
+#define C011_MAX_HST_RSPS      (16)
+#define C011_MAX_HST_CMDQ_SIZE (64)
 
 // default success return code
-#define C011_RET_SUCCESS        (0x0)
+#define C011_RET_SUCCESS       (0x0)
 
 // default failure return code
-#define C011_RET_FAILURE        (0xFFFFFFFF)
+#define C011_RET_FAILURE       (0xFFFFFFFF)
 
-#define C011_RET_UNKNOWN        (0x1)
+#define C011_RET_UNKNOWN       (0x1)
 
 // Stream ARC base address
-#define STR_BASE            (0x00000000)
+#define STR_BASE               (0x00000000)
 
-// Stream ARC <- Host (default) address
-#define STR_HOSTRCV         (STR_BASE + 0x100)
+// Stream ARC <- Host          (default) address
+#define STR_HOSTRCV            (STR_BASE + 0x100)
 
 // Stream ARC -> Host address
-#define STR_HOSTSND         (STR_BASE + 0x200)
+#define STR_HOSTSND            (STR_BASE + 0x200)
 
-#define eCMD_C011_CMD_BASE      (0x73763000)
+#define eCMD_C011_CMD_BASE     (0x73763000)
 
 /* host commands */
 typedef enum
@@ -612,16 +612,16 @@ typedef enum
 /*  - eCMD_C011_DEC_CHAN_TRICK_PLAY */
 typedef enum
 {
-    eC011_SPEED_NORMAL        = 0x00000000, // all pictures
-    eC011_SPEED_FAST        = 0x00000001, // reference pictures only
-    eC011_SPEED_VERYFAST    = 0x00000002, // I-picture only
-    eC011_SPEED_SLOW        = 0x00000003, // STC trickplay slow
-    eC011_SPEED_PAUSE        = 0x00000004, // STC trickplay pause
+    eC011_SPEED_NORMAL           = 0x00000000, // all pictures
+    eC011_SPEED_FAST             = 0x00000001, // reference pictures only
+    eC011_SPEED_VERYFAST         = 0x00000002, // I-picture only
+    eC011_SPEED_SLOW             = 0x00000003, // STC trickplay slow
+    eC011_SPEED_PAUSE            = 0x00000004, // STC trickplay pause
     eC011_SPEED_I_ONLY_HOST_MODE = 0x00000100, // I-picture only host mode
-    eC011_SPEED_2x_SLOW        = 0xFFFFFFFF, // all pics played 2x frame time
-    eC011_SPEED_4x_SLOW        = 0xFFFFFFFE, // all pics played 4x frame time
-    eC011_SPEED_8x_SLOW        = 0xFFFFFFFD, // all pics played 8x frame time
-    eC011_SPEED_STEP        = 0xFFFFFFFC, // STC trickplay step
+    eC011_SPEED_2x_SLOW          = 0xFFFFFFFF, // all pics played 2x frame time
+    eC011_SPEED_4x_SLOW          = 0xFFFFFFFE, // all pics played 4x frame time
+    eC011_SPEED_8x_SLOW          = 0xFFFFFFFD, // all pics played 8x frame time
+    eC011_SPEED_STEP             = 0xFFFFFFFC, // STC trickplay step
 
 } eC011_SPEED;
 
@@ -645,8 +645,8 @@ typedef enum
 /*  - eCMD_C011_DEC_CHAN_INPUT_PARAMS */
 typedef enum
 {
-    eC011_UNMARKED_DISCONTINUITY_OFF    = 0x00000000, // disable unmarked discontinuity
-    eC011_UNMARKED_DISCONTINUITY_ON    = 0x00000001, // enable unmarked discontinuity
+    eC011_UNMARKED_DISCONTINUITY_OFF = 0x00000000, // disable unmarked discontinuity
+    eC011_UNMARKED_DISCONTINUITY_ON  = 0x00000001, // enable unmarked discontinuity
 
 } eC011_UNMARKED_DISCONTINUITY_MODE;
 
@@ -654,8 +654,8 @@ typedef enum
 /*  - eCMD_C011_DEC_CHAN_INPUT_PARAMS */
 typedef enum
 {
-    eC011_UNMARKED_DISCONTINUITY_THRESHOLD_1_PKT    = 0x00000000, // trigger on one packet only
-    eC011_UNMARKED_DISCONTINUITY_THRESHOLD_2_PKTS    = 0x00000001, // trigger on 2 consecutive packets only
+    eC011_UNMARKED_DISCONTINUITY_THRESHOLD_1_PKT  = 0x00000000, // trigger on one packet only
+    eC011_UNMARKED_DISCONTINUITY_THRESHOLD_2_PKTS = 0x00000001, // trigger on 2 consecutive packets only
 
 } eC011_UNMARKED_DISCONTINUITY_THRESHOLD;
 
@@ -663,31 +663,31 @@ typedef enum
 /*  - eCMD_C011_DEC_CHAN_VIDEO_OUTPUT */
 typedef enum
 {
-    eC011_RESOLUTION_CUSTOM    = 0x00000000, // custom
-    eC011_RESOLUTION_480i    = 0x00000001, // 480i
-    eC011_RESOLUTION_1080i    = 0x00000002, // 1080i (1920x1080, 60i)
-    eC011_RESOLUTION_NTSC    = 0x00000003, // NTSC (720x483, 60i)
-    eC011_RESOLUTION_480p    = 0x00000004, // 480p (720x480, 60p)
-    eC011_RESOLUTION_720p    = 0x00000005, // 720p (1280x720, 60p)
-    eC011_RESOLUTION_PAL1    = 0x00000006, // PAL_1 (720x576, 50i)
-    eC011_RESOLUTION_1080i25    = 0x00000007, // 1080i25 (1920x1080, 50i)
-    eC011_RESOLUTION_720p50    = 0x00000008, // 720p50 (1280x720, 50p)
-    eC011_RESOLUTION_576p    = 0x00000009, // 576p (720x576, 50p)
-    eC011_RESOLUTION_1080i29_97    = 0x0000000A, // 1080i (1920x1080, 59.94i)
-    eC011_RESOLUTION_720p59_94    = 0x0000000B, // 720p (1280x720, 59.94p)
-    eC011_RESOLUTION_SD_DVD    = 0x0000000C, // SD DVD (720x483, 60i)
-    eC011_RESOLUTION_480p656    = 0x0000000D, // 480p (720x480, 60p), output bus width 8 bit, clock 74.25MHz.
+    eC011_RESOLUTION_CUSTOM      = 0x00000000, // custom
+    eC011_RESOLUTION_480i        = 0x00000001, // 480i
+    eC011_RESOLUTION_1080i       = 0x00000002, // 1080i (1920x1080, 60i)
+    eC011_RESOLUTION_NTSC        = 0x00000003, // NTSC (720x483, 60i)
+    eC011_RESOLUTION_480p        = 0x00000004, // 480p (720x480, 60p)
+    eC011_RESOLUTION_720p        = 0x00000005, // 720p (1280x720, 60p)
+    eC011_RESOLUTION_PAL1        = 0x00000006, // PAL_1 (720x576, 50i)
+    eC011_RESOLUTION_1080i25     = 0x00000007, // 1080i25 (1920x1080, 50i)
+    eC011_RESOLUTION_720p50      = 0x00000008, // 720p50 (1280x720, 50p)
+    eC011_RESOLUTION_576p        = 0x00000009, // 576p (720x576, 50p)
+    eC011_RESOLUTION_1080i29_97  = 0x0000000A, // 1080i (1920x1080, 59.94i)
+    eC011_RESOLUTION_720p59_94   = 0x0000000B, // 720p (1280x720, 59.94p)
+    eC011_RESOLUTION_SD_DVD      = 0x0000000C, // SD DVD (720x483, 60i)
+    eC011_RESOLUTION_480p656     = 0x0000000D, // 480p (720x480, 60p), output bus width 8 bit, clock 74.25MHz.
     eC011_RESOLUTION_1080p23_976 = 0x0000000E, // 1080p23_976 (1920x1080, 23.976p)
-    eC011_RESOLUTION_720p23_976    = 0x0000000F, // 720p23_976 (1280x720p, 23.976p)
-    eC011_RESOLUTION_240p29_97    = 0x00000010, // 240p (1440x240, 29.97p )
-    eC011_RESOLUTION_240p30    = 0x00000011, // 240p (1440x240, 30p)
-    eC011_RESOLUTION_288p25    = 0x00000012, // 288p (1440x288p, 25p)
-    eC011_RESOLUTION_1080p29_97    = 0x00000013, // 1080p29_97 (1920x1080, 29.97p)
-    eC011_RESOLUTION_1080p30    = 0x00000014, // 1080p30 (1920x1080, 30p)
-    eC011_RESOLUTION_1080p24    = 0x00000015, // 1080p24 (1920x1080, 24p)
-    eC011_RESOLUTION_1080p25    = 0x00000016, // 1080p25 (1920x1080, 25p)
-    eC011_RESOLUTION_720p24    = 0x00000017, // 720p24 (1280x720, 25p)
-    eC011_RESOLUTION_720p29_97    = 0x00000018, // 720p29_97 (1280x720, 29.97p)
+    eC011_RESOLUTION_720p23_976  = 0x0000000F, // 720p23_976 (1280x720p, 23.976p)
+    eC011_RESOLUTION_240p29_97   = 0x00000010, // 240p (1440x240, 29.97p )
+    eC011_RESOLUTION_240p30      = 0x00000011, // 240p (1440x240, 30p)
+    eC011_RESOLUTION_288p25      = 0x00000012, // 288p (1440x288p, 25p)
+    eC011_RESOLUTION_1080p29_97  = 0x00000013, // 1080p29_97 (1920x1080, 29.97p)
+    eC011_RESOLUTION_1080p30     = 0x00000014, // 1080p30 (1920x1080, 30p)
+    eC011_RESOLUTION_1080p24     = 0x00000015, // 1080p24 (1920x1080, 24p)
+    eC011_RESOLUTION_1080p25     = 0x00000016, // 1080p25 (1920x1080, 25p)
+    eC011_RESOLUTION_720p24      = 0x00000017, // 720p24 (1280x720, 25p)
+    eC011_RESOLUTION_720p29_97   = 0x00000018, // 720p29_97 (1280x720, 29.97p)
 
 } eC011_RESOLUTION;
 
@@ -695,17 +695,17 @@ typedef enum
 /*  - eCMD_C011_DEC_CHAN_VIDEO_OUTPUT */
 typedef enum
 {
-    eC011_SCAN_MODE_PROGRESSIVE    = 0x00000000, // progressive frames
-    eC011_SCAN_MODE_INTERLACED    = 0x00000001, // interlaced fields
+    eC011_SCAN_MODE_PROGRESSIVE = 0x00000000, // progressive frames
+    eC011_SCAN_MODE_INTERLACED  = 0x00000001, // interlaced fields
 } eC011_SCAN_MODE;
 
 /* display option */
 /*  - eCMD_C011_DEC_CHAN_VIDEO_OUTPUT */
 typedef enum
 {
-    eC011_DISPLAY_LETTERBOX    = 0x00000000, // letter box
-    eC011_DISPLAY_FULLSCREEN    = 0x00000001, // full screen
-    eC011_DISPLAY_PILLARBOX    = 0x00000002, // pillar box
+    eC011_DISPLAY_LETTERBOX  = 0x00000000, // letter box
+    eC011_DISPLAY_FULLSCREEN = 0x00000001, // full screen
+    eC011_DISPLAY_PILLARBOX  = 0x00000002, // pillar box
 } eC011_DISPLAY_OPTION;
 
 /* display formatting */
@@ -713,50 +713,47 @@ typedef enum
 typedef enum
 {
     eC011_FORMATTING_AUTO    = 0x00000000, // automatic
-    eC011_FORMATTING_CUSTOM    = 0x00000001, // custom
+    eC011_FORMATTING_CUSTOM  = 0x00000001, // custom
     eC011_FORMATTING_NONE    = 0x00000002, // no formatting
-    eC011_FORMATTING_PICTURE    = 0x00000003, // picture level
+    eC011_FORMATTING_PICTURE = 0x00000003, // picture level
 } eC011_FORMATTING;
 
 /* vsync mode */
 /*  - eCMD_C011_DEC_CHAN_VIDEO_OUTPUT */
 typedef enum
 {
-    eC011_VSYNC_MODE_NORMAL    = 0x00000000, // internal video timing
-    eC011_VSYNC_MODE_EXTERNAL    = 0x00000001, // use external vsync_in signal
-    eC011_VSYNC_MODE_BYPASS    = 0x00000002, // 7411 updates STC from PCR in stream, but external vsync
-    eC011_VSYNC_MODE_INTERNAL    = 0x00000003, // User updates STC, but internal vsync
-
+    eC011_VSYNC_MODE_NORMAL   = 0x00000000, // internal video timing
+    eC011_VSYNC_MODE_EXTERNAL = 0x00000001, // use external vsync_in signal
+    eC011_VSYNC_MODE_BYPASS   = 0x00000002, // 7411 updates STC from PCR in stream, but external vsync
+    eC011_VSYNC_MODE_INTERNAL = 0x00000003, // User updates STC, but internal vsync
 } eC011_VSYNC_MODE;
 
 /* output clipping mode */
 /*  - eCMD_C011_DEC_CHAN_VIDEO_OUTPUT */
 typedef enum
 {
-    eC011_OUTPUT_CLIPPING_BT601     = 0x00000000, // Luma pixel is clipped to [16,235]. Chroma pixel is clipped to [16,240]
+    eC011_OUTPUT_CLIPPING_BT601  = 0x00000000, // Luma pixel is clipped to [16,235]. Chroma pixel is clipped to [16,240]
     eC011_OUTPUT_CLIPPING_BT1120 = 0x00000001, // The pixel is clipped to [1,254]
-    eC011_OUTPUT_CLIPPING_NONE     = 0x00000002, // No output clipping
-
+    eC011_OUTPUT_CLIPPING_NONE   = 0x00000002, // No output clipping
 } eC011_OUTPUT_CLIPPING;
 
 /* display mode for pause/slow/fastforward*/
 /*  - eCMD_C011_DEC_CHAN_VIDEO_OUTPUT */
 typedef enum
 {
-    eC011_DISPLAY_MODE_AUTO    = 0x00000000,
-    eC011_DISPLAY_MODE_FRAME    = 0x00000001,
+    eC011_DISPLAY_MODE_AUTO   = 0x00000000,
+    eC011_DISPLAY_MODE_FRAME  = 0x00000001,
     eC011_DISPLAY_MODE_TOP    = 0x00000002,
-    eC011_DISPLAY_MODE_BOTTOM    = 0x00000003,
-
+    eC011_DISPLAY_MODE_BOTTOM = 0x00000003,
 } eC011_DISPLAY_MODE;
 
 /*order in timeline where the pauseUntoPts and displayUntoPts occur*/
 typedef enum
 {
-    eC011_PAUSE_UNTO_PTS_ONLY                = 0x00000001,
-    eC011_DISPLAY_UNTO_PTS_ONLY                = 0x00000002,
-    eC011_DISPLAY_UNTO_PTS_LESSER_THAN_PAUSE_UNTO_PTS    = 0x00000003,
-    eC011_DISPLAY_UNTO_PTS_GREATER_THAN_PAUSE_UNTO_PTS    = 0x00000004,
+    eC011_PAUSE_UNTO_PTS_ONLY                          = 0x00000001,
+    eC011_DISPLAY_UNTO_PTS_ONLY                        = 0x00000002,
+    eC011_DISPLAY_UNTO_PTS_LESSER_THAN_PAUSE_UNTO_PTS  = 0x00000003,
+    eC011_DISPLAY_UNTO_PTS_GREATER_THAN_PAUSE_UNTO_PTS = 0x00000004,
 }
 eC011_DISPLAY_PAUSE_STATE;
 
@@ -764,78 +761,71 @@ eC011_DISPLAY_PAUSE_STATE;
 /*  - eCMD_C011_DEC_CHAN_OUTPUT_FORMAT */
 typedef enum
 {
-    eC011_SCALING_OFF        = 0x00000000,
-    eC011_SCALING_ON        = 0x00000001,
-
+    eC011_SCALING_OFF = 0x00000000,
+    eC011_SCALING_ON  = 0x00000001,
 } eC011_SCALING;
 
 /* edge control */
 /*  - eCMD_C011_DEC_CHAN_OUTPUT_FORMAT */
 typedef enum
 {
-    eC011_EDGE_CONTROL_NONE    = 0x00000000, // no cropping or padding
-    eC011_EDGE_CONTROL_CROP    = 0x00000001, // cropping
-    eC011_EDGE_CONTROL_PAD    = 0x00000002, // padding
-
+    eC011_EDGE_CONTROL_NONE = 0x00000000, // no cropping or padding
+    eC011_EDGE_CONTROL_CROP = 0x00000001, // cropping
+    eC011_EDGE_CONTROL_PAD  = 0x00000002, // padding
 } eC011_EDGE_CONTROL;
 
 /* deinterlacing on/off */
 /*  - eCMD_C011_DEC_CHAN_OUTPUT_FORMAT */
 typedef enum
 {
-    eC011_DEINTERLACING_OFF    = 0x00000000,
-    eC011_DEINTERLACING_ON    = 0x00000001,
-
+    eC011_DEINTERLACING_OFF = 0x00000000,
+    eC011_DEINTERLACING_ON  = 0x00000001,
 } eC011_DEINTERLACING;
 
 /* scaling target */
 /*  - eCMD_C011_DEC_CHAN_SCALING_FILTERS */
 typedef enum
 {
-    eC011_HORIZONTAL        = 0x00000000,
-    eC011_VERTICAL_FRAME    = 0x00000001,
+    eC011_HORIZONTAL            = 0x00000000,
+    eC011_VERTICAL_FRAME        = 0x00000001,
     eC011_VERTICAL_FIELD_TOP    = 0x00000002,
-    eC011_VERTICAL_FIELD_BOTTOM    = 0x00000003,
-
+    eC011_VERTICAL_FIELD_BOTTOM = 0x00000003,
 } eC011_SCALING_TARGET;
 
 /* normalization */
 /*  - eCMD_C011_DEC_CHAN_SCALING_FILTERS */
 typedef enum
 {
-    eC011_NORMALIZATION_128    = 0x00000000, // divide by 128
-    eC011_NORMALIZATION_64    = 0x00000001, // divide by 64
-
+    eC011_NORMALIZATION_128 = 0x00000000, // divide by 128
+    eC011_NORMALIZATION_64  = 0x00000001, // divide by 64
 } eC011_NORMALIZATION;
 
 /* pause type */
 /*  - eCMD_C011_DEC_CHAN_PAUSE_OUTPUT */
 typedef enum
 {
-    eC011_PAUSE_TYPE_RESUME    = 0x00000000, // resume video output
-    eC011_PAUSE_TYPE_CURRENT    = 0x00000001, // pause video on current frame
-    eC011_PAUSE_TYPE_BLACK    = 0x00000002, // pause video with black screen
+    eC011_PAUSE_TYPE_RESUME  = 0x00000000, // resume video output
+    eC011_PAUSE_TYPE_CURRENT = 0x00000001, // pause video on current frame
+    eC011_PAUSE_TYPE_BLACK   = 0x00000002, // pause video with black screen
     eC011_PAUSE_TYPE_STEP    = 0x00000003, // display next picture
-
 } eC011_PAUSE_TYPE;
 
 /* TSD audio payload type */
 /*  - eCMD_C011_DEC_CREATE_AUDIO_CONTEXT */
 typedef enum
 {
-    eC011_TSD_AUDIO_PAYLOAD_MPEG1    = 0x00000000,
-    eC011_TSD_AUDIO_PAYLOAD_AC3        = 0x00000001,
-
+    eC011_TSD_AUDIO_PAYLOAD_MPEG1 = 0x00000000,
+    eC011_TSD_AUDIO_PAYLOAD_AC3   = 0x00000001,
 } eC011_TSD_AUDIO_PAYLOAD_TYPE;
 
 /* CDB extract bytes for PES */
 /*  - eCMD_C011_DEC_CREATE_AUDIO_CONTEXT */
 typedef enum
 {
-    eC011_PES_CDB_EXTRACT_0_BYTES    = 0x00000000,
-    eC011_PES_CDB_EXTRACT_1_BYTE    = 0x00000001,
-    eC011_PES_CDB_EXTRACT_4_BYTES    = 0x00000002,
-    eC011_PES_CDB_EXTRACT_7_BYTES    = 0x00000003,
+    eC011_PES_CDB_EXTRACT_0_BYTES = 0x00000000,
+    eC011_PES_CDB_EXTRACT_1_BYTE  = 0x00000001,
+    eC011_PES_CDB_EXTRACT_4_BYTES = 0x00000002,
+    eC011_PES_CDB_EXTRACT_7_BYTES = 0x00000003,
 
 } eC011_PES_CDB_EXTRACT_BYTES;
 
@@ -844,86 +834,80 @@ typedef enum
 typedef union DecAudioPayloadInfo {
     eC011_TSD_AUDIO_PAYLOAD_TYPE payloadType;
     eC011_PES_CDB_EXTRACT_BYTES  extractBytes;
-
 } uC011_AUDIO_PAYLOAD_INFO;
 
 /* descrambling mode */
 /*  - eCMD_C011_DEC_CHAN_SET_DECYPTION */
 typedef enum
 {
-    eC011_DESCRAMBLING_3DES    = 0x00000000,
-    eC011_DESCRAMBLING_DES    = 0x00000001,
-
+    eC011_DESCRAMBLING_3DES = 0x00000000,
+    eC011_DESCRAMBLING_DES  = 0x00000001,
 } eC011_DESCRAMBLING_MODE;
 
 /* key exchange */
 /*  - eCMD_C011_DEC_CHAN_SET_DECYPTION */
 typedef enum
 {
-    eC011_KEY_EXCHANGE_EVEN_0    = 0x00000001,
-    eC011_KEY_EXCHANGE_EVEN_1    = 0x00000002,
-    eC011_KEY_EXCHANGE_EVEN_2    = 0x00000004,
-    eC011_KEY_EXCHANGE_ODD_0    = 0x00000010,
-    eC011_KEY_EXCHANGE_ODD_1    = 0x00000020,
-    eC011_KEY_EXCHANGE_ODD_2    = 0x00000040,
-
+    eC011_KEY_EXCHANGE_EVEN_0 = 0x00000001,
+    eC011_KEY_EXCHANGE_EVEN_1 = 0x00000002,
+    eC011_KEY_EXCHANGE_EVEN_2 = 0x00000004,
+    eC011_KEY_EXCHANGE_ODD_0  = 0x00000010,
+    eC011_KEY_EXCHANGE_ODD_1  = 0x00000020,
+    eC011_KEY_EXCHANGE_ODD_2  = 0x00000040,
 } eC011_KEY_EXCHANGE_MODE;
 
 /* cipher text stealing */
 /*  - eCMD_C011_DEC_CHAN_SET_DECYPTION */
 typedef enum
 {
-    eC011_CT_STEALING_MODE_OFF      = 0x00000000,
-    eC011_CT_STEALING_MODE_ON       = 0x00000001,
-
+    eC011_CT_STEALING_MODE_OFF = 0x00000000,
+    eC011_CT_STEALING_MODE_ON  = 0x00000001,
 } eC011_CT_STEALING_MODE;
 
 /* pause mode */
 /*  - eCMD_C011_DEC_CHAN_PAUSE */
 typedef enum
 {
-    eC011_PAUSE_MODE_OFF    = 0x00000000,
-    eC011_PAUSE_MODE_ON        = 0x00000001,
-
+    eC011_PAUSE_MODE_OFF = 0x00000000,
+    eC011_PAUSE_MODE_ON  = 0x00000001,
 } eC011_PAUSE_MODE;
 
 /* skip pic mode */
 /*  - eCMD_C011_DEC_CHAN_SET_SKIP_PIC_MODE */
 typedef enum
 {
-    eC011_SKIP_PIC_IPB_DECODE    = 0x00000000,
-    eC011_SKIP_PIC_IP_DECODE    = 0x00000001,
-    eC011_SKIP_PIC_I_DECODE    = 0x00000002,
-
+    eC011_SKIP_PIC_IPB_DECODE = 0x00000000,
+    eC011_SKIP_PIC_IP_DECODE  = 0x00000001,
+    eC011_SKIP_PIC_I_DECODE   = 0x00000002,
 } eC011_SKIP_PIC_MODE;
 
 /* enum for color space conversion */
 typedef enum
 {
-   eC011_DEC_CSC_CTLBYDEC    = 0x00000000,
-   eC011_DEC_CSC_ENABLE        = 0x00000001,
-   eC011_DEC_CSC_DISABLE    = 0x00000002,
+   eC011_DEC_CSC_CTLBYDEC = 0x00000000,
+   eC011_DEC_CSC_ENABLE   = 0x00000001,
+   eC011_DEC_CSC_DISABLE  = 0x00000002,
 } eC011_DEC_CSC_SETUP;
 
 /* enum for setting range remap */
 typedef enum
 {
-   eC011_DEC_RANGE_REMAP_VIDCTL     = 0x00000000,
-   eC011_DEC_RANGE_REMAP_ENABLE     = 0x00000001,
+   eC011_DEC_RANGE_REMAP_VIDCTL  = 0x00000000,
+   eC011_DEC_RANGE_REMAP_ENABLE  = 0x00000001,
    eC011_DEC_RANGE_REMAP_DISABLE = 0x00000002,
 } eC011_DEC_RANGE_REMAP_SETUP;
 
 typedef enum
 {
-   eC011_DEC_OPERATION_MODE_GENERIC    = 0x00000000,
-   eC011_DEC_OPERATION_MODE_BLURAY    = 0x00000001,
-   eC011_DEC_OPERATION_MODE_HDDVD    = 0x00000002,
+   eC011_DEC_OPERATION_MODE_GENERIC = 0x00000000,
+   eC011_DEC_OPERATION_MODE_BLURAY  = 0x00000001,
+   eC011_DEC_OPERATION_MODE_HDDVD   = 0x00000002,
 } eC011_DEC_OPERATION_MODE;
 
 typedef enum
 {
-   eC011_DEC_RANGE_REMAP_ADVANCED    = 0x00000000,
-   eC011_DEC_RANGE_REMAP_MAIN        = 0x00000001,
+   eC011_DEC_RANGE_REMAP_ADVANCED = 0x00000000,
+   eC011_DEC_RANGE_REMAP_MAIN     = 0x00000001,
 } eC011_DEC_RANGE_REMAP_VC1PROFILE;
 
 /* encoder sequence paramaters */
@@ -932,19 +916,18 @@ typedef enum
 typedef struct
 {
   uint32_t    seqParamId;     // sequence parameter set ID
-  uint32_t    profile;    // profile (E_ENC_PROFILE)
-  uint32_t    level;        // level x 10
+  uint32_t    profile;        // profile (E_ENC_PROFILE)
+  uint32_t    level;          // level x 10
   uint32_t    constraintMap;  // bitmap for constraint sets
   uint32_t    frameNumMaxLog; // logorithm of frame number max
   uint32_t    pocLsbMaxLog;   // logorithm of POC LSB max
-  uint32_t    pocType;    // POC type
+  uint32_t    pocType;        // POC type
   uint32_t    refFrameMax;    // number of reference frames
   uint32_t    frameMBHeight;  // frame height in MB
   uint32_t    frameMBWidth;   // frame width in MB
   uint32_t    frameMBOnly;    // frame MB only flag
-  uint32_t    adaptMB;    // MBAFF flag
+  uint32_t    adaptMB;        // MBAFF flag
   uint32_t    dir8x8Infer;    // direct 8x8 inference flag
-
 } sC011_ENC_SEQ_PARAM;
 
 /* encoder picture parameters */
@@ -956,10 +939,9 @@ typedef struct
   uint32_t    seqParameterId; // sequence parameter set ID
   uint32_t    refIdxMaxL0;    // number of active reference indices
   uint32_t    refIdxMaxL1;    // number of active reference indices
-  uint32_t    entMode;    // entropy mode (E_ENC_ENT_MODE)
-  uint32_t    initQP;     // picture init QP
+  uint32_t    entMode;        // entropy mode (E_ENC_ENT_MODE)
+  uint32_t    initQP;         // picture init QP
   uint32_t    intraConst;     // constrained intra prediction flag
-
 } sC011_ENC_PIC_PARAM;
 
 /* encoder coding parameters */
@@ -967,18 +949,17 @@ typedef struct
 /*  - eCMD_C011_ENC_CHAN_CONTROL */
 typedef struct
 {
-  uint32_t    eventNfy;       // event notify generation flag
-  uint32_t    intMode;    // interlace coding mode (E_ENC_INT_MODE)
-  uint32_t    gopSize;    // number of frames per GOP (I frame period)
-  uint32_t    gopStruct;      // number of B-frames between references
-  uint32_t    rateCtrlMode;   // rate control mode (E_ENC_RATE_CTRL_MODE)
-  uint32_t    frameRate;      // frame rate
-  uint32_t    constQP;    // constant QP
-  uint32_t    bitratePeriod;  // VBR bitrate average period (in GOPs)
-  uint32_t    bitRateAvg;     // VBR average bitrate
-  uint32_t    bitRateMax;     // VBR max bitrate
-  uint32_t    bitRateMin;     // VBR min bitrate
-
+  uint32_t    eventNfy;      // event notify generation flag
+  uint32_t    intMode;       // interlace coding mode (E_ENC_INT_MODE)
+  uint32_t    gopSize;       // number of frames per GOP (I frame period)
+  uint32_t    gopStruct;     // number of B-frames between references
+  uint32_t    rateCtrlMode;  // rate control mode (E_ENC_RATE_CTRL_MODE)
+  uint32_t    frameRate;     // frame rate
+  uint32_t    constQP;       // constant QP
+  uint32_t    bitratePeriod; // VBR bitrate average period (in GOPs)
+  uint32_t    bitRateAvg;    // VBR average bitrate
+  uint32_t    bitRateMax;    // VBR max bitrate
+  uint32_t    bitRateMin;    // VBR min bitrate
 } sC011_ENC_CODING_PARAM;
 
 /* encoder video-in parameters */
@@ -990,7 +971,6 @@ typedef struct
   uint32_t    picIdSrc;       // picture ID source (E_ENC_PIC_ID_SRC)
   uint32_t    picYUVFormat;   // picture YUV format (E_ENC_PIC_YUV_FORMAT)
   uint32_t    picIntFormat;   // picture interlace format (E_ENC_PIC_INT_FORMAT)
-
 } sC011_ENC_VID_IN_PARAM;
 
 /* encoder code-out parameters */
@@ -998,14 +978,13 @@ typedef struct
 /*  - eCMD_C011_ENC_CHAN_CONTROL */
 typedef struct
 {
-  uint32_t    portId;        // port ID
+  uint32_t    portId;         // port ID
   uint32_t    codeFormat;     // code format (E_ENC_CODE_FORMAT)
   uint32_t    delimiter;      // delimiter NAL flag
   uint32_t    endOfSeq;       // end of sequence NAL flag
   uint32_t    endOfStream;    // end of stream NAL flag
   uint32_t    picParamPerPic; // picture parameter set per picture flag
   uint32_t    seiMasks;       // SEI message (1 << E_ENC_SEI_TYPE)
-
 } sC011_ENC_CODE_OUT_PARAM;
 
 /* encoder picture data */
@@ -1013,10 +992,9 @@ typedef struct
 typedef struct
 {
   uint32_t    picId;        // picture ID
-  uint32_t    picStruct;      // picture structure (E_ENC_PIC_STRUCT)
-  uint32_t    origBuffIdx;    // original frame buffer index
-  uint32_t    reconBuffIdx;   // reconstructed frame buffer index
-
+  uint32_t    picStruct;    // picture structure (E_ENC_PIC_STRUCT)
+  uint32_t    origBuffIdx;  // original frame buffer index
+  uint32_t    reconBuffIdx; // reconstructed frame buffer index
 } sC011_ENC_PIC_DATA;
 
 /* encoder channel control parameter type */
@@ -1024,19 +1002,17 @@ typedef struct
 typedef enum {
     eC011_ENC_CTRL_SEQ_PARAM    = 0x00000000,
     eC011_ENC_CTRL_PIC_PARAM    = 0x00000001,
-    eC011_ENC_CTRL_CODING_PARAM    = 0x00000002,
-    eC011_ENC_CTRL_PIC_DATA    = 0x00000003,
-
+    eC011_ENC_CTRL_CODING_PARAM = 0x00000002,
+    eC011_ENC_CTRL_PIC_DATA     = 0x00000003,
 } eC011_ENC_CTRL_CODE;
 
 /* encoder channel control parameter */
 /*  - eCMD_C011_ENC_CHAN_CONTROL */
 typedef union EncCtrlParam {
-    sC011_ENC_SEQ_PARAM        seqParams;
-    sC011_ENC_PIC_PARAM        picParams;
-    sC011_ENC_CODING_PARAM    codingParams;
-    sC011_ENC_PIC_DATA        picData;
-
+    sC011_ENC_SEQ_PARAM    seqParams;
+    sC011_ENC_PIC_PARAM    picParams;
+    sC011_ENC_CODING_PARAM codingParams;
+    sC011_ENC_PIC_DATA     picData;
 } uC011_ENC_CTRL_PARAM;
 
 /*
@@ -1065,9 +1041,9 @@ typedef struct {
 
 /* dsDmaCtrlInfoQueue */
 typedef struct {
-    uint32_t        readIndex;
-    uint32_t        writeIndex;
-    dsDmaCtrlInfo    dmaCtrlInfo[DMA_CIQ_DEPTH];
+    uint32_t      readIndex;
+    uint32_t      writeIndex;
+    dsDmaCtrlInfo dmaCtrlInfo[DMA_CIQ_DEPTH];
 } dsDmaCtrlInfoQueue;
 
 /* Init */
@@ -1081,10 +1057,10 @@ typedef struct {
     eC011_INT_CONTROL interrupt;
     uint32_t    audioMemSize;
     eC011_BRCM_MODE brcmMode;
-    uint32_t    fgtEnable;        /* 0 - disable FGT, 1 - enable FGT */
-    uint32_t    DramLogEnable;        /* 0 - disable DramLog, 1 - enable DramLog */
-    uint32_t    sidMemorySize;        /* in bytes */
-    uint32_t    dmaDataXferEnable;    /* 0:disable; 1:enable */
+    uint32_t    fgtEnable;         /* 0 - disable FGT, 1 - enable FGT */
+    uint32_t    DramLogEnable;     /* 0 - disable DramLog, 1 - enable DramLog */
+    uint32_t    sidMemorySize;     /* in bytes */
+    uint32_t    dmaDataXferEnable; /* 0:disable; 1:enable */
     uint32_t    rsaDecrypt;        /* 0:disable; 1:enable */
     uint32_t    openMode;
     uint32_t    rsvd1;
@@ -1455,8 +1431,8 @@ typedef struct {
     uint32_t    bottomSize;
     uint32_t    horizontalSize;
     uint32_t    verticalSize;
-    int32_t    horizontalOrigin;
-    int32_t    verticalOrigin;
+    int32_t     horizontalOrigin;
+    int32_t     verticalOrigin;
     uint32_t    horizontalCropSize;
     uint32_t    verticalCropSize;
     uint32_t    lumaTopFieldOffset;
@@ -1490,21 +1466,21 @@ typedef struct {
    uint32_t    bottomSize;
    uint32_t    horizontalSize;
    uint32_t    verticalSize;
-   int32_t    horizontalOrigin;
-   int32_t    verticalOrigin;
+   int32_t     horizontalOrigin;
+   int32_t     verticalOrigin;
    uint32_t    horizontalCropSize;
    uint32_t    verticalCropSize;
    uint32_t    lumaTopFieldOffset;
    uint32_t    lumaBottomFieldOffset; /* 20 */
    uint32_t    chromaTopFieldOffset;
    uint32_t    chromaBottomFieldOffset;
-   eC011_SCAN_MODE       inputScanMode;
-   eC011_DEINTERLACING       deinterlacing;
-   uint32_t    horizontalDecimationFactor; /* bits: 0-7 N; 8-15 M */
-   uint32_t    verticalDecimationFactor;   /* bits: 0-7 Np; 8-15 Mp; 16-23 Ni; 24-31 Mi*/
+   eC011_SCAN_MODE     inputScanMode;
+   eC011_DEINTERLACING deinterlacing;
+   uint32_t    horizontalDecimationFactor;       /* bits: 0-7 N; 8-15 M */
+   uint32_t    verticalDecimationFactor;         /* bits: 0-7 Np; 8-15 Mp; 16-23 Ni; 24-31 Mi*/
    uint32_t    horizontalDecimationOutputSize;
    uint32_t    verticalDecimationOutputSize;
-   uint32_t    horizontalScalingFactor;    /* bits: 0-7 N; 8-15 M */
+   uint32_t    horizontalScalingFactor;          /* bits: 0-7 N; 8-15 M */
    uint32_t    verticalScalingFactorProgressive; /* bits: 0-7 Nt; 8-15 Mt; 16-23 Nb; 24-31 Mb*/
    uint32_t    verticalScalingFactorInterlace;   /* bits: 0-7 Nt; 8-15 Mt; 16-23 Nb; 24-31 Mb*/
    uint32_t    Reserved[5];
@@ -1512,29 +1488,29 @@ typedef struct {
 
 /* DecChannelSetScalingFilters */
 typedef struct {
-    uint32_t    command;
-    uint32_t    sequence;
-    eC011_OUTPUT_PORT     portId;
-    eC011_SCALING_TARGET      target;
-    uint32_t    pixelPos;
-    uint32_t    increment;
+    uint32_t   command;
+    uint32_t   sequence;
+    eC011_OUTPUT_PORT    portId;
+    eC011_SCALING_TARGET target;
+    uint32_t   pixelPos;
+    uint32_t   increment;
     int32_t    lumaCoeff1;
     int32_t    lumaCoeff2;
     int32_t    lumaCoeff3;
     int32_t    lumaCoeff4;
     int32_t    lumaCoeff5;
-    eC011_NORMALIZATION       lumaNormalization;
+    eC011_NORMALIZATION lumaNormalization;
     int32_t    chromaCoeff1;
     int32_t    chromaCoeff2;
     int32_t    chromaCoeff3;
-    eC011_NORMALIZATION       chromaNormalization;
+    eC011_NORMALIZATION chromaNormalization;
 } DecCmdChannelSetScalingFilters;
 
 /* DecChannelOsdMode */
 typedef struct {
     uint32_t    command;
     uint32_t    sequence;
-    eC011_OUTPUT_PORT     portId;
+    eC011_OUTPUT_PORT portId;
     uint32_t    osdBuffer;
     uint32_t    fullRes;
 } DecCmdChannelOsdMode;
@@ -1543,17 +1519,17 @@ typedef struct {
 typedef struct {
     uint32_t    command;
     uint32_t    sequence;
-    eC011_OUTPUT_PORT     portId;
+    eC011_OUTPUT_PORT portId;
     uint32_t    ccBuffer;
 } DecCmdChannelCcDataMode;
 
 /* DecChannelDrop */
 typedef struct {
-    uint32_t    command;
-    uint32_t    sequence;
-    uint32_t    channelId;
-    uint32_t    numPicDrop;
-   eC011_DROP_TYPE        dropType;
+  uint32_t        command;
+  uint32_t        sequence;
+  uint32_t        channelId;
+  uint32_t        numPicDrop;
+  eC011_DROP_TYPE dropType;
 } DecCmdChannelDrop;
 
 /* DecChannelRelease */
@@ -1631,7 +1607,7 @@ typedef struct {
     uC011_AUDIO_PAYLOAD_INFO  payloadInfo;
     uint32_t    cdbBaseAddress;
     uint32_t    cdbEndAddress;
-    uint32_t         itbBaseAddress;
+    uint32_t    itbBaseAddress;
     uint32_t    itbEndAddress;
     uint32_t    streamIdExtension;
 } DecCmdCreateAudioContext;
@@ -1658,7 +1634,7 @@ typedef struct {
     uint32_t    command;
     uint32_t    sequence;
     uint32_t    channelId;
-    eC011_DESCRAMBLING_MODE   descramMode;
+    eC011_DESCRAMBLING_MODE descramMode;
     uint32_t    evenKey0;
     uint32_t    evenKey1;
     uint32_t    evenKey2;
@@ -1667,8 +1643,8 @@ typedef struct {
     uint32_t    oddKey1;
     uint32_t    oddKey2;
     uint32_t    oddKey3;
-    eC011_KEY_EXCHANGE_MODE   keyExchangeMode;
-    eC011_CT_STEALING_MODE    cipherTextStealingMode;
+    eC011_KEY_EXCHANGE_MODE keyExchangeMode;
+    eC011_CT_STEALING_MODE  cipherTextStealingMode;
 } DecCmdSetDecryption;
 
 /* DecChanPicCapture */
@@ -1690,7 +1666,7 @@ typedef struct {
     uint32_t    command;
     uint32_t    sequence;
     uint32_t    channelId;
-    eC011_PAUSE_MODE      enableState;
+    eC011_PAUSE_MODE enableState;
 } DecCmdChannelPause;
 
 /* DecChanPauseState */
@@ -1704,7 +1680,7 @@ typedef struct {
     uint32_t    command;
     uint32_t    sequence;
     uint32_t    status;
-    eC011_PAUSE_MODE      pauseState;
+    eC011_PAUSE_MODE pauseState;
 } DecRspChannelPauseState;
 
 /* DecChanSetSlowMotionRate */
@@ -1894,7 +1870,7 @@ typedef struct {
     uint32_t    command;
     uint32_t    sequence;
     uint32_t    channelId;
-    eC011_DISPLAY_MODE    displayMode;
+    eC011_DISPLAY_MODE displayMode;
 } DecCmdChannelSetSlowDisplayMode;
 
 /* DecCmdChannelSetFastForwardDisplayMode */
@@ -1902,7 +1878,7 @@ typedef struct {
     uint32_t    command;
     uint32_t    sequence;
     uint32_t    channelId;
-    eC011_DISPLAY_MODE    displayMode;
+    eC011_DISPLAY_MODE displayMode;
 } DecCmdChannelSetFastForwardDisplayMode;
 
 /* DecCmdChannelSetDisplayMode */
@@ -1910,7 +1886,7 @@ typedef struct {
     uint32_t    command;
     uint32_t    sequence;
     uint32_t    channelId;
-    eC011_DISPLAY_MODE    displayMode;
+    eC011_DISPLAY_MODE displayMode;
 } DecCmdChannelSetDisplayMode;
 
 /* DecCmdChannelGetDisplayMode */
@@ -1925,7 +1901,7 @@ typedef struct {
     uint32_t    command;
     uint32_t    sequence;
     uint32_t    status;
-    eC011_DISPLAY_MODE    displayMode;
+    eC011_DISPLAY_MODE displayMode;
 } DecRspChannelGetDisplayMode;
 
 /* DecCmdChannelSetReverseField */
@@ -1948,8 +1924,8 @@ typedef struct {
 typedef struct {
     uint32_t    command;
     uint32_t    sequence;
-    eC011_INPUT_PORT     inPort;
-    eC011_STREAM_TYPE     streamType;
+    eC011_INPUT_PORT  inPort;
+    eC011_STREAM_TYPE streamType;
 } DecCmdChannelStreamOpen;
 
 /*DecCmdChannelChannelOpen*/
@@ -2080,7 +2056,7 @@ typedef struct {
     uint32_t    sequence;
     uint32_t    channelId;
     eC011_PIC_REL_MODE    pictureRelease;
-    eC011_LASTPIC_DISPLAY     lastPicDisplay;
+    eC011_LASTPIC_DISPLAY lastPicDisplay;
 } DecCmdChannelStopVideo;
 
 /* DecCmdChannelSetPanScanMode */
@@ -2088,7 +2064,7 @@ typedef struct {
     uint32_t    command;
     uint32_t    sequence;
     uint32_t    channelId;
-   eC011_PAN_SCAN_MODE       ePanScanMode;
+   eC011_PAN_SCAN_MODE ePanScanMode;
 } DecCmdChannelSetPanScanMode;
 
 /* DecChannelStartDisplayAtPTS */
@@ -2118,10 +2094,10 @@ typedef struct {
     uint32_t    pausePtsValue1;
     uint32_t    displayPtsValue0;
     uint32_t    displayPtsValue1;
-    int32_t    pauseLoopAroundCounter;
-    int32_t    displayLoopAroundCounter;
-    int32_t    pauseUntoPtsValid;
-    int32_t    displayUntoPtsValid;
+    int32_t     pauseLoopAroundCounter;
+    int32_t     displayLoopAroundCounter;
+    int32_t     pauseUntoPtsValid;
+    int32_t     displayUntoPtsValid;
 } DecCmdChannelDisplayPauseUntoPTS;
 
 /* DecCmdChanSetPtsStcDiffThreshold */
@@ -2155,11 +2131,11 @@ typedef struct {
 } DecRspChannelGetDisplayOrder;
 
 typedef struct {
-    uint32_t    command;
-    uint32_t    sequence;
-    uint32_t    channelId;
-    uint32_t    CodeInBuffLowerThreshold;
-    uint32_t    CodeInBuffHigherThreshold;
+    uint32_t   command;
+    uint32_t   sequence;
+    uint32_t   channelId;
+    uint32_t   CodeInBuffLowerThreshold;
+    uint32_t   CodeInBuffHigherThreshold;
     int32_t    MaxNumVsyncsCodeInEmpty;
     int32_t    MaxNumVsyncsCodeInFull;
 } DecCmdChanSetParametersForHardResetInterruptToHost;
@@ -2198,8 +2174,8 @@ typedef struct {
     uint32_t    channelId;
     uint32_t    condControl;
     uint32_t    picId;
-    eC011_ENC_CTRL_CODE       controlCode;
-    uC011_ENC_CTRL_PARAM      controlParam;
+    eC011_ENC_CTRL_CODE  controlCode;
+    uC011_ENC_CTRL_PARAM controlParam;
 } EncCmdChannelControl;
 
 /* EncChannelStatistics */
@@ -2213,8 +2189,8 @@ typedef struct {
 typedef struct {
    uint32_t    command;
    uint32_t    sequence;
-   eC011_OUTPUT_PORT     portId;
-   eC011_DEC_CSC_SETUP       enable;
+   eC011_OUTPUT_PORT   portId;
+   eC011_DEC_CSC_SETUP enable;
    uint32_t    padInput; /* if the padded pixels need to be converted. 1: input; 0:output */
    uint32_t    lumaCoefY;
    uint32_t    lumaCoefU;
@@ -2236,7 +2212,7 @@ typedef struct {
 typedef struct {
    uint32_t    command;
    uint32_t    sequence;
-   eC011_OUTPUT_PORT        portId;
+   eC011_OUTPUT_PORT                portId;
    eC011_DEC_RANGE_REMAP_SETUP      enable;
    eC011_DEC_RANGE_REMAP_VC1PROFILE vc1Profile;
    uint32_t    lumaEnable;
@@ -2257,7 +2233,7 @@ typedef struct {
 typedef struct {
     uint32_t    command;
     uint32_t    sequence;
-    eC011_OUTPUT_PORT     portId;
+    eC011_OUTPUT_PORT portId;
     uint32_t    paddingValue;   // bits: 23-16 (Y), 15-8 (U), 7-0 (V)
     uint32_t    padFullScreen;  // 0: fgt off, 1: fgt on
 } DecCmdChannelSetLastPicturePadding;
@@ -2291,7 +2267,7 @@ typedef struct {
    uint32_t    command;
    uint32_t    sequence;
    eC011_OUTPUT_PORT     portId;
-   eC011_OUTPUT_CLIPPING     outputClipping;
+   eC011_OUTPUT_CLIPPING outputClipping;
 } DecCmdSetClipping;
 
 /* DecSetContentKey */
@@ -2304,7 +2280,7 @@ typedef struct {
     uint32_t    inputKey1;  // bits 33:63
     uint32_t    inputKey2;
     uint32_t    inputKey3;
-    uint32_t    inputIv0;  // bits 31:0
+    uint32_t    inputIv0;   // bits 31:0
     uint32_t    inputIv1;
     uint32_t    inputIv2;
     uint32_t    inputIv3;
@@ -2316,10 +2292,10 @@ typedef struct {
     uint32_t    outputIv1;
     uint32_t    outputIv2;
     uint32_t    outputIv3;
-    uint32_t    outputStripeStart;      // 0 based stripe encrypt start number, don't use 0
-    uint32_t    outputStripeNumber;  // 0 based number of stripes to encrypt
-    uint32_t    outputStripeLines;   // 0 = 256 lines, otherwise actual number of lines, start on second line
-    uint32_t    outputStripeLineStart;   // 0 based start line number
+    uint32_t    outputStripeStart;     // 0 based stripe encrypt start number, don't use 0
+    uint32_t    outputStripeNumber;    // 0 based number of stripes to encrypt
+    uint32_t    outputStripeLines;     // 0 = 256 lines, otherwise actual number of lines, start on second line
+    uint32_t    outputStripeLineStart; // 0 based start line number
 
     uint32_t    outputMode;
     uint32_t    outputyScramLen;
@@ -2328,12 +2304,12 @@ typedef struct {
 
     uint32_t    outputyLen;
     uint32_t    outputyOffset;
-    union {                                                // Adaptive Output Encryption Percentages
+    union {                                 // Adaptive Output Encryption Percentages
     struct {
-        uint32_t    outputClearPercent:8;        // Clear Percentage
-        uint32_t    outputEncryptPercent:8;        // Encrypt Percentage
-        uint32_t    outputScramPercent:8;        // Scramble Percentage
-        uint32_t    output422Mode:8;            // 422 Mode
+        uint32_t    outputClearPercent:8;   // Clear Percentage
+        uint32_t    outputEncryptPercent:8; // Encrypt Percentage
+        uint32_t    outputScramPercent:8;   // Scramble Percentage
+        uint32_t    output422Mode:8;        // 422 Mode
     } u;
     uint32_t    outputPercentage;
     } adapt;

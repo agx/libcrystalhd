@@ -32,19 +32,19 @@
 #include <sys/types.h>
 
 //VC1 prefix 000001
-#define VC1_FRM_SUFFIX    0x0D
-#define VC1_SEQ_SUFFIX    0x0F
+#define VC1_FRM_SUFFIX             0x0D
+#define VC1_SEQ_SUFFIX             0x0F
 
 //VC1 SM Profile prefix 000001
-#define VC1_SM_FRM_SUFFIX    0xE0
+#define VC1_SM_FRM_SUFFIX          0xE0
 
 //Check WMV SP/MP PES Payload for PTS Info
-#define VC1_SM_MAGIC_WORD    0x5A5A5A5A
-#define VC1_SM_PTS_INFO_START_CODE    0xBD
+#define VC1_SM_MAGIC_WORD          0x5A5A5A5A
+#define VC1_SM_PTS_INFO_START_CODE 0xBD
 
 //MPEG2 prefix 000001
-#define    MPEG2_FRM_SUFFIX 0x00
-#define    MPEG2_SEQ_SUFFIX 0xB3
+#define    MPEG2_FRM_SUFFIX        0x00
+#define    MPEG2_SEQ_SUFFIX        0xB3
 
 #define BRCM_START_CODE_SIZE    4
 
@@ -77,48 +77,48 @@ typedef enum
     NALU_TYPE_EOSEQ,
     NALU_TYPE_EOSTREAM,
     NALU_TYPE_FILL
-}NALuType;
+} NALuType;
 
 typedef struct
 {
-  int32_t StartcodePrefixLen;        //! 4 for parameter sets and first slice in picture, 3 for everything else (suggested)
-  uint32_t Len;                //! Length of the NAL unit (Excluding the start code, which does not belong to the NALU)
-  uint32_t MaxSize;            //! Nal Unit Buffer size
-  int32_t NalUnitType;                //! NALU_TYPE_xxxx
-  int32_t ForbiddenBit;                //! should be always FALSE
+  int32_t StartcodePrefixLen; // 4 for parameter sets and first slice in picture, 3 for everything else (suggested)
+  uint32_t Len;               // Length of the NAL unit (Excluding the start code, which does not belong to the NALU)
+  uint32_t MaxSize;           // Nal Unit Buffer size
+  int32_t NalUnitType;        // NALU_TYPE_xxxx
+  int32_t ForbiddenBit;       // should be always FALSE
   uint8_t* pNalBuf;
 } NALU_t;
 
 typedef struct stSYMBINT
 {
-    uint8_t*    m_pInputBuffer;
-    uint8_t*    m_pInputBufferEnd;
-    uint8_t*    m_pCurrent;
-    uint32_t    m_ulMask;
-    uint32_t    m_ulOffset;
-    uint32_t  m_nSize;
-    uint32_t  m_nUsed;
-    uint32_t    m_ulZero;
+    uint8_t   *m_pInputBuffer;
+    uint8_t   *m_pInputBufferEnd;
+    uint8_t   *m_pCurrent;
+    uint32_t   m_ulMask;
+    uint32_t   m_ulOffset;
+    uint32_t   m_nSize;
+    uint32_t   m_nUsed;
+    uint32_t   m_ulZero;
 } SYMBINT;
 
 typedef struct stPES_CONVERT_PARAMS
 {
     bool        m_bIsFirstByteStreamNALU;
-    SYMBINT        m_SymbInt;
+    SYMBINT     m_SymbInt;
 
     uint8_t*    m_pSpsPpsBuf;
     uint32_t    m_iSpsPpsLen;
     uint32_t    m_lStartCodeDataSize;
 
-    uint8_t      *pStartcodePendBuff;
-    uint32_t     lPendBufferSize;
+    uint8_t     *pStartcodePendBuff;
+    uint32_t    lPendBufferSize;
 
     //Get Sequence Header Info (Sequence Layer Bitestream for Simple and Main Profile)
     bool        m_bRangered;
     bool        m_bFinterpFlag;
     bool        m_bMaxbFrames;
 
-    bool         m_bIsAdd_SCode_CodeIn;
+    bool        m_bIsAdd_SCode_CodeIn;
     bool        m_bAddSpsPps;
     //PES header parameter
     bool        m_bPESPrivData;
@@ -127,8 +127,8 @@ typedef struct stPES_CONVERT_PARAMS
     bool        m_bStuffing;
     uint32_t    m_nStuffingBytes;
 
-    uint8_t        *m_pPESPrivData;
-    uint8_t        *m_pPESExtField;
+    uint8_t     *m_pPESPrivData;
+    uint8_t     *m_pPESExtField;
     //SoftRave (VC-1 S/M and Divx) EOS Timing Marker
     bool        m_bSoftRave;
 }PES_CONVERT_PARAMS;

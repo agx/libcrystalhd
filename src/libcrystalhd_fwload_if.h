@@ -36,8 +36,8 @@
 #endif
 #include "libcrystalhd_if.h"
 
-#define BC_FWIMG_ST_ADDR                    0x00000000
-#define MAX_BIN_FILE_SZ                        0x300000
+#define BC_FWIMG_ST_ADDR 0x00000000
+#define MAX_BIN_FILE_SZ  0x300000
 
 /* BOOTLOADER IMPLEMENTATION */
 DRVIFLIB_INT_API BC_STATUS 

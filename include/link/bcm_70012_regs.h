@@ -50,62 +50,62 @@
 /****************************************************************************
  * Enums: AES_RGR_BRIDGE_RESET_CTRL
  ***************************************************************************/
-#define AES_RGR_BRIDGE_RESET_CTRL_DEASSERT                 0
-#define AES_RGR_BRIDGE_RESET_CTRL_ASSERT                   1
+#define AES_RGR_BRIDGE_RESET_CTRL_DEASSERT    0
+#define AES_RGR_BRIDGE_RESET_CTRL_ASSERT      1
 
 /****************************************************************************
  * Enums: CCE_RGR_BRIDGE_RESET_CTRL
  ***************************************************************************/
-#define CCE_RGR_BRIDGE_RESET_CTRL_DEASSERT                 0
-#define CCE_RGR_BRIDGE_RESET_CTRL_ASSERT                   1
+#define CCE_RGR_BRIDGE_RESET_CTRL_DEASSERT    0
+#define CCE_RGR_BRIDGE_RESET_CTRL_ASSERT      1
 
 /****************************************************************************
  * Enums: DBU_RGR_BRIDGE_RESET_CTRL
  ***************************************************************************/
-#define DBU_RGR_BRIDGE_RESET_CTRL_DEASSERT                 0
-#define DBU_RGR_BRIDGE_RESET_CTRL_ASSERT                   1
+#define DBU_RGR_BRIDGE_RESET_CTRL_DEASSERT    0
+#define DBU_RGR_BRIDGE_RESET_CTRL_ASSERT      1
 
 /****************************************************************************
  * Enums: DCI_RGR_BRIDGE_RESET_CTRL
  ***************************************************************************/
-#define DCI_RGR_BRIDGE_RESET_CTRL_DEASSERT                 0
-#define DCI_RGR_BRIDGE_RESET_CTRL_ASSERT                   1
+#define DCI_RGR_BRIDGE_RESET_CTRL_DEASSERT    0
+#define DCI_RGR_BRIDGE_RESET_CTRL_ASSERT      1
 
 /****************************************************************************
  * Enums: GISB_ARBITER_DEASSERT_ASSERT
  ***************************************************************************/
-#define GISB_ARBITER_DEASSERT_ASSERT_DEASSERT              0
-#define GISB_ARBITER_DEASSERT_ASSERT_ASSERT                1
+#define GISB_ARBITER_DEASSERT_ASSERT_DEASSERT 0
+#define GISB_ARBITER_DEASSERT_ASSERT_ASSERT   1
 
 /****************************************************************************
  * Enums: GISB_ARBITER_UNMASK_MASK
  ***************************************************************************/
-#define GISB_ARBITER_UNMASK_MASK_UNMASK                    0
-#define GISB_ARBITER_UNMASK_MASK_MASK                      1
+#define GISB_ARBITER_UNMASK_MASK_UNMASK       0
+#define GISB_ARBITER_UNMASK_MASK_MASK         1
 
 /****************************************************************************
  * Enums: GISB_ARBITER_DISABLE_ENABLE
  ***************************************************************************/
-#define GISB_ARBITER_DISABLE_ENABLE_DISABLE                0
-#define GISB_ARBITER_DISABLE_ENABLE_ENABLE                 1
+#define GISB_ARBITER_DISABLE_ENABLE_DISABLE   0
+#define GISB_ARBITER_DISABLE_ENABLE_ENABLE    1
 
 /****************************************************************************
  * Enums: I2C_GR_BRIDGE_RESET_CTRL
  ***************************************************************************/
-#define I2C_GR_BRIDGE_RESET_CTRL_DEASSERT                  0
-#define I2C_GR_BRIDGE_RESET_CTRL_ASSERT                    1
+#define I2C_GR_BRIDGE_RESET_CTRL_DEASSERT     0
+#define I2C_GR_BRIDGE_RESET_CTRL_ASSERT       1
 
 /****************************************************************************
  * Enums: MISC_GR_BRIDGE_RESET_CTRL
  ***************************************************************************/
-#define MISC_GR_BRIDGE_RESET_CTRL_DEASSERT                 0
-#define MISC_GR_BRIDGE_RESET_CTRL_ASSERT                   1
+#define MISC_GR_BRIDGE_RESET_CTRL_DEASSERT    0
+#define MISC_GR_BRIDGE_RESET_CTRL_ASSERT      1
 
 /****************************************************************************
  * Enums: OTP_GR_BRIDGE_RESET_CTRL
  ***************************************************************************/
-#define OTP_GR_BRIDGE_RESET_CTRL_DEASSERT                  0
-#define OTP_GR_BRIDGE_RESET_CTRL_ASSERT                    1
+#define OTP_GR_BRIDGE_RESET_CTRL_DEASSERT     0
+#define OTP_GR_BRIDGE_RESET_CTRL_ASSERT       1
 
 /****************************************************************************
  * BCM70012_TGT_TOP_PCIE_CFG
@@ -291,9 +291,9 @@
 /****************************************************************************
  * BCM70012_TGT_TOP_TGT_RGR_BRIDGE
  ***************************************************************************/
-#define TGT_RGR_BRIDGE_REVISION        0x00000740 /* PCIE RGR Bridge Revision Register */
-#define TGT_RGR_BRIDGE_CTRL            0x00000744 /* RGR Bridge Control Register */
-#define TGT_RGR_BRIDGE_RBUS_TIMER      0x00000748 /* RGR Bridge RBUS Timer Register */
+#define TGT_RGR_BRIDGE_REVISION         0x00000740 /* PCIE RGR Bridge Revision Register */
+#define TGT_RGR_BRIDGE_CTRL             0x00000744 /* RGR Bridge Control Register */
+#define TGT_RGR_BRIDGE_RBUS_TIMER       0x00000748 /* RGR Bridge RBUS Timer Register */
 #define TGT_RGR_BRIDGE_SPARE_SW_RESET_0 0x0000074c /* RGR Bridge Spare Software Reset 0 Register */
 #define TGT_RGR_BRIDGE_SPARE_SW_RESET_1 0x00000750 /* RGR Bridge Spare Software Reset 1 Register */
 
@@ -301,28 +301,28 @@
 /****************************************************************************
  * BCM70012_I2C_TOP_I2C
  ***************************************************************************/
-#define I2C_CHIP_ADDRESS               0x00000800 /* I2C Chip Address And Read/Write Control */
-#define I2C_DATA_IN0                   0x00000804 /* I2C Write Data Byte 0 */
-#define I2C_DATA_IN1                   0x00000808 /* I2C Write Data Byte 1 */
-#define I2C_DATA_IN2                   0x0000080c /* I2C Write Data Byte 2 */
-#define I2C_DATA_IN3                   0x00000810 /* I2C Write Data Byte 3 */
-#define I2C_DATA_IN4                   0x00000814 /* I2C Write Data Byte 4 */
-#define I2C_DATA_IN5                   0x00000818 /* I2C Write Data Byte 5 */
-#define I2C_DATA_IN6                   0x0000081c /* I2C Write Data Byte 6 */
-#define I2C_DATA_IN7                   0x00000820 /* I2C Write Data Byte 7 */
-#define I2C_CNT_REG                    0x00000824 /* I2C Transfer Count Register */
-#define I2C_CTL_REG                    0x00000828 /* I2C Control Register */
-#define I2C_IIC_ENABLE                 0x0000082c /* I2C Read/Write Enable And Interrupt */
-#define I2C_DATA_OUT0                  0x00000830 /* I2C Read Data Byte 0 */
-#define I2C_DATA_OUT1                  0x00000834 /* I2C Read Data Byte 1 */
-#define I2C_DATA_OUT2                  0x00000838 /* I2C Read Data Byte 2 */
-#define I2C_DATA_OUT3                  0x0000083c /* I2C Read Data Byte 3 */
-#define I2C_DATA_OUT4                  0x00000840 /* I2C Read Data Byte 4 */
-#define I2C_DATA_OUT5                  0x00000844 /* I2C Read Data Byte 5 */
-#define I2C_DATA_OUT6                  0x00000848 /* I2C Read Data Byte 6 */
-#define I2C_DATA_OUT7                  0x0000084c /* I2C Read Data Byte 7 */
-#define I2C_CTLHI_REG                  0x00000850 /* I2C Control Register */
-#define I2C_SCL_PARAM                  0x00000854 /* I2C SCL Parameter Register */
+#define I2C_CHIP_ADDRESS 0x00000800 /* I2C Chip Address And Read/Write Control */
+#define I2C_DATA_IN0     0x00000804 /* I2C Write Data Byte 0 */
+#define I2C_DATA_IN1     0x00000808 /* I2C Write Data Byte 1 */
+#define I2C_DATA_IN2     0x0000080c /* I2C Write Data Byte 2 */
+#define I2C_DATA_IN3     0x00000810 /* I2C Write Data Byte 3 */
+#define I2C_DATA_IN4     0x00000814 /* I2C Write Data Byte 4 */
+#define I2C_DATA_IN5     0x00000818 /* I2C Write Data Byte 5 */
+#define I2C_DATA_IN6     0x0000081c /* I2C Write Data Byte 6 */
+#define I2C_DATA_IN7     0x00000820 /* I2C Write Data Byte 7 */
+#define I2C_CNT_REG      0x00000824 /* I2C Transfer Count Register */
+#define I2C_CTL_REG      0x00000828 /* I2C Control Register */
+#define I2C_IIC_ENABLE   0x0000082c /* I2C Read/Write Enable And Interrupt */
+#define I2C_DATA_OUT0    0x00000830 /* I2C Read Data Byte 0 */
+#define I2C_DATA_OUT1    0x00000834 /* I2C Read Data Byte 1 */
+#define I2C_DATA_OUT2    0x00000838 /* I2C Read Data Byte 2 */
+#define I2C_DATA_OUT3    0x0000083c /* I2C Read Data Byte 3 */
+#define I2C_DATA_OUT4    0x00000840 /* I2C Read Data Byte 4 */
+#define I2C_DATA_OUT5    0x00000844 /* I2C Read Data Byte 5 */
+#define I2C_DATA_OUT6    0x00000848 /* I2C Read Data Byte 6 */
+#define I2C_DATA_OUT7    0x0000084c /* I2C Read Data Byte 7 */
+#define I2C_CTLHI_REG    0x00000850 /* I2C Control Register */
+#define I2C_SCL_PARAM    0x00000854 /* I2C SCL Parameter Register */
 
 
 /****************************************************************************
@@ -337,45 +337,45 @@
 /****************************************************************************
  * BCM70012_MISC_TOP_MISC1
  ***************************************************************************/
-#define MISC1_TX_FIRST_DESC_L_ADDR_LIST0 0x00000c00 /* Tx DMA Descriptor List0 First Descriptor lower Address */
-#define MISC1_TX_FIRST_DESC_U_ADDR_LIST0 0x00000c04 /* Tx DMA Descriptor List0 First Descriptor Upper Address */
-#define MISC1_TX_FIRST_DESC_L_ADDR_LIST1 0x00000c08 /* Tx DMA Descriptor List1 First Descriptor Lower Address */
-#define MISC1_TX_FIRST_DESC_U_ADDR_LIST1 0x00000c0c /* Tx DMA Descriptor List1 First Descriptor Upper Address */
-#define MISC1_TX_SW_DESC_LIST_CTRL_STS 0x00000c10 /* Tx DMA Software Descriptor List Control and Status */
-#define MISC1_TX_DMA_ERROR_STATUS      0x00000c18 /* Tx DMA Engine Error Status */
-#define MISC1_TX_DMA_LIST0_CUR_DESC_L_ADDR 0x00000c1c /* Tx DMA List0 Current Descriptor Lower Address */
-#define MISC1_TX_DMA_LIST0_CUR_DESC_U_ADDR 0x00000c20 /* Tx DMA List0 Current Descriptor Upper Address */
+#define MISC1_TX_FIRST_DESC_L_ADDR_LIST0    0x00000c00 /* Tx DMA Descriptor List0 First Descriptor lower Address */
+#define MISC1_TX_FIRST_DESC_U_ADDR_LIST0    0x00000c04 /* Tx DMA Descriptor List0 First Descriptor Upper Address */
+#define MISC1_TX_FIRST_DESC_L_ADDR_LIST1    0x00000c08 /* Tx DMA Descriptor List1 First Descriptor Lower Address */
+#define MISC1_TX_FIRST_DESC_U_ADDR_LIST1    0x00000c0c /* Tx DMA Descriptor List1 First Descriptor Upper Address */
+#define MISC1_TX_SW_DESC_LIST_CTRL_STS      0x00000c10 /* Tx DMA Software Descriptor List Control and Status */
+#define MISC1_TX_DMA_ERROR_STATUS           0x00000c18 /* Tx DMA Engine Error Status */
+#define MISC1_TX_DMA_LIST0_CUR_DESC_L_ADDR  0x00000c1c /* Tx DMA List0 Current Descriptor Lower Address */
+#define MISC1_TX_DMA_LIST0_CUR_DESC_U_ADDR  0x00000c20 /* Tx DMA List0 Current Descriptor Upper Address */
 #define MISC1_TX_DMA_LIST0_CUR_BYTE_CNT_REM 0x00000c24 /* Tx DMA List0 Current Descriptor Upper Address */
-#define MISC1_TX_DMA_LIST1_CUR_DESC_L_ADDR 0x00000c28 /* Tx DMA List1 Current Descriptor Lower Address */
-#define MISC1_TX_DMA_LIST1_CUR_DESC_U_ADDR 0x00000c2c /* Tx DMA List1 Current Descriptor Upper Address */
+#define MISC1_TX_DMA_LIST1_CUR_DESC_L_ADDR  0x00000c28 /* Tx DMA List1 Current Descriptor Lower Address */
+#define MISC1_TX_DMA_LIST1_CUR_DESC_U_ADDR  0x00000c2c /* Tx DMA List1 Current Descriptor Upper Address */
 #define MISC1_TX_DMA_LIST1_CUR_BYTE_CNT_REM 0x00000c30 /* Tx DMA List1 Current Descriptor Upper Address */
-#define MISC1_Y_RX_FIRST_DESC_L_ADDR_LIST0 0x00000c34 /* Y Rx Descriptor List0 First Descriptor Lower Address */
-#define MISC1_Y_RX_FIRST_DESC_U_ADDR_LIST0 0x00000c38 /* Y Rx Descriptor List0 First Descriptor Upper Address */
-#define MISC1_Y_RX_FIRST_DESC_L_ADDR_LIST1 0x00000c3c /* Y Rx Descriptor List1 First Descriptor Lower Address */
-#define MISC1_Y_RX_FIRST_DESC_U_ADDR_LIST1 0x00000c40 /* Y Rx Descriptor List1 First Descriptor Upper Address */
-#define MISC1_Y_RX_SW_DESC_LIST_CTRL_STS 0x00000c44 /* Y Rx Software Descriptor List Control and Status */
-#define MISC1_Y_RX_ERROR_STATUS        0x00000c4c /* Y Rx Engine Error Status */
-#define MISC1_Y_RX_LIST0_CUR_DESC_L_ADDR 0x00000c50 /* Y Rx List0 Current Descriptor Lower Address */
-#define MISC1_Y_RX_LIST0_CUR_DESC_U_ADDR 0x00000c54 /* Y Rx List0 Current Descriptor Upper Address */
-#define MISC1_Y_RX_LIST0_CUR_BYTE_CNT  0x00000c58 /* Y Rx List0 Current Descriptor Byte Count */
-#define MISC1_Y_RX_LIST1_CUR_DESC_L_ADDR 0x00000c5c /* Y Rx List1 Current Descriptor Lower address */
-#define MISC1_Y_RX_LIST1_CUR_DESC_U_ADDR 0x00000c60 /* Y Rx List1 Current Descriptor Upper address */
-#define MISC1_Y_RX_LIST1_CUR_BYTE_CNT  0x00000c64 /* Y Rx List1 Current Descriptor Byte Count */
+#define MISC1_Y_RX_FIRST_DESC_L_ADDR_LIST0  0x00000c34 /* Y Rx Descriptor List0 First Descriptor Lower Address */
+#define MISC1_Y_RX_FIRST_DESC_U_ADDR_LIST0  0x00000c38 /* Y Rx Descriptor List0 First Descriptor Upper Address */
+#define MISC1_Y_RX_FIRST_DESC_L_ADDR_LIST1  0x00000c3c /* Y Rx Descriptor List1 First Descriptor Lower Address */
+#define MISC1_Y_RX_FIRST_DESC_U_ADDR_LIST1  0x00000c40 /* Y Rx Descriptor List1 First Descriptor Upper Address */
+#define MISC1_Y_RX_SW_DESC_LIST_CTRL_STS    0x00000c44 /* Y Rx Software Descriptor List Control and Status */
+#define MISC1_Y_RX_ERROR_STATUS             0x00000c4c /* Y Rx Engine Error Status */
+#define MISC1_Y_RX_LIST0_CUR_DESC_L_ADDR    0x00000c50 /* Y Rx List0 Current Descriptor Lower Address */
+#define MISC1_Y_RX_LIST0_CUR_DESC_U_ADDR    0x00000c54 /* Y Rx List0 Current Descriptor Upper Address */
+#define MISC1_Y_RX_LIST0_CUR_BYTE_CNT       0x00000c58 /* Y Rx List0 Current Descriptor Byte Count */
+#define MISC1_Y_RX_LIST1_CUR_DESC_L_ADDR    0x00000c5c /* Y Rx List1 Current Descriptor Lower address */
+#define MISC1_Y_RX_LIST1_CUR_DESC_U_ADDR    0x00000c60 /* Y Rx List1 Current Descriptor Upper address */
+#define MISC1_Y_RX_LIST1_CUR_BYTE_CNT       0x00000c64 /* Y Rx List1 Current Descriptor Byte Count */
 #define MISC1_UV_RX_FIRST_DESC_L_ADDR_LIST0 0x00000c68 /* UV Rx Descriptor List0 First Descriptor lower Address */
 #define MISC1_UV_RX_FIRST_DESC_U_ADDR_LIST0 0x00000c6c /* UV Rx Descriptor List0 First Descriptor Upper Address */
 #define MISC1_UV_RX_FIRST_DESC_L_ADDR_LIST1 0x00000c70 /* UV Rx Descriptor List1 First Descriptor Lower Address */
 #define MISC1_UV_RX_FIRST_DESC_U_ADDR_LIST1 0x00000c74 /* UV Rx Descriptor List1 First Descriptor Upper Address */
-#define MISC1_UV_RX_SW_DESC_LIST_CTRL_STS 0x00000c78 /* UV Rx Software Descriptor List Control and Status */
-#define MISC1_UV_RX_ERROR_STATUS       0x00000c7c /* UV Rx Engine Error Status */
-#define MISC1_UV_RX_LIST0_CUR_DESC_L_ADDR 0x00000c80 /* UV Rx List0 Current Descriptor Lower Address */
-#define MISC1_UV_RX_LIST0_CUR_DESC_U_ADDR 0x00000c84 /* UV Rx List0 Current Descriptor Upper Address */
-#define MISC1_UV_RX_LIST0_CUR_BYTE_CNT 0x00000c88 /* UV Rx List0 Current Descriptor Byte Count */
-#define MISC1_UV_RX_LIST1_CUR_DESC_L_ADDR 0x00000c8c /* UV Rx List1 Current Descriptor Lower Address */
-#define MISC1_UV_RX_LIST1_CUR_DESC_U_ADDR 0x00000c90 /* UV Rx List1 Current Descriptor Upper Address */
-#define MISC1_UV_RX_LIST1_CUR_BYTE_CNT 0x00000c94 /* UV Rx List1 Current Descriptor Byte Count */
-#define MISC1_DMA_DEBUG_OPTIONS_REG    0x00000c98 /* DMA Debug Options Register */
-#define MISC1_READ_CHANNEL_ERROR_STATUS 0x00000c9c /* Read Channel Error Status */
-#define MISC1_PCIE_DMA_CTRL            0x00000ca0 /* PCIE DMA Control Register */
+#define MISC1_UV_RX_SW_DESC_LIST_CTRL_STS   0x00000c78 /* UV Rx Software Descriptor List Control and Status */
+#define MISC1_UV_RX_ERROR_STATUS            0x00000c7c /* UV Rx Engine Error Status */
+#define MISC1_UV_RX_LIST0_CUR_DESC_L_ADDR   0x00000c80 /* UV Rx List0 Current Descriptor Lower Address */
+#define MISC1_UV_RX_LIST0_CUR_DESC_U_ADDR   0x00000c84 /* UV Rx List0 Current Descriptor Upper Address */
+#define MISC1_UV_RX_LIST0_CUR_BYTE_CNT      0x00000c88 /* UV Rx List0 Current Descriptor Byte Count */
+#define MISC1_UV_RX_LIST1_CUR_DESC_L_ADDR   0x00000c8c /* UV Rx List1 Current Descriptor Lower Address */
+#define MISC1_UV_RX_LIST1_CUR_DESC_U_ADDR   0x00000c90 /* UV Rx List1 Current Descriptor Upper Address */
+#define MISC1_UV_RX_LIST1_CUR_BYTE_CNT      0x00000c94 /* UV Rx List1 Current Descriptor Byte Count */
+#define MISC1_DMA_DEBUG_OPTIONS_REG         0x00000c98 /* DMA Debug Options Register */
+#define MISC1_READ_CHANNEL_ERROR_STATUS     0x00000c9c /* Read Channel Error Status */
+#define MISC1_PCIE_DMA_CTRL                 0x00000ca0 /* PCIE DMA Control Register */
 
 
 /****************************************************************************
@@ -390,94 +390,94 @@
 /****************************************************************************
  * BCM70012_MISC_TOP_MISC3
  ***************************************************************************/
-#define MISC3_RESET_CTRL               0x00000e00 /* Reset Control Register */
-#define MISC3_BIST_CTRL                0x00000e04 /* BIST Control Register */
-#define MISC3_BIST_STATUS              0x00000e08 /* BIST Status Register */
-#define MISC3_RX_CHECKSUM              0x00000e0c /* Receive Checksum */
-#define MISC3_TX_CHECKSUM              0x00000e10 /* Transmit Checksum */
-#define MISC3_ECO_CTRL_CORE            0x00000e14 /* ECO Core Reset Control Register */
-#define MISC3_CSI_TEST_CTRL            0x00000e18 /* CSI Test Control Register */
-#define MISC3_HD_DVI_TEST_CTRL         0x00000e1c /* HD DVI Test Control Register */
+#define MISC3_RESET_CTRL       0x00000e00 /* Reset Control Register */
+#define MISC3_BIST_CTRL        0x00000e04 /* BIST Control Register */
+#define MISC3_BIST_STATUS      0x00000e08 /* BIST Status Register */
+#define MISC3_RX_CHECKSUM      0x00000e0c /* Receive Checksum */
+#define MISC3_TX_CHECKSUM      0x00000e10 /* Transmit Checksum */
+#define MISC3_ECO_CTRL_CORE    0x00000e14 /* ECO Core Reset Control Register */
+#define MISC3_CSI_TEST_CTRL    0x00000e18 /* CSI Test Control Register */
+#define MISC3_HD_DVI_TEST_CTRL 0x00000e1c /* HD DVI Test Control Register */
 
 
 /****************************************************************************
  * BCM70012_MISC_TOP_MISC_PERST
  ***************************************************************************/
-#define MISC_PERST_ECO_CTRL_PERST      0x00000e80 /* ECO PCIE Reset Control Register */
-#define MISC_PERST_DECODER_CTRL        0x00000e84 /* Decoder Control Register */
-#define MISC_PERST_CCE_STATUS          0x00000e88 /* Config Copy Engine Status */
-#define MISC_PERST_PCIE_DEBUG          0x00000e8c /* PCIE Debug Control Register */
-#define MISC_PERST_PCIE_DEBUG_STATUS   0x00000e90 /* PCIE Debug Status Register */
-#define MISC_PERST_VREG_CTRL           0x00000e94 /* Voltage Regulator Control Register */
-#define MISC_PERST_MEM_CTRL            0x00000e98 /* Memory Control Register */
-#define MISC_PERST_CLOCK_CTRL          0x00000e9c /* Clock Control Register */
+#define MISC_PERST_ECO_CTRL_PERST    0x00000e80 /* ECO PCIE Reset Control Register */
+#define MISC_PERST_DECODER_CTRL      0x00000e84 /* Decoder Control Register */
+#define MISC_PERST_CCE_STATUS        0x00000e88 /* Config Copy Engine Status */
+#define MISC_PERST_PCIE_DEBUG        0x00000e8c /* PCIE Debug Control Register */
+#define MISC_PERST_PCIE_DEBUG_STATUS 0x00000e90 /* PCIE Debug Status Register */
+#define MISC_PERST_VREG_CTRL         0x00000e94 /* Voltage Regulator Control Register */
+#define MISC_PERST_MEM_CTRL          0x00000e98 /* Memory Control Register */
+#define MISC_PERST_CLOCK_CTRL        0x00000e9c /* Clock Control Register */
 
 
 /****************************************************************************
  * BCM70012_MISC_TOP_GISB_ARBITER
  ***************************************************************************/
-#define GISB_ARBITER_REVISION          0x00000f00 /* GISB ARBITER REVISION */
-#define GISB_ARBITER_SCRATCH           0x00000f04 /* GISB ARBITER Scratch Register */
-#define GISB_ARBITER_REQ_MASK          0x00000f08 /* GISB ARBITER Master Request Mask Register */
-#define GISB_ARBITER_TIMER             0x00000f0c /* GISB ARBITER Timer Value Register */
-#define GISB_ARBITER_BP_CTRL           0x00000f10 /* GISB ARBITER Breakpoint Control Register */
-#define GISB_ARBITER_BP_CAP_CLR        0x00000f14 /* GISB ARBITER Breakpoint Capture Clear Register */
-#define GISB_ARBITER_BP_START_ADDR_0   0x00000f18 /* GISB ARBITER Breakpoint Start Address 0 Register */
-#define GISB_ARBITER_BP_END_ADDR_0     0x00000f1c /* GISB ARBITER Breakpoint End Address 0 Register */
-#define GISB_ARBITER_BP_READ_0         0x00000f20 /* GISB ARBITER Breakpoint Master Read Control 0 Register */
-#define GISB_ARBITER_BP_WRITE_0        0x00000f24 /* GISB ARBITER Breakpoint Master Write Control 0 Register */
-#define GISB_ARBITER_BP_ENABLE_0       0x00000f28 /* GISB ARBITER Breakpoint Enable 0 Register */
-#define GISB_ARBITER_BP_START_ADDR_1   0x00000f2c /* GISB ARBITER Breakpoint Start Address 1 Register */
-#define GISB_ARBITER_BP_END_ADDR_1     0x00000f30 /* GISB ARBITER Breakpoint End Address 1 Register */
-#define GISB_ARBITER_BP_READ_1         0x00000f34 /* GISB ARBITER Breakpoint Master Read Control 1 Register */
-#define GISB_ARBITER_BP_WRITE_1        0x00000f38 /* GISB ARBITER Breakpoint Master Write Control 1 Register */
-#define GISB_ARBITER_BP_ENABLE_1       0x00000f3c /* GISB ARBITER Breakpoint Enable 1 Register */
-#define GISB_ARBITER_BP_START_ADDR_2   0x00000f40 /* GISB ARBITER Breakpoint Start Address 2 Register */
-#define GISB_ARBITER_BP_END_ADDR_2     0x00000f44 /* GISB ARBITER Breakpoint End Address 2 Register */
-#define GISB_ARBITER_BP_READ_2         0x00000f48 /* GISB ARBITER Breakpoint Master Read Control 2 Register */
-#define GISB_ARBITER_BP_WRITE_2        0x00000f4c /* GISB ARBITER Breakpoint Master Write Control 2 Register */
-#define GISB_ARBITER_BP_ENABLE_2       0x00000f50 /* GISB ARBITER Breakpoint Enable 2 Register */
-#define GISB_ARBITER_BP_START_ADDR_3   0x00000f54 /* GISB ARBITER Breakpoint Start Address 3 Register */
-#define GISB_ARBITER_BP_END_ADDR_3     0x00000f58 /* GISB ARBITER Breakpoint End Address 3 Register */
-#define GISB_ARBITER_BP_READ_3         0x00000f5c /* GISB ARBITER Breakpoint Master Read Control 3 Register */
-#define GISB_ARBITER_BP_WRITE_3        0x00000f60 /* GISB ARBITER Breakpoint Master Write Control 3 Register */
-#define GISB_ARBITER_BP_ENABLE_3       0x00000f64 /* GISB ARBITER Breakpoint Enable 3 Register */
-#define GISB_ARBITER_BP_START_ADDR_4   0x00000f68 /* GISB ARBITER Breakpoint Start Address 4 Register */
-#define GISB_ARBITER_BP_END_ADDR_4     0x00000f6c /* GISB ARBITER Breakpoint End Address 4 Register */
-#define GISB_ARBITER_BP_READ_4         0x00000f70 /* GISB ARBITER Breakpoint Master Read Control 4 Register */
-#define GISB_ARBITER_BP_WRITE_4        0x00000f74 /* GISB ARBITER Breakpoint Master Write Control 4 Register */
-#define GISB_ARBITER_BP_ENABLE_4       0x00000f78 /* GISB ARBITER Breakpoint Enable 4 Register */
-#define GISB_ARBITER_BP_START_ADDR_5   0x00000f7c /* GISB ARBITER Breakpoint Start Address 5 Register */
-#define GISB_ARBITER_BP_END_ADDR_5     0x00000f80 /* GISB ARBITER Breakpoint End Address 5 Register */
-#define GISB_ARBITER_BP_READ_5         0x00000f84 /* GISB ARBITER Breakpoint Master Read Control 5 Register */
-#define GISB_ARBITER_BP_WRITE_5        0x00000f88 /* GISB ARBITER Breakpoint Master Write Control 5 Register */
-#define GISB_ARBITER_BP_ENABLE_5       0x00000f8c /* GISB ARBITER Breakpoint Enable 5 Register */
-#define GISB_ARBITER_BP_START_ADDR_6   0x00000f90 /* GISB ARBITER Breakpoint Start Address 6 Register */
-#define GISB_ARBITER_BP_END_ADDR_6     0x00000f94 /* GISB ARBITER Breakpoint End Address 6 Register */
-#define GISB_ARBITER_BP_READ_6         0x00000f98 /* GISB ARBITER Breakpoint Master Read Control 6 Register */
-#define GISB_ARBITER_BP_WRITE_6        0x00000f9c /* GISB ARBITER Breakpoint Master Write Control 6 Register */
-#define GISB_ARBITER_BP_ENABLE_6       0x00000fa0 /* GISB ARBITER Breakpoint Enable 6 Register */
-#define GISB_ARBITER_BP_START_ADDR_7   0x00000fa4 /* GISB ARBITER Breakpoint Start Address 7 Register */
-#define GISB_ARBITER_BP_END_ADDR_7     0x00000fa8 /* GISB ARBITER Breakpoint End Address 7 Register */
-#define GISB_ARBITER_BP_READ_7         0x00000fac /* GISB ARBITER Breakpoint Master Read Control 7 Register */
-#define GISB_ARBITER_BP_WRITE_7        0x00000fb0 /* GISB ARBITER Breakpoint Master Write Control 7 Register */
-#define GISB_ARBITER_BP_ENABLE_7       0x00000fb4 /* GISB ARBITER Breakpoint Enable 7 Register */
-#define GISB_ARBITER_BP_CAP_ADDR       0x00000fb8 /* GISB ARBITER Breakpoint Capture Address Register */
-#define GISB_ARBITER_BP_CAP_DATA       0x00000fbc /* GISB ARBITER Breakpoint Capture Data Register */
-#define GISB_ARBITER_BP_CAP_STATUS     0x00000fc0 /* GISB ARBITER Breakpoint Capture Status Register */
-#define GISB_ARBITER_BP_CAP_MASTER     0x00000fc4 /* GISB ARBITER Breakpoint Capture GISB MASTER Register */
-#define GISB_ARBITER_ERR_CAP_CLR       0x00000fc8 /* GISB ARBITER Error Capture Clear Register */
-#define GISB_ARBITER_ERR_CAP_ADDR      0x00000fcc /* GISB ARBITER Error Capture Address Register */
-#define GISB_ARBITER_ERR_CAP_DATA      0x00000fd0 /* GISB ARBITER Error Capture Data Register */
-#define GISB_ARBITER_ERR_CAP_STATUS    0x00000fd4 /* GISB ARBITER Error Capture Status Register */
-#define GISB_ARBITER_ERR_CAP_MASTER    0x00000fd8 /* GISB ARBITER Error Capture GISB MASTER Register */
+#define GISB_ARBITER_REVISION        0x00000f00 /* GISB ARBITER REVISION */
+#define GISB_ARBITER_SCRATCH         0x00000f04 /* GISB ARBITER Scratch Register */
+#define GISB_ARBITER_REQ_MASK        0x00000f08 /* GISB ARBITER Master Request Mask Register */
+#define GISB_ARBITER_TIMER           0x00000f0c /* GISB ARBITER Timer Value Register */
+#define GISB_ARBITER_BP_CTRL         0x00000f10 /* GISB ARBITER Breakpoint Control Register */
+#define GISB_ARBITER_BP_CAP_CLR      0x00000f14 /* GISB ARBITER Breakpoint Capture Clear Register */
+#define GISB_ARBITER_BP_START_ADDR_0 0x00000f18 /* GISB ARBITER Breakpoint Start Address 0 Register */
+#define GISB_ARBITER_BP_END_ADDR_0   0x00000f1c /* GISB ARBITER Breakpoint End Address 0 Register */
+#define GISB_ARBITER_BP_READ_0       0x00000f20 /* GISB ARBITER Breakpoint Master Read Control 0 Register */
+#define GISB_ARBITER_BP_WRITE_0      0x00000f24 /* GISB ARBITER Breakpoint Master Write Control 0 Register */
+#define GISB_ARBITER_BP_ENABLE_0     0x00000f28 /* GISB ARBITER Breakpoint Enable 0 Register */
+#define GISB_ARBITER_BP_START_ADDR_1 0x00000f2c /* GISB ARBITER Breakpoint Start Address 1 Register */
+#define GISB_ARBITER_BP_END_ADDR_1   0x00000f30 /* GISB ARBITER Breakpoint End Address 1 Register */
+#define GISB_ARBITER_BP_READ_1       0x00000f34 /* GISB ARBITER Breakpoint Master Read Control 1 Register */
+#define GISB_ARBITER_BP_WRITE_1      0x00000f38 /* GISB ARBITER Breakpoint Master Write Control 1 Register */
+#define GISB_ARBITER_BP_ENABLE_1     0x00000f3c /* GISB ARBITER Breakpoint Enable 1 Register */
+#define GISB_ARBITER_BP_START_ADDR_2 0x00000f40 /* GISB ARBITER Breakpoint Start Address 2 Register */
+#define GISB_ARBITER_BP_END_ADDR_2   0x00000f44 /* GISB ARBITER Breakpoint End Address 2 Register */
+#define GISB_ARBITER_BP_READ_2       0x00000f48 /* GISB ARBITER Breakpoint Master Read Control 2 Register */
+#define GISB_ARBITER_BP_WRITE_2      0x00000f4c /* GISB ARBITER Breakpoint Master Write Control 2 Register */
+#define GISB_ARBITER_BP_ENABLE_2     0x00000f50 /* GISB ARBITER Breakpoint Enable 2 Register */
+#define GISB_ARBITER_BP_START_ADDR_3 0x00000f54 /* GISB ARBITER Breakpoint Start Address 3 Register */
+#define GISB_ARBITER_BP_END_ADDR_3   0x00000f58 /* GISB ARBITER Breakpoint End Address 3 Register */
+#define GISB_ARBITER_BP_READ_3       0x00000f5c /* GISB ARBITER Breakpoint Master Read Control 3 Register */
+#define GISB_ARBITER_BP_WRITE_3      0x00000f60 /* GISB ARBITER Breakpoint Master Write Control 3 Register */
+#define GISB_ARBITER_BP_ENABLE_3     0x00000f64 /* GISB ARBITER Breakpoint Enable 3 Register */
+#define GISB_ARBITER_BP_START_ADDR_4 0x00000f68 /* GISB ARBITER Breakpoint Start Address 4 Register */
+#define GISB_ARBITER_BP_END_ADDR_4   0x00000f6c /* GISB ARBITER Breakpoint End Address 4 Register */
+#define GISB_ARBITER_BP_READ_4       0x00000f70 /* GISB ARBITER Breakpoint Master Read Control 4 Register */
+#define GISB_ARBITER_BP_WRITE_4      0x00000f74 /* GISB ARBITER Breakpoint Master Write Control 4 Register */
+#define GISB_ARBITER_BP_ENABLE_4     0x00000f78 /* GISB ARBITER Breakpoint Enable 4 Register */
+#define GISB_ARBITER_BP_START_ADDR_5 0x00000f7c /* GISB ARBITER Breakpoint Start Address 5 Register */
+#define GISB_ARBITER_BP_END_ADDR_5   0x00000f80 /* GISB ARBITER Breakpoint End Address 5 Register */
+#define GISB_ARBITER_BP_READ_5       0x00000f84 /* GISB ARBITER Breakpoint Master Read Control 5 Register */
+#define GISB_ARBITER_BP_WRITE_5      0x00000f88 /* GISB ARBITER Breakpoint Master Write Control 5 Register */
+#define GISB_ARBITER_BP_ENABLE_5     0x00000f8c /* GISB ARBITER Breakpoint Enable 5 Register */
+#define GISB_ARBITER_BP_START_ADDR_6 0x00000f90 /* GISB ARBITER Breakpoint Start Address 6 Register */
+#define GISB_ARBITER_BP_END_ADDR_6   0x00000f94 /* GISB ARBITER Breakpoint End Address 6 Register */
+#define GISB_ARBITER_BP_READ_6       0x00000f98 /* GISB ARBITER Breakpoint Master Read Control 6 Register */
+#define GISB_ARBITER_BP_WRITE_6      0x00000f9c /* GISB ARBITER Breakpoint Master Write Control 6 Register */
+#define GISB_ARBITER_BP_ENABLE_6     0x00000fa0 /* GISB ARBITER Breakpoint Enable 6 Register */
+#define GISB_ARBITER_BP_START_ADDR_7 0x00000fa4 /* GISB ARBITER Breakpoint Start Address 7 Register */
+#define GISB_ARBITER_BP_END_ADDR_7   0x00000fa8 /* GISB ARBITER Breakpoint End Address 7 Register */
+#define GISB_ARBITER_BP_READ_7       0x00000fac /* GISB ARBITER Breakpoint Master Read Control 7 Register */
+#define GISB_ARBITER_BP_WRITE_7      0x00000fb0 /* GISB ARBITER Breakpoint Master Write Control 7 Register */
+#define GISB_ARBITER_BP_ENABLE_7     0x00000fb4 /* GISB ARBITER Breakpoint Enable 7 Register */
+#define GISB_ARBITER_BP_CAP_ADDR     0x00000fb8 /* GISB ARBITER Breakpoint Capture Address Register */
+#define GISB_ARBITER_BP_CAP_DATA     0x00000fbc /* GISB ARBITER Breakpoint Capture Data Register */
+#define GISB_ARBITER_BP_CAP_STATUS   0x00000fc0 /* GISB ARBITER Breakpoint Capture Status Register */
+#define GISB_ARBITER_BP_CAP_MASTER   0x00000fc4 /* GISB ARBITER Breakpoint Capture GISB MASTER Register */
+#define GISB_ARBITER_ERR_CAP_CLR     0x00000fc8 /* GISB ARBITER Error Capture Clear Register */
+#define GISB_ARBITER_ERR_CAP_ADDR    0x00000fcc /* GISB ARBITER Error Capture Address Register */
+#define GISB_ARBITER_ERR_CAP_DATA    0x00000fd0 /* GISB ARBITER Error Capture Data Register */
+#define GISB_ARBITER_ERR_CAP_STATUS  0x00000fd4 /* GISB ARBITER Error Capture Status Register */
+#define GISB_ARBITER_ERR_CAP_MASTER  0x00000fd8 /* GISB ARBITER Error Capture GISB MASTER Register */
 
 
 /****************************************************************************
  * BCM70012_MISC_TOP_MISC_GR_BRIDGE
  ***************************************************************************/
-#define MISC_GR_BRIDGE_REVISION        0x00000fe0 /* GR Bridge Revision */
-#define MISC_GR_BRIDGE_CTRL            0x00000fe4 /* GR Bridge Control Register */
+#define MISC_GR_BRIDGE_REVISION         0x00000fe0 /* GR Bridge Revision */
+#define MISC_GR_BRIDGE_CTRL             0x00000fe4 /* GR Bridge Control Register */
 #define MISC_GR_BRIDGE_SPARE_SW_RESET_0 0x00000fe8 /* GR Bridge Software Reset 0 Register */
 #define MISC_GR_BRIDGE_SPARE_SW_RESET_1 0x00000fec /* GR Bridge Software Reset 1 Register */
 
@@ -485,20 +485,20 @@
 /****************************************************************************
  * BCM70012_DBU_TOP_DBU
  ***************************************************************************/
-#define DBU_DBU_CMD                    0x00001000 /* DBU (Debug UART) command register */
-#define DBU_DBU_STATUS                 0x00001004 /* DBU (Debug UART) status register */
-#define DBU_DBU_CONFIG                 0x00001008 /* DBU (Debug UART) configuration register */
-#define DBU_DBU_TIMING                 0x0000100c /* DBU (Debug UART) timing register */
-#define DBU_DBU_RXDATA                 0x00001010 /* DBU (Debug UART) recieve data register */
-#define DBU_DBU_TXDATA                 0x00001014 /* DBU (Debug UART) transmit data register */
+#define DBU_DBU_CMD    0x00001000 /* DBU (Debug UART) command register */
+#define DBU_DBU_STATUS 0x00001004 /* DBU (Debug UART) status register */
+#define DBU_DBU_CONFIG 0x00001008 /* DBU (Debug UART) configuration register */
+#define DBU_DBU_TIMING 0x0000100c /* DBU (Debug UART) timing register */
+#define DBU_DBU_RXDATA 0x00001010 /* DBU (Debug UART) recieve data register */
+#define DBU_DBU_TXDATA 0x00001014 /* DBU (Debug UART) transmit data register */
 
 
 /****************************************************************************
  * BCM70012_DBU_TOP_DBU_RGR_BRIDGE
  ***************************************************************************/
-#define DBU_RGR_BRIDGE_REVISION        0x000013e0 /* RGR Bridge Revision */
-#define DBU_RGR_BRIDGE_CTRL            0x000013e4 /* RGR Bridge Control Register */
-#define DBU_RGR_BRIDGE_RBUS_TIMER      0x000013e8 /* RGR Bridge RBUS Timer Register */
+#define DBU_RGR_BRIDGE_REVISION         0x000013e0 /* RGR Bridge Revision */
+#define DBU_RGR_BRIDGE_CTRL             0x000013e4 /* RGR Bridge Control Register */
+#define DBU_RGR_BRIDGE_RBUS_TIMER       0x000013e8 /* RGR Bridge RBUS Timer Register */
 #define DBU_RGR_BRIDGE_SPARE_SW_RESET_0 0x000013ec /* RGR Bridge Software Reset 0 Register */
 #define DBU_RGR_BRIDGE_SPARE_SW_RESET_1 0x000013f0 /* RGR Bridge Software Reset 1 Register */
 
@@ -506,30 +506,30 @@
 /****************************************************************************
  * BCM70012_OTP_TOP_OTP
  ***************************************************************************/
-#define OTP_CONFIG_INFO                0x00001400 /* OTP Configuration Register */
-#define OTP_CMD                        0x00001404 /* OTP Command Register */
-#define OTP_STATUS                     0x00001408 /* OTP Status Register */
-#define OTP_CONTENT_MISC               0x0000140c /* Content : Miscellaneous Register */
-#define OTP_CONTENT_AES_0              0x00001410 /* Content : AES Key 0 Register */
-#define OTP_CONTENT_AES_1              0x00001414 /* Content : AES Key 1 Register */
-#define OTP_CONTENT_AES_2              0x00001418 /* Content : AES Key 2 Register */
-#define OTP_CONTENT_AES_3              0x0000141c /* Content : AES Key 3 Register */
-#define OTP_CONTENT_SHA_0              0x00001420 /* Content : SHA Key 0 Register */
-#define OTP_CONTENT_SHA_1              0x00001424 /* Content : SHA Key 1 Register */
-#define OTP_CONTENT_SHA_2              0x00001428 /* Content : SHA Key 2 Register */
-#define OTP_CONTENT_SHA_3              0x0000142c /* Content : SHA Key 3 Register */
-#define OTP_CONTENT_SHA_4              0x00001430 /* Content : SHA Key 4 Register */
-#define OTP_CONTENT_SHA_5              0x00001434 /* Content : SHA Key 5 Register */
-#define OTP_CONTENT_SHA_6              0x00001438 /* Content : SHA Key 6 Register */
-#define OTP_CONTENT_SHA_7              0x0000143c /* Content : SHA Key 7 Register */
-#define OTP_CONTENT_CHECKSUM           0x00001440 /* Content : Checksum  Register */
-#define OTP_PROG_CTRL                  0x00001444 /* Programming Control Register */
-#define OTP_PROG_STATUS                0x00001448 /* Programming Status Register */
-#define OTP_PROG_PULSE                 0x0000144c /* Program Pulse Width Register */
-#define OTP_VERIFY_PULSE               0x00001450 /* Verify Pulse Width Register */
-#define OTP_PROG_MASK                  0x00001454 /* Program Mask Register */
-#define OTP_DATA_INPUT                 0x00001458 /* Data Input Register */
-#define OTP_DATA_OUTPUT                0x0000145c /* Data Output Register */
+#define OTP_CONFIG_INFO      0x00001400 /* OTP Configuration Register */
+#define OTP_CMD              0x00001404 /* OTP Command Register */
+#define OTP_STATUS           0x00001408 /* OTP Status Register */
+#define OTP_CONTENT_MISC     0x0000140c /* Content : Miscellaneous Register */
+#define OTP_CONTENT_AES_0    0x00001410 /* Content : AES Key 0 Register */
+#define OTP_CONTENT_AES_1    0x00001414 /* Content : AES Key 1 Register */
+#define OTP_CONTENT_AES_2    0x00001418 /* Content : AES Key 2 Register */
+#define OTP_CONTENT_AES_3    0x0000141c /* Content : AES Key 3 Register */
+#define OTP_CONTENT_SHA_0    0x00001420 /* Content : SHA Key 0 Register */
+#define OTP_CONTENT_SHA_1    0x00001424 /* Content : SHA Key 1 Register */
+#define OTP_CONTENT_SHA_2    0x00001428 /* Content : SHA Key 2 Register */
+#define OTP_CONTENT_SHA_3    0x0000142c /* Content : SHA Key 3 Register */
+#define OTP_CONTENT_SHA_4    0x00001430 /* Content : SHA Key 4 Register */
+#define OTP_CONTENT_SHA_5    0x00001434 /* Content : SHA Key 5 Register */
+#define OTP_CONTENT_SHA_6    0x00001438 /* Content : SHA Key 6 Register */
+#define OTP_CONTENT_SHA_7    0x0000143c /* Content : SHA Key 7 Register */
+#define OTP_CONTENT_CHECKSUM 0x00001440 /* Content : Checksum  Register */
+#define OTP_PROG_CTRL        0x00001444 /* Programming Control Register */
+#define OTP_PROG_STATUS      0x00001448 /* Programming Status Register */
+#define OTP_PROG_PULSE       0x0000144c /* Program Pulse Width Register */
+#define OTP_VERIFY_PULSE     0x00001450 /* Verify Pulse Width Register */
+#define OTP_PROG_MASK        0x00001454 /* Program Mask Register */
+#define OTP_DATA_INPUT       0x00001458 /* Data Input Register */
+#define OTP_DATA_OUTPUT      0x0000145c /* Data Output Register */
 
 
 /****************************************************************************
@@ -544,22 +544,22 @@
 /****************************************************************************
  * BCM70012_AES_TOP_AES
  ***************************************************************************/
-#define AES_CONFIG_INFO                0x00001800 /* AES Configuration Information Register */
-#define AES_CMD                        0x00001804 /* AES Command Register */
-#define AES_STATUS                     0x00001808 /* AES Status Register */
-#define AES_EEPROM_CONFIG              0x0000180c /* AES EEPROM Configuration Register */
-#define AES_EEPROM_DATA_0              0x00001810 /* AES EEPROM Data Register 0 */
-#define AES_EEPROM_DATA_1              0x00001814 /* AES EEPROM Data Register 1 */
-#define AES_EEPROM_DATA_2              0x00001818 /* AES EEPROM Data Register 2 */
-#define AES_EEPROM_DATA_3              0x0000181c /* AES EEPROM Data Register 3 */
+#define AES_CONFIG_INFO   0x00001800 /* AES Configuration Information Register */
+#define AES_CMD           0x00001804 /* AES Command Register */
+#define AES_STATUS        0x00001808 /* AES Status Register */
+#define AES_EEPROM_CONFIG 0x0000180c /* AES EEPROM Configuration Register */
+#define AES_EEPROM_DATA_0 0x00001810 /* AES EEPROM Data Register 0 */
+#define AES_EEPROM_DATA_1 0x00001814 /* AES EEPROM Data Register 1 */
+#define AES_EEPROM_DATA_2 0x00001818 /* AES EEPROM Data Register 2 */
+#define AES_EEPROM_DATA_3 0x0000181c /* AES EEPROM Data Register 3 */
 
 
 /****************************************************************************
  * BCM70012_AES_TOP_AES_RGR_BRIDGE
  ***************************************************************************/
-#define AES_RGR_BRIDGE_REVISION        0x00001be0 /* RGR Bridge Revision */
-#define AES_RGR_BRIDGE_CTRL            0x00001be4 /* RGR Bridge Control Register */
-#define AES_RGR_BRIDGE_RBUS_TIMER      0x00001be8 /* RGR Bridge RBUS Timer Register */
+#define AES_RGR_BRIDGE_REVISION         0x00001be0 /* RGR Bridge Revision */
+#define AES_RGR_BRIDGE_CTRL             0x00001be4 /* RGR Bridge Control Register */
+#define AES_RGR_BRIDGE_RBUS_TIMER       0x00001be8 /* RGR Bridge RBUS Timer Register */
 #define AES_RGR_BRIDGE_SPARE_SW_RESET_0 0x00001bec /* RGR Bridge Software Reset 0 Register */
 #define AES_RGR_BRIDGE_SPARE_SW_RESET_1 0x00001bf0 /* RGR Bridge Software Reset 1 Register */
 
@@ -567,27 +567,27 @@
 /****************************************************************************
  * BCM70012_DCI_TOP_DCI
  ***************************************************************************/
-#define DCI_CMD                        0x00001c00 /* DCI Command Register */
-#define DCI_STATUS                     0x00001c04 /* DCI Status Register */
-#define DCI_DRAM_BASE_ADDR             0x00001c08 /* DRAM Base Address Register */
-#define DCI_FIRMWARE_ADDR              0x00001c0c /* Firmware Address Register */
-#define DCI_FIRMWARE_DATA              0x00001c10 /* Firmware Data Register */
-#define DCI_SIGNATURE_DATA_0           0x00001c14 /* Signature Data Register 0 */
-#define DCI_SIGNATURE_DATA_1           0x00001c18 /* Signature Data Register 1 */
-#define DCI_SIGNATURE_DATA_2           0x00001c1c /* Signature Data Register 2 */
-#define DCI_SIGNATURE_DATA_3           0x00001c20 /* Signature Data Register 3 */
-#define DCI_SIGNATURE_DATA_4           0x00001c24 /* Signature Data Register 4 */
-#define DCI_SIGNATURE_DATA_5           0x00001c28 /* Signature Data Register 5 */
-#define DCI_SIGNATURE_DATA_6           0x00001c2c /* Signature Data Register 6 */
-#define DCI_SIGNATURE_DATA_7           0x00001c30 /* Signature Data Register 7 */
+#define DCI_CMD              0x00001c00 /* DCI Command Register */
+#define DCI_STATUS           0x00001c04 /* DCI Status Register */
+#define DCI_DRAM_BASE_ADDR   0x00001c08 /* DRAM Base Address Register */
+#define DCI_FIRMWARE_ADDR    0x00001c0c /* Firmware Address Register */
+#define DCI_FIRMWARE_DATA    0x00001c10 /* Firmware Data Register */
+#define DCI_SIGNATURE_DATA_0 0x00001c14 /* Signature Data Register 0 */
+#define DCI_SIGNATURE_DATA_1 0x00001c18 /* Signature Data Register 1 */
+#define DCI_SIGNATURE_DATA_2 0x00001c1c /* Signature Data Register 2 */
+#define DCI_SIGNATURE_DATA_3 0x00001c20 /* Signature Data Register 3 */
+#define DCI_SIGNATURE_DATA_4 0x00001c24 /* Signature Data Register 4 */
+#define DCI_SIGNATURE_DATA_5 0x00001c28 /* Signature Data Register 5 */
+#define DCI_SIGNATURE_DATA_6 0x00001c2c /* Signature Data Register 6 */
+#define DCI_SIGNATURE_DATA_7 0x00001c30 /* Signature Data Register 7 */
 
 
 /****************************************************************************
  * BCM70012_DCI_TOP_DCI_RGR_BRIDGE
  ***************************************************************************/
-#define DCI_RGR_BRIDGE_REVISION        0x00001fe0 /* RGR Bridge Revision */
-#define DCI_RGR_BRIDGE_CTRL            0x00001fe4 /* RGR Bridge Control Register */
-#define DCI_RGR_BRIDGE_RBUS_TIMER      0x00001fe8 /* RGR Bridge RBUS Timer Register */
+#define DCI_RGR_BRIDGE_REVISION         0x00001fe0 /* RGR Bridge Revision */
+#define DCI_RGR_BRIDGE_CTRL             0x00001fe4 /* RGR Bridge Control Register */
+#define DCI_RGR_BRIDGE_RBUS_TIMER       0x00001fe8 /* RGR Bridge RBUS Timer Register */
 #define DCI_RGR_BRIDGE_SPARE_SW_RESET_0 0x00001fec /* RGR Bridge Software Reset 0 Register */
 #define DCI_RGR_BRIDGE_SPARE_SW_RESET_1 0x00001ff0 /* RGR Bridge Software Reset 1 Register */
 
@@ -595,9 +595,9 @@
 /****************************************************************************
  * BCM70012_CCE_TOP_CCE_RGR_BRIDGE
  ***************************************************************************/
-#define CCE_RGR_BRIDGE_REVISION        0x000023e0 /* RGR Bridge Revision */
-#define CCE_RGR_BRIDGE_CTRL            0x000023e4 /* RGR Bridge Control Register */
-#define CCE_RGR_BRIDGE_RBUS_TIMER      0x000023e8 /* RGR Bridge RBUS Timer Register */
+#define CCE_RGR_BRIDGE_REVISION         0x000023e0 /* RGR Bridge Revision */
+#define CCE_RGR_BRIDGE_CTRL             0x000023e4 /* RGR Bridge Control Register */
+#define CCE_RGR_BRIDGE_RBUS_TIMER       0x000023e8 /* RGR Bridge RBUS Timer Register */
 #define CCE_RGR_BRIDGE_SPARE_SW_RESET_0 0x000023ec /* RGR Bridge Software Reset 0 Register */
 #define CCE_RGR_BRIDGE_SPARE_SW_RESET_1 0x000023f0 /* RGR Bridge Software Reset 1 Register */
 
@@ -609,16 +609,16 @@
  * PCIE_CFG :: DEVICE_VENDOR_ID
  ***************************************************************************/
 /* PCIE_CFG :: DEVICE_VENDOR_ID :: DEVICE_ID [31:16] */
-#define PCIE_CFG_DEVICE_VENDOR_ID_DEVICE_ID_MASK                   0xffff0000
-#define PCIE_CFG_DEVICE_VENDOR_ID_DEVICE_ID_ALIGN                  0
-#define PCIE_CFG_DEVICE_VENDOR_ID_DEVICE_ID_BITS                   16
-#define PCIE_CFG_DEVICE_VENDOR_ID_DEVICE_ID_SHIFT                  16
+#define PCIE_CFG_DEVICE_VENDOR_ID_DEVICE_ID_MASK  0xffff0000
+#define PCIE_CFG_DEVICE_VENDOR_ID_DEVICE_ID_ALIGN 0
+#define PCIE_CFG_DEVICE_VENDOR_ID_DEVICE_ID_BITS  16
+#define PCIE_CFG_DEVICE_VENDOR_ID_DEVICE_ID_SHIFT 16
 
 /* PCIE_CFG :: DEVICE_VENDOR_ID :: VENDOR_ID [15:00] */
-#define PCIE_CFG_DEVICE_VENDOR_ID_VENDOR_ID_MASK                   0x0000ffff
-#define PCIE_CFG_DEVICE_VENDOR_ID_VENDOR_ID_ALIGN                  0
-#define PCIE_CFG_DEVICE_VENDOR_ID_VENDOR_ID_BITS                   16
-#define PCIE_CFG_DEVICE_VENDOR_ID_VENDOR_ID_SHIFT                  0
+#define PCIE_CFG_DEVICE_VENDOR_ID_VENDOR_ID_MASK  0x0000ffff
+#define PCIE_CFG_DEVICE_VENDOR_ID_VENDOR_ID_ALIGN 0
+#define PCIE_CFG_DEVICE_VENDOR_ID_VENDOR_ID_BITS  16
+#define PCIE_CFG_DEVICE_VENDOR_ID_VENDOR_ID_SHIFT 0
 
 
 /****************************************************************************
@@ -923,13 +923,13 @@
 /* PCIE_CFG :: SUBSYSTEM_DEVICE_VENDOR_ID :: SUBSYSTEM_DEVICE_ID [31:16] */
 #define PCIE_CFG_SUBSYSTEM_DEVICE_VENDOR_ID_SUBSYSTEM_DEVICE_ID_MASK 0xffff0000
 #define PCIE_CFG_SUBSYSTEM_DEVICE_VENDOR_ID_SUBSYSTEM_DEVICE_ID_ALIGN 0
-#define PCIE_CFG_SUBSYSTEM_DEVICE_VENDOR_ID_SUBSYSTEM_DEVICE_ID_BITS 16
+#define PCIE_CFG_SUBSYSTEM_DEVICE_VENDOR_ID_SUBSYSTEM_DEVICE_ID_BITS  16
 #define PCIE_CFG_SUBSYSTEM_DEVICE_VENDOR_ID_SUBSYSTEM_DEVICE_ID_SHIFT 16
 
 /* PCIE_CFG :: SUBSYSTEM_DEVICE_VENDOR_ID :: SUBSYSTEM_VENDOR_ID [15:00] */
 #define PCIE_CFG_SUBSYSTEM_DEVICE_VENDOR_ID_SUBSYSTEM_VENDOR_ID_MASK 0x0000ffff
 #define PCIE_CFG_SUBSYSTEM_DEVICE_VENDOR_ID_SUBSYSTEM_VENDOR_ID_ALIGN 0
-#define PCIE_CFG_SUBSYSTEM_DEVICE_VENDOR_ID_SUBSYSTEM_VENDOR_ID_BITS 16
+#define PCIE_CFG_SUBSYSTEM_DEVICE_VENDOR_ID_SUBSYSTEM_VENDOR_ID_BITS  16
 #define PCIE_CFG_SUBSYSTEM_DEVICE_VENDOR_ID_SUBSYSTEM_VENDOR_ID_SHIFT 0
 
 
@@ -943,9 +943,9 @@
 #define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_ROM_BASE_ADDRESS_SHIFT 16
 
 /* PCIE_CFG :: EXPANSION_ROM_BASE_ADDRESS :: ROM_SIZE_INDICATION [15:11] */
-#define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_ROM_SIZE_INDICATION_MASK 0x0000f800
+#define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_ROM_SIZE_INDICATION_MASK  0x0000f800
 #define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_ROM_SIZE_INDICATION_ALIGN 0
-#define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_ROM_SIZE_INDICATION_BITS 5
+#define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_ROM_SIZE_INDICATION_BITS  5
 #define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_ROM_SIZE_INDICATION_SHIFT 11
 
 /* PCIE_CFG :: EXPANSION_ROM_BASE_ADDRESS :: RESERVED_0 [10:01] */
@@ -955,9 +955,9 @@
 #define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_RESERVED_0_SHIFT       1
 
 /* PCIE_CFG :: EXPANSION_ROM_BASE_ADDRESS :: EXPANSION_ROM_ENABLE [00:00] */
-#define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_EXPANSION_ROM_ENABLE_MASK 0x00000001
+#define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_EXPANSION_ROM_ENABLE_MASK  0x00000001
 #define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_EXPANSION_ROM_ENABLE_ALIGN 0
-#define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_EXPANSION_ROM_ENABLE_BITS 1
+#define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_EXPANSION_ROM_ENABLE_BITS  1
 #define PCIE_CFG_EXPANSION_ROM_BASE_ADDRESS_EXPANSION_ROM_ENABLE_SHIFT 0
 
 
@@ -1207,9 +1207,9 @@
  * PCIE_CFG :: MSI_UPPER_ADDRESS_REGISTER
  ***************************************************************************/
 /* PCIE_CFG :: MSI_UPPER_ADDRESS_REGISTER :: MSI_UPPER_ADDRESS [31:00] */
-#define PCIE_CFG_MSI_UPPER_ADDRESS_REGISTER_MSI_UPPER_ADDRESS_MASK 0xffffffff
+#define PCIE_CFG_MSI_UPPER_ADDRESS_REGISTER_MSI_UPPER_ADDRESS_MASK  0xffffffff
 #define PCIE_CFG_MSI_UPPER_ADDRESS_REGISTER_MSI_UPPER_ADDRESS_ALIGN 0
-#define PCIE_CFG_MSI_UPPER_ADDRESS_REGISTER_MSI_UPPER_ADDRESS_BITS 32
+#define PCIE_CFG_MSI_UPPER_ADDRESS_REGISTER_MSI_UPPER_ADDRESS_BITS  32
 #define PCIE_CFG_MSI_UPPER_ADDRESS_REGISTER_MSI_UPPER_ADDRESS_SHIFT 0
 
 
@@ -1233,27 +1233,27 @@
  * PCIE_CFG :: BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER
  ***************************************************************************/
 /* PCIE_CFG :: BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER :: RESERVED_0 [31:24] */
-#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_RESERVED_0_MASK 0xff000000
+#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_RESERVED_0_MASK  0xff000000
 #define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_RESERVED_0_ALIGN 0
-#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_RESERVED_0_BITS 8
+#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_RESERVED_0_BITS  8
 #define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_RESERVED_0_SHIFT 24
 
 /* PCIE_CFG :: BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER :: VENDOR_SPECIFIC_CAPABILITY_LENGTH [23:16] */
-#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_VENDOR_SPECIFIC_CAPABILITY_LENGTH_MASK 0x00ff0000
+#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_VENDOR_SPECIFIC_CAPABILITY_LENGTH_MASK  0x00ff0000
 #define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_VENDOR_SPECIFIC_CAPABILITY_LENGTH_ALIGN 0
-#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_VENDOR_SPECIFIC_CAPABILITY_LENGTH_BITS 8
+#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_VENDOR_SPECIFIC_CAPABILITY_LENGTH_BITS  8
 #define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_VENDOR_SPECIFIC_CAPABILITY_LENGTH_SHIFT 16
 
 /* PCIE_CFG :: BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER :: NEXT_POINTER [15:08] */
-#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_NEXT_POINTER_MASK 0x0000ff00
+#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_NEXT_POINTER_MASK  0x0000ff00
 #define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_NEXT_POINTER_ALIGN 0
-#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_NEXT_POINTER_BITS 8
+#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_NEXT_POINTER_BITS  8
 #define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_NEXT_POINTER_SHIFT 8
 
 /* PCIE_CFG :: BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER :: CAPABILITY_ID [07:00] */
-#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_CAPABILITY_ID_MASK 0x000000ff
+#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_CAPABILITY_ID_MASK  0x000000ff
 #define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_CAPABILITY_ID_ALIGN 0
-#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_CAPABILITY_ID_BITS 8
+#define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_CAPABILITY_ID_BITS  8
 #define PCIE_CFG_BROADCOM_VENDOR_SPECIFIC_CAPABILITY_HEADER_CAPABILITY_ID_SHIFT 0
 
 
@@ -1261,33 +1261,33 @@
  * PCIE_CFG :: RESET_COUNTERS_INITIAL_VALUES
  ***************************************************************************/
 /* PCIE_CFG :: RESET_COUNTERS_INITIAL_VALUES :: POR_RESET_COUNTER [31:28] */
-#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_POR_RESET_COUNTER_MASK 0xf0000000
+#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_POR_RESET_COUNTER_MASK  0xf0000000
 #define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_POR_RESET_COUNTER_ALIGN 0
-#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_POR_RESET_COUNTER_BITS 4
+#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_POR_RESET_COUNTER_BITS  4
 #define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_POR_RESET_COUNTER_SHIFT 28
 
 /* PCIE_CFG :: RESET_COUNTERS_INITIAL_VALUES :: HOT_RESET_COUNTER [27:24] */
-#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_HOT_RESET_COUNTER_MASK 0x0f000000
+#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_HOT_RESET_COUNTER_MASK  0x0f000000
 #define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_HOT_RESET_COUNTER_ALIGN 0
-#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_HOT_RESET_COUNTER_BITS 4
+#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_HOT_RESET_COUNTER_BITS  4
 #define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_HOT_RESET_COUNTER_SHIFT 24
 
 /* PCIE_CFG :: RESET_COUNTERS_INITIAL_VALUES :: GRC_RESET_COUNTER [23:16] */
-#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_GRC_RESET_COUNTER_MASK 0x00ff0000
+#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_GRC_RESET_COUNTER_MASK  0x00ff0000
 #define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_GRC_RESET_COUNTER_ALIGN 0
-#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_GRC_RESET_COUNTER_BITS 8
+#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_GRC_RESET_COUNTER_BITS  8
 #define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_GRC_RESET_COUNTER_SHIFT 16
 
 /* PCIE_CFG :: RESET_COUNTERS_INITIAL_VALUES :: PERST_RESET_COUNTER [15:08] */
-#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_PERST_RESET_COUNTER_MASK 0x0000ff00
+#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_PERST_RESET_COUNTER_MASK  0x0000ff00
 #define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_PERST_RESET_COUNTER_ALIGN 0
-#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_PERST_RESET_COUNTER_BITS 8
+#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_PERST_RESET_COUNTER_BITS  8
 #define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_PERST_RESET_COUNTER_SHIFT 8
 
 /* PCIE_CFG :: RESET_COUNTERS_INITIAL_VALUES :: LINKDOWN_RESET_COUNTER [07:00] */
-#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_LINKDOWN_RESET_COUNTER_MASK 0x000000ff
+#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_LINKDOWN_RESET_COUNTER_MASK  0x000000ff
 #define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_LINKDOWN_RESET_COUNTER_ALIGN 0
-#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_LINKDOWN_RESET_COUNTER_BITS 8
+#define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_LINKDOWN_RESET_COUNTER_BITS  8
 #define PCIE_CFG_RESET_COUNTERS_INITIAL_VALUES_LINKDOWN_RESET_COUNTER_SHIFT 0
 
 
@@ -1307,15 +1307,15 @@
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ASIC_REVISION_ID_SHIFT 16
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: ENABLE_TLP_MINOR_ERROR_TOLERANCE [15:15] */
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TLP_MINOR_ERROR_TOLERANCE_MASK 0x00008000
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TLP_MINOR_ERROR_TOLERANCE_MASK  0x00008000
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TLP_MINOR_ERROR_TOLERANCE_ALIGN 0
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TLP_MINOR_ERROR_TOLERANCE_BITS 1
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TLP_MINOR_ERROR_TOLERANCE_BITS  1
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TLP_MINOR_ERROR_TOLERANCE_SHIFT 15
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: LOG_HEADER_OVERFLOW [14:14] */
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_LOG_HEADER_OVERFLOW_MASK 0x00004000
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_LOG_HEADER_OVERFLOW_MASK  0x00004000
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_LOG_HEADER_OVERFLOW_ALIGN 0
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_LOG_HEADER_OVERFLOW_BITS 1
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_LOG_HEADER_OVERFLOW_BITS  1
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_LOG_HEADER_OVERFLOW_SHIFT 14
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: BOUNDARY_CHECK [13:13] */
@@ -1325,9 +1325,9 @@
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_BOUNDARY_CHECK_SHIFT   13
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: BYTE_ENABLE_RULE_CHECK [12:12] */
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_BYTE_ENABLE_RULE_CHECK_MASK 0x00001000
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_BYTE_ENABLE_RULE_CHECK_MASK  0x00001000
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_BYTE_ENABLE_RULE_CHECK_ALIGN 0
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_BYTE_ENABLE_RULE_CHECK_BITS 1
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_BYTE_ENABLE_RULE_CHECK_BITS  1
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_BYTE_ENABLE_RULE_CHECK_SHIFT 12
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: INTERRUPT_CHECK [11:11] */
@@ -1343,51 +1343,51 @@
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_RCB_CHECK_SHIFT        10
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: ENABLE_TAGGED_STATUS_MODE [09:09] */
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TAGGED_STATUS_MODE_MASK 0x00000200
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TAGGED_STATUS_MODE_MASK  0x00000200
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TAGGED_STATUS_MODE_ALIGN 0
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TAGGED_STATUS_MODE_BITS 1
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TAGGED_STATUS_MODE_BITS  1
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_TAGGED_STATUS_MODE_SHIFT 9
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: MASK_INTERRUPT_MODE [08:08] */
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_MASK_INTERRUPT_MODE_MASK 0x00000100
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_MASK_INTERRUPT_MODE_MASK  0x00000100
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_MASK_INTERRUPT_MODE_ALIGN 0
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_MASK_INTERRUPT_MODE_BITS 1
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_MASK_INTERRUPT_MODE_BITS  1
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_MASK_INTERRUPT_MODE_SHIFT 8
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: ENABLE_INDIRECT_ACCESS [07:07] */
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_INDIRECT_ACCESS_MASK 0x00000080
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_INDIRECT_ACCESS_MASK  0x00000080
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_INDIRECT_ACCESS_ALIGN 0
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_INDIRECT_ACCESS_BITS 1
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_INDIRECT_ACCESS_BITS  1
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_INDIRECT_ACCESS_SHIFT 7
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: ENABLE_REGISTER_WORD_SWAP [06:06] */
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_REGISTER_WORD_SWAP_MASK 0x00000040
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_REGISTER_WORD_SWAP_MASK  0x00000040
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_REGISTER_WORD_SWAP_ALIGN 0
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_REGISTER_WORD_SWAP_BITS 1
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_REGISTER_WORD_SWAP_BITS  1
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_REGISTER_WORD_SWAP_SHIFT 6
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: ENABLE_CLOCK_CONTROL_REGISTER_READ_WRITE_CAPABILITY [05:05] */
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_CLOCK_CONTROL_REGISTER_READ_WRITE_CAPABILITY_MASK 0x00000020
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_CLOCK_CONTROL_REGISTER_READ_WRITE_CAPABILITY_MASK  0x00000020
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_CLOCK_CONTROL_REGISTER_READ_WRITE_CAPABILITY_ALIGN 0
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_CLOCK_CONTROL_REGISTER_READ_WRITE_CAPABILITY_BITS 1
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_CLOCK_CONTROL_REGISTER_READ_WRITE_CAPABILITY_BITS  1
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_CLOCK_CONTROL_REGISTER_READ_WRITE_CAPABILITY_SHIFT 5
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: ENABLE_PCI_STATE_REGISTER_READ_WRITE_CAPABILITY [04:04] */
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_PCI_STATE_REGISTER_READ_WRITE_CAPABILITY_MASK 0x00000010
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_PCI_STATE_REGISTER_READ_WRITE_CAPABILITY_MASK  0x00000010
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_PCI_STATE_REGISTER_READ_WRITE_CAPABILITY_ALIGN 0
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_PCI_STATE_REGISTER_READ_WRITE_CAPABILITY_BITS 1
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_PCI_STATE_REGISTER_READ_WRITE_CAPABILITY_BITS  1
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_PCI_STATE_REGISTER_READ_WRITE_CAPABILITY_SHIFT 4
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: ENABLE_ENDIAN_WORD_SWAP [03:03] */
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_WORD_SWAP_MASK 0x00000008
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_WORD_SWAP_MASK  0x00000008
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_WORD_SWAP_ALIGN 0
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_WORD_SWAP_BITS 1
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_WORD_SWAP_BITS  1
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_WORD_SWAP_SHIFT 3
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: ENABLE_ENDIAN_BYTE_SWAP [02:02] */
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_BYTE_SWAP_MASK 0x00000004
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_BYTE_SWAP_MASK  0x00000004
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_BYTE_SWAP_ALIGN 0
-#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_BYTE_SWAP_BITS 1
+#define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_BYTE_SWAP_BITS  1
 #define PCIE_CFG_MISCELLANEOUS_HOST_CONTROL_ENABLE_ENDIAN_BYTE_SWAP_SHIFT 2
 
 /* PCIE_CFG :: MISCELLANEOUS_HOST_CONTROL :: MASK_INTERRUPT [01:01] */
@@ -1679,9 +1679,9 @@
  * PCIE_CFG :: UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_UPPER
  ***************************************************************************/
 /* PCIE_CFG :: UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_UPPER :: UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX [31:00] */
-#define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_MASK 0xffffffff
+#define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_MASK  0xffffffff
 #define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_ALIGN 0
-#define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_BITS 32
+#define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_BITS  32
 #define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_SHIFT 0
 
 
@@ -1689,9 +1689,9 @@
  * PCIE_CFG :: UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_LOWER
  ***************************************************************************/
 /* PCIE_CFG :: UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_LOWER :: UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX [31:00] */
-#define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_MASK 0xffffffff
+#define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_MASK  0xffffffff
 #define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_ALIGN 0
-#define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_BITS 32
+#define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_BITS  32
 #define PCIE_CFG_UNDI_RECEIVE_BD_STANDARD_PRODUCER_RING_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_RECEIVE_BD_STANDARD_RING_PRODUCER_INDEX_SHIFT 0
 
 
@@ -1699,9 +1699,9 @@
  * PCIE_CFG :: UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_UPPER
  ***************************************************************************/
 /* PCIE_CFG :: UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_UPPER :: UNDI_RECEIVE_RETURN_C_IDX [31:00] */
-#define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_UPPER_UNDI_RECEIVE_RETURN_C_IDX_MASK 0xffffffff
+#define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_UPPER_UNDI_RECEIVE_RETURN_C_IDX_MASK  0xffffffff
 #define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_UPPER_UNDI_RECEIVE_RETURN_C_IDX_ALIGN 0
-#define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_UPPER_UNDI_RECEIVE_RETURN_C_IDX_BITS 32
+#define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_UPPER_UNDI_RECEIVE_RETURN_C_IDX_BITS  32
 #define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_UPPER_UNDI_RECEIVE_RETURN_C_IDX_SHIFT 0
 
 
@@ -1709,9 +1709,9 @@
  * PCIE_CFG :: UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_LOWER
  ***************************************************************************/
 /* PCIE_CFG :: UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_LOWER :: UNDI_RECEIVE_RETURN_C_IDX [31:00] */
-#define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_LOWER_UNDI_RECEIVE_RETURN_C_IDX_MASK 0xffffffff
+#define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_LOWER_UNDI_RECEIVE_RETURN_C_IDX_MASK  0xffffffff
 #define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_LOWER_UNDI_RECEIVE_RETURN_C_IDX_ALIGN 0
-#define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_LOWER_UNDI_RECEIVE_RETURN_C_IDX_BITS 32
+#define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_LOWER_UNDI_RECEIVE_RETURN_C_IDX_BITS  32
 #define PCIE_CFG_UNDI_RECEIVE_RETURN_RING_CONSUMER_INDEX_LOWER_UNDI_RECEIVE_RETURN_C_IDX_SHIFT 0
 
 
@@ -1719,9 +1719,9 @@
  * PCIE_CFG :: UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_UPPER
  ***************************************************************************/
 /* PCIE_CFG :: UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_UPPER :: UNDI_SEND_BD_NIC_P_IDX [31:00] */
-#define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_SEND_BD_NIC_P_IDX_MASK 0xffffffff
+#define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_SEND_BD_NIC_P_IDX_MASK  0xffffffff
 #define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_SEND_BD_NIC_P_IDX_ALIGN 0
-#define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_SEND_BD_NIC_P_IDX_BITS 32
+#define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_SEND_BD_NIC_P_IDX_BITS  32
 #define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_UPPER_UNDI_SEND_BD_NIC_P_IDX_SHIFT 0
 
 
@@ -1729,9 +1729,9 @@
  * PCIE_CFG :: UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_LOWER
  ***************************************************************************/
 /* PCIE_CFG :: UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_LOWER :: UNDI_SEND_BD_NIC_P_IDX [31:00] */
-#define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_SEND_BD_NIC_P_IDX_MASK 0xffffffff
+#define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_SEND_BD_NIC_P_IDX_MASK  0xffffffff
 #define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_SEND_BD_NIC_P_IDX_ALIGN 0
-#define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_SEND_BD_NIC_P_IDX_BITS 32
+#define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_SEND_BD_NIC_P_IDX_BITS  32
 #define PCIE_CFG_UNDI_SEND_BD_PRODUCER_INDEX_MAILBOX_LOWER_UNDI_SEND_BD_NIC_P_IDX_SHIFT 0
 
 
@@ -1739,9 +1739,9 @@
  * PCIE_CFG :: INT_MAILBOX_UPPER
  ***************************************************************************/
 /* PCIE_CFG :: INT_MAILBOX_UPPER :: INDIRECT_INTERRUPT_MAIL_BOX [31:00] */
-#define PCIE_CFG_INT_MAILBOX_UPPER_INDIRECT_INTERRUPT_MAIL_BOX_MASK 0xffffffff
+#define PCIE_CFG_INT_MAILBOX_UPPER_INDIRECT_INTERRUPT_MAIL_BOX_MASK  0xffffffff
 #define PCIE_CFG_INT_MAILBOX_UPPER_INDIRECT_INTERRUPT_MAIL_BOX_ALIGN 0
-#define PCIE_CFG_INT_MAILBOX_UPPER_INDIRECT_INTERRUPT_MAIL_BOX_BITS 32
+#define PCIE_CFG_INT_MAILBOX_UPPER_INDIRECT_INTERRUPT_MAIL_BOX_BITS  32
 #define PCIE_CFG_INT_MAILBOX_UPPER_INDIRECT_INTERRUPT_MAIL_BOX_SHIFT 0
 
 
@@ -1749,9 +1749,9 @@
  * PCIE_CFG :: INT_MAILBOX_LOWER
  ***************************************************************************/
 /* PCIE_CFG :: INT_MAILBOX_LOWER :: INDIRECT_INTERRUPT_MAIL_BOX [31:00] */
-#define PCIE_CFG_INT_MAILBOX_LOWER_INDIRECT_INTERRUPT_MAIL_BOX_MASK 0xffffffff
+#define PCIE_CFG_INT_MAILBOX_LOWER_INDIRECT_INTERRUPT_MAIL_BOX_MASK  0xffffffff
 #define PCIE_CFG_INT_MAILBOX_LOWER_INDIRECT_INTERRUPT_MAIL_BOX_ALIGN 0
-#define PCIE_CFG_INT_MAILBOX_LOWER_INDIRECT_INTERRUPT_MAIL_BOX_BITS 32
+#define PCIE_CFG_INT_MAILBOX_LOWER_INDIRECT_INTERRUPT_MAIL_BOX_BITS  32
 #define PCIE_CFG_INT_MAILBOX_LOWER_INDIRECT_INTERRUPT_MAIL_BOX_SHIFT 0
 
 
@@ -1771,9 +1771,9 @@
 #define PCIE_CFG_PRODUCT_ID_AND_ASIC_REVISION_PRODUCT_ID_SHIFT     8
 
 /* PCIE_CFG :: PRODUCT_ID_AND_ASIC_REVISION :: ASIC_REVISION_ID [07:00] */
-#define PCIE_CFG_PRODUCT_ID_AND_ASIC_REVISION_ASIC_REVISION_ID_MASK 0x000000ff
+#define PCIE_CFG_PRODUCT_ID_AND_ASIC_REVISION_ASIC_REVISION_ID_MASK  0x000000ff
 #define PCIE_CFG_PRODUCT_ID_AND_ASIC_REVISION_ASIC_REVISION_ID_ALIGN 0
-#define PCIE_CFG_PRODUCT_ID_AND_ASIC_REVISION_ASIC_REVISION_ID_BITS 8
+#define PCIE_CFG_PRODUCT_ID_AND_ASIC_REVISION_ASIC_REVISION_ID_BITS  8
 #define PCIE_CFG_PRODUCT_ID_AND_ASIC_REVISION_ASIC_REVISION_ID_SHIFT 0
 
 
@@ -1941,15 +1941,15 @@
 #define PCIE_CFG_DEVICE_CAPABILITIES_RESERVED_0_SHIFT              28
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: CAPTURED_SLOT_POWER_LIMIT_SCALE [27:26] */
-#define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_SCALE_MASK 0x0c000000
+#define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_SCALE_MASK  0x0c000000
 #define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_SCALE_ALIGN 0
-#define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_SCALE_BITS 2
+#define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_SCALE_BITS  2
 #define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_SCALE_SHIFT 26
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: CAPTURED_SLOT_POWER_LIMIT_VALUE [25:18] */
-#define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_VALUE_MASK 0x03fc0000
+#define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_VALUE_MASK  0x03fc0000
 #define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_VALUE_ALIGN 0
-#define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_VALUE_BITS 8
+#define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_VALUE_BITS  8
 #define PCIE_CFG_DEVICE_CAPABILITIES_CAPTURED_SLOT_POWER_LIMIT_VALUE_SHIFT 18
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: RESERVED_1 [17:16] */
@@ -1959,9 +1959,9 @@
 #define PCIE_CFG_DEVICE_CAPABILITIES_RESERVED_1_SHIFT              16
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: ROLE_BASED_ERROR_SUPPORT [15:15] */
-#define PCIE_CFG_DEVICE_CAPABILITIES_ROLE_BASED_ERROR_SUPPORT_MASK 0x00008000
+#define PCIE_CFG_DEVICE_CAPABILITIES_ROLE_BASED_ERROR_SUPPORT_MASK  0x00008000
 #define PCIE_CFG_DEVICE_CAPABILITIES_ROLE_BASED_ERROR_SUPPORT_ALIGN 0
-#define PCIE_CFG_DEVICE_CAPABILITIES_ROLE_BASED_ERROR_SUPPORT_BITS 1
+#define PCIE_CFG_DEVICE_CAPABILITIES_ROLE_BASED_ERROR_SUPPORT_BITS  1
 #define PCIE_CFG_DEVICE_CAPABILITIES_ROLE_BASED_ERROR_SUPPORT_SHIFT 15
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: POWER_INDICATOR_PRESENT [14:14] */
@@ -1971,45 +1971,45 @@
 #define PCIE_CFG_DEVICE_CAPABILITIES_POWER_INDICATOR_PRESENT_SHIFT 14
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: ATTENTION_INDICATOR_PRESENT [13:13] */
-#define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_INDICATOR_PRESENT_MASK 0x00002000
+#define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_INDICATOR_PRESENT_MASK  0x00002000
 #define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_INDICATOR_PRESENT_ALIGN 0
-#define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_INDICATOR_PRESENT_BITS 1
+#define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_INDICATOR_PRESENT_BITS  1
 #define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_INDICATOR_PRESENT_SHIFT 13
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: ATTENTION_BUTTON_PRESENT [12:12] */
-#define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_BUTTON_PRESENT_MASK 0x00001000
+#define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_BUTTON_PRESENT_MASK  0x00001000
 #define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_BUTTON_PRESENT_ALIGN 0
-#define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_BUTTON_PRESENT_BITS 1
+#define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_BUTTON_PRESENT_BITS  1
 #define PCIE_CFG_DEVICE_CAPABILITIES_ATTENTION_BUTTON_PRESENT_SHIFT 12
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: ENDPOINT_L1_ACCEPTABLE_LATENCY [11:09] */
-#define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L1_ACCEPTABLE_LATENCY_MASK 0x00000e00
+#define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L1_ACCEPTABLE_LATENCY_MASK  0x00000e00
 #define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L1_ACCEPTABLE_LATENCY_ALIGN 0
-#define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L1_ACCEPTABLE_LATENCY_BITS 3
+#define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L1_ACCEPTABLE_LATENCY_BITS  3
 #define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L1_ACCEPTABLE_LATENCY_SHIFT 9
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: ENDPOINT_L0S_ACCEPTABLE_LATENCY [08:06] */
-#define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L0S_ACCEPTABLE_LATENCY_MASK 0x000001c0
+#define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L0S_ACCEPTABLE_LATENCY_MASK  0x000001c0
 #define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L0S_ACCEPTABLE_LATENCY_ALIGN 0
-#define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L0S_ACCEPTABLE_LATENCY_BITS 3
+#define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L0S_ACCEPTABLE_LATENCY_BITS  3
 #define PCIE_CFG_DEVICE_CAPABILITIES_ENDPOINT_L0S_ACCEPTABLE_LATENCY_SHIFT 6
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: EXTENDED_TAG_FIELD_SUPPORTED [05:05] */
-#define PCIE_CFG_DEVICE_CAPABILITIES_EXTENDED_TAG_FIELD_SUPPORTED_MASK 0x00000020
+#define PCIE_CFG_DEVICE_CAPABILITIES_EXTENDED_TAG_FIELD_SUPPORTED_MASK  0x00000020
 #define PCIE_CFG_DEVICE_CAPABILITIES_EXTENDED_TAG_FIELD_SUPPORTED_ALIGN 0
-#define PCIE_CFG_DEVICE_CAPABILITIES_EXTENDED_TAG_FIELD_SUPPORTED_BITS 1
+#define PCIE_CFG_DEVICE_CAPABILITIES_EXTENDED_TAG_FIELD_SUPPORTED_BITS  1
 #define PCIE_CFG_DEVICE_CAPABILITIES_EXTENDED_TAG_FIELD_SUPPORTED_SHIFT 5
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: PHANTOM_FUNCTIONS_SUPPORTED [04:03] */
-#define PCIE_CFG_DEVICE_CAPABILITIES_PHANTOM_FUNCTIONS_SUPPORTED_MASK 0x00000018
+#define PCIE_CFG_DEVICE_CAPABILITIES_PHANTOM_FUNCTIONS_SUPPORTED_MASK  0x00000018
 #define PCIE_CFG_DEVICE_CAPABILITIES_PHANTOM_FUNCTIONS_SUPPORTED_ALIGN 0
-#define PCIE_CFG_DEVICE_CAPABILITIES_PHANTOM_FUNCTIONS_SUPPORTED_BITS 2
+#define PCIE_CFG_DEVICE_CAPABILITIES_PHANTOM_FUNCTIONS_SUPPORTED_BITS  2
 #define PCIE_CFG_DEVICE_CAPABILITIES_PHANTOM_FUNCTIONS_SUPPORTED_SHIFT 3
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES :: MAX_PAYLOAD_SIZE_SUPPORTED [02:00] */
-#define PCIE_CFG_DEVICE_CAPABILITIES_MAX_PAYLOAD_SIZE_SUPPORTED_MASK 0x00000007
+#define PCIE_CFG_DEVICE_CAPABILITIES_MAX_PAYLOAD_SIZE_SUPPORTED_MASK  0x00000007
 #define PCIE_CFG_DEVICE_CAPABILITIES_MAX_PAYLOAD_SIZE_SUPPORTED_ALIGN 0
-#define PCIE_CFG_DEVICE_CAPABILITIES_MAX_PAYLOAD_SIZE_SUPPORTED_BITS 3
+#define PCIE_CFG_DEVICE_CAPABILITIES_MAX_PAYLOAD_SIZE_SUPPORTED_BITS  3
 #define PCIE_CFG_DEVICE_CAPABILITIES_MAX_PAYLOAD_SIZE_SUPPORTED_SHIFT 0
 
 
@@ -2035,9 +2035,9 @@
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_AUX_POWER_DETECTED_SHIFT    20
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: UNSUPPORTED_REQUEST_DETECTED [19:19] */
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_DETECTED_MASK 0x00080000
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_DETECTED_MASK  0x00080000
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_DETECTED_ALIGN 0
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_DETECTED_BITS 1
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_DETECTED_BITS  1
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_DETECTED_SHIFT 19
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: FATAL_ERROR_DETECTED [18:18] */
@@ -2047,15 +2047,15 @@
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_FATAL_ERROR_DETECTED_SHIFT  18
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: NON_FATAL_ERROR_DETECTED [17:17] */
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_DETECTED_MASK 0x00020000
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_DETECTED_MASK  0x00020000
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_DETECTED_ALIGN 0
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_DETECTED_BITS 1
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_DETECTED_BITS  1
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_DETECTED_SHIFT 17
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: CORRECTABLE_ERROR_DETECTED [16:16] */
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_DETECTED_MASK 0x00010000
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_DETECTED_MASK  0x00010000
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_DETECTED_ALIGN 0
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_DETECTED_BITS 1
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_DETECTED_BITS  1
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_DETECTED_SHIFT 16
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: RESERVED_1 [15:15] */
@@ -2083,15 +2083,15 @@
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_AUX_POWER_PM_ENABLE_SHIFT   10
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: PHANTOM_FUNCTIONS_ENABLE [09:09] */
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_PHANTOM_FUNCTIONS_ENABLE_MASK 0x00000200
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_PHANTOM_FUNCTIONS_ENABLE_MASK  0x00000200
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_PHANTOM_FUNCTIONS_ENABLE_ALIGN 0
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_PHANTOM_FUNCTIONS_ENABLE_BITS 1
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_PHANTOM_FUNCTIONS_ENABLE_BITS  1
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_PHANTOM_FUNCTIONS_ENABLE_SHIFT 9
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: EXTENDED_TAG_FIELD_ENABLE [08:08] */
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_EXTENDED_TAG_FIELD_ENABLE_MASK 0x00000100
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_EXTENDED_TAG_FIELD_ENABLE_MASK  0x00000100
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_EXTENDED_TAG_FIELD_ENABLE_ALIGN 0
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_EXTENDED_TAG_FIELD_ENABLE_BITS 1
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_EXTENDED_TAG_FIELD_ENABLE_BITS  1
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_EXTENDED_TAG_FIELD_ENABLE_SHIFT 8
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: MAX_PAYLOAD_SIZE [07:05] */
@@ -2101,33 +2101,33 @@
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_MAX_PAYLOAD_SIZE_SHIFT      5
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: ENABLED_RELAXED_ORDERING [04:04] */
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_ENABLED_RELAXED_ORDERING_MASK 0x00000010
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_ENABLED_RELAXED_ORDERING_MASK  0x00000010
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_ENABLED_RELAXED_ORDERING_ALIGN 0
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_ENABLED_RELAXED_ORDERING_BITS 1
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_ENABLED_RELAXED_ORDERING_BITS  1
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_ENABLED_RELAXED_ORDERING_SHIFT 4
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: UNSUPPORTED_REQUEST_REPORTING_ENABLE [03:03] */
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_REPORTING_ENABLE_MASK 0x00000008
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_REPORTING_ENABLE_MASK  0x00000008
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_REPORTING_ENABLE_ALIGN 0
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_REPORTING_ENABLE_BITS 1
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_REPORTING_ENABLE_BITS  1
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_UNSUPPORTED_REQUEST_REPORTING_ENABLE_SHIFT 3
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: FATAL_ERROR_REPORTING_ENABLED [02:02] */
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_FATAL_ERROR_REPORTING_ENABLED_MASK 0x00000004
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_FATAL_ERROR_REPORTING_ENABLED_MASK  0x00000004
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_FATAL_ERROR_REPORTING_ENABLED_ALIGN 0
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_FATAL_ERROR_REPORTING_ENABLED_BITS 1
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_FATAL_ERROR_REPORTING_ENABLED_BITS  1
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_FATAL_ERROR_REPORTING_ENABLED_SHIFT 2
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: NON_FATAL_ERROR_REPORTING_ENABLED [01:01] */
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_REPORTING_ENABLED_MASK 0x00000002
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_REPORTING_ENABLED_MASK  0x00000002
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_REPORTING_ENABLED_ALIGN 0
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_REPORTING_ENABLED_BITS 1
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_REPORTING_ENABLED_BITS  1
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_NON_FATAL_ERROR_REPORTING_ENABLED_SHIFT 1
 
 /* PCIE_CFG :: DEVICE_STATUS_CONTROL :: CORRECTABLE_ERROR_REPORTING_ENABLED [00:00] */
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_REPORTING_ENABLED_MASK 0x00000001
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_REPORTING_ENABLED_MASK  0x00000001
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_REPORTING_ENABLED_ALIGN 0
-#define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_REPORTING_ENABLED_BITS 1
+#define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_REPORTING_ENABLED_BITS  1
 #define PCIE_CFG_DEVICE_STATUS_CONTROL_CORRECTABLE_ERROR_REPORTING_ENABLED_SHIFT 0
 
 
@@ -2265,9 +2265,9 @@
 #define PCIE_CFG_LINK_STATUS_CONTROL_RESERVED_5_SHIFT              2
 
 /* PCIE_CFG :: LINK_STATUS_CONTROL :: ACTIVE_STATE_POWER_MANAGEMENT_CONTROL [01:00] */
-#define PCIE_CFG_LINK_STATUS_CONTROL_ACTIVE_STATE_POWER_MANAGEMENT_CONTROL_MASK 0x00000003
+#define PCIE_CFG_LINK_STATUS_CONTROL_ACTIVE_STATE_POWER_MANAGEMENT_CONTROL_MASK  0x00000003
 #define PCIE_CFG_LINK_STATUS_CONTROL_ACTIVE_STATE_POWER_MANAGEMENT_CONTROL_ALIGN 0
-#define PCIE_CFG_LINK_STATUS_CONTROL_ACTIVE_STATE_POWER_MANAGEMENT_CONTROL_BITS 2
+#define PCIE_CFG_LINK_STATUS_CONTROL_ACTIVE_STATE_POWER_MANAGEMENT_CONTROL_BITS  2
 #define PCIE_CFG_LINK_STATUS_CONTROL_ACTIVE_STATE_POWER_MANAGEMENT_CONTROL_SHIFT 0
 
 
@@ -2287,9 +2287,9 @@
 #define PCIE_CFG_DEVICE_CAPABILITIES_2_CPL_DISABLE_SUPPORTED_SHIFT 4
 
 /* PCIE_CFG :: DEVICE_CAPABILITIES_2 :: CPL_TIMEOUT_RANGE_SUPPORTED [03:00] */
-#define PCIE_CFG_DEVICE_CAPABILITIES_2_CPL_TIMEOUT_RANGE_SUPPORTED_MASK 0x0000000f
+#define PCIE_CFG_DEVICE_CAPABILITIES_2_CPL_TIMEOUT_RANGE_SUPPORTED_MASK  0x0000000f
 #define PCIE_CFG_DEVICE_CAPABILITIES_2_CPL_TIMEOUT_RANGE_SUPPORTED_ALIGN 0
-#define PCIE_CFG_DEVICE_CAPABILITIES_2_CPL_TIMEOUT_RANGE_SUPPORTED_BITS 4
+#define PCIE_CFG_DEVICE_CAPABILITIES_2_CPL_TIMEOUT_RANGE_SUPPORTED_BITS  4
 #define PCIE_CFG_DEVICE_CAPABILITIES_2_CPL_TIMEOUT_RANGE_SUPPORTED_SHIFT 0
 
 
@@ -2339,21 +2339,21 @@
  * PCIE_CFG :: ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER
  ***************************************************************************/
 /* PCIE_CFG :: ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER :: NEXT_CAPABILITY_OFFSET [31:20] */
-#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_MASK 0xfff00000
+#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_MASK  0xfff00000
 #define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_ALIGN 0
-#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_BITS 12
+#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_BITS  12
 #define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_SHIFT 20
 
 /* PCIE_CFG :: ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER :: CAPABILITY_VERSION [19:16] */
-#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_MASK 0x000f0000
+#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_MASK  0x000f0000
 #define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_ALIGN 0
-#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_BITS 4
+#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_BITS  4
 #define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_SHIFT 16
 
 /* PCIE_CFG :: ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER :: PCIE_EXTENDED_CAPABILITY_ID [15:00] */
-#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_MASK 0x0000ffff
+#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_MASK  0x0000ffff
 #define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_ALIGN 0
-#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_BITS 16
+#define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_BITS  16
 #define PCIE_CFG_ADVANCED_ERROR_REPORTING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_SHIFT 0
 
 
@@ -2367,57 +2367,57 @@
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_RESERVED_0_SHIFT       21
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: UNSUPPORTED_REQUEST_ERROR_STATUS [20:20] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNSUPPORTED_REQUEST_ERROR_STATUS_MASK 0x00100000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNSUPPORTED_REQUEST_ERROR_STATUS_MASK  0x00100000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNSUPPORTED_REQUEST_ERROR_STATUS_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNSUPPORTED_REQUEST_ERROR_STATUS_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNSUPPORTED_REQUEST_ERROR_STATUS_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNSUPPORTED_REQUEST_ERROR_STATUS_SHIFT 20
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: ECRC_ERROR_STATUS [19:19] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_ECRC_ERROR_STATUS_MASK 0x00080000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_ECRC_ERROR_STATUS_MASK  0x00080000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_ECRC_ERROR_STATUS_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_ECRC_ERROR_STATUS_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_ECRC_ERROR_STATUS_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_ECRC_ERROR_STATUS_SHIFT 19
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: MALFORMED_TLP_STATUS [18:18] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_MALFORMED_TLP_STATUS_MASK 0x00040000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_MALFORMED_TLP_STATUS_MASK  0x00040000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_MALFORMED_TLP_STATUS_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_MALFORMED_TLP_STATUS_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_MALFORMED_TLP_STATUS_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_MALFORMED_TLP_STATUS_SHIFT 18
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: RECEIVER_OVERFLOW_STATUS [17:17] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_RECEIVER_OVERFLOW_STATUS_MASK 0x00020000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_RECEIVER_OVERFLOW_STATUS_MASK  0x00020000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_RECEIVER_OVERFLOW_STATUS_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_RECEIVER_OVERFLOW_STATUS_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_RECEIVER_OVERFLOW_STATUS_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_RECEIVER_OVERFLOW_STATUS_SHIFT 17
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: UNEXPECTED_COMPLETION_STATUS [16:16] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNEXPECTED_COMPLETION_STATUS_MASK 0x00010000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNEXPECTED_COMPLETION_STATUS_MASK  0x00010000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNEXPECTED_COMPLETION_STATUS_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNEXPECTED_COMPLETION_STATUS_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNEXPECTED_COMPLETION_STATUS_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_UNEXPECTED_COMPLETION_STATUS_SHIFT 16
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: COMPLETER_ABORT_STATUS [15:15] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETER_ABORT_STATUS_MASK 0x00008000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETER_ABORT_STATUS_MASK  0x00008000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETER_ABORT_STATUS_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETER_ABORT_STATUS_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETER_ABORT_STATUS_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETER_ABORT_STATUS_SHIFT 15
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: COMPLETION_TIMEOUT_STATUS [14:14] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETION_TIMEOUT_STATUS_MASK 0x00004000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETION_TIMEOUT_STATUS_MASK  0x00004000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETION_TIMEOUT_STATUS_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETION_TIMEOUT_STATUS_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETION_TIMEOUT_STATUS_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_COMPLETION_TIMEOUT_STATUS_SHIFT 14
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: FLOW_CONTROL_PROTOCOL_ERROR_STATUS [13:13] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_FLOW_CONTROL_PROTOCOL_ERROR_STATUS_MASK 0x00002000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_FLOW_CONTROL_PROTOCOL_ERROR_STATUS_MASK  0x00002000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_FLOW_CONTROL_PROTOCOL_ERROR_STATUS_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_FLOW_CONTROL_PROTOCOL_ERROR_STATUS_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_FLOW_CONTROL_PROTOCOL_ERROR_STATUS_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_FLOW_CONTROL_PROTOCOL_ERROR_STATUS_SHIFT 13
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: POISONED_TLP_STATUS [12:12] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_POISONED_TLP_STATUS_MASK 0x00001000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_POISONED_TLP_STATUS_MASK  0x00001000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_POISONED_TLP_STATUS_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_POISONED_TLP_STATUS_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_POISONED_TLP_STATUS_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_POISONED_TLP_STATUS_SHIFT 12
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: RESERVED_1 [11:05] */
@@ -2427,9 +2427,9 @@
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_RESERVED_1_SHIFT       5
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: DATA_LINK_PROTOCOL_ERROR_STATUS [04:04] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_DATA_LINK_PROTOCOL_ERROR_STATUS_MASK 0x00000010
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_DATA_LINK_PROTOCOL_ERROR_STATUS_MASK  0x00000010
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_DATA_LINK_PROTOCOL_ERROR_STATUS_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_DATA_LINK_PROTOCOL_ERROR_STATUS_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_DATA_LINK_PROTOCOL_ERROR_STATUS_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_DATA_LINK_PROTOCOL_ERROR_STATUS_SHIFT 4
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: RESERVED_2 [03:01] */
@@ -2439,9 +2439,9 @@
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_RESERVED_2_SHIFT       1
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_STATUS :: TRAINING_ERROR_STATUS [00:00] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_TRAINING_ERROR_STATUS_MASK 0x00000001
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_TRAINING_ERROR_STATUS_MASK  0x00000001
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_TRAINING_ERROR_STATUS_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_TRAINING_ERROR_STATUS_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_TRAINING_ERROR_STATUS_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_STATUS_TRAINING_ERROR_STATUS_SHIFT 0
 
 
@@ -2455,9 +2455,9 @@
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_RESERVED_0_SHIFT         21
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_MASK :: UNSUPPORTED_REQUEST_ERROR_MASK [20:20] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNSUPPORTED_REQUEST_ERROR_MASK_MASK 0x00100000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNSUPPORTED_REQUEST_ERROR_MASK_MASK  0x00100000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNSUPPORTED_REQUEST_ERROR_MASK_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNSUPPORTED_REQUEST_ERROR_MASK_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNSUPPORTED_REQUEST_ERROR_MASK_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNSUPPORTED_REQUEST_ERROR_MASK_SHIFT 20
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_MASK :: ECRC_ERROR_MASK [19:19] */
@@ -2473,33 +2473,33 @@
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_MALFORMED_TLP_MASK_SHIFT 18
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_MASK :: RECEIVER_OVERFLOW_MASK [17:17] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_RECEIVER_OVERFLOW_MASK_MASK 0x00020000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_RECEIVER_OVERFLOW_MASK_MASK  0x00020000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_RECEIVER_OVERFLOW_MASK_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_RECEIVER_OVERFLOW_MASK_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_RECEIVER_OVERFLOW_MASK_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_RECEIVER_OVERFLOW_MASK_SHIFT 17
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_MASK :: UNEXPECTED_COMPLETION_MASK [16:16] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNEXPECTED_COMPLETION_MASK_MASK 0x00010000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNEXPECTED_COMPLETION_MASK_MASK  0x00010000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNEXPECTED_COMPLETION_MASK_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNEXPECTED_COMPLETION_MASK_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNEXPECTED_COMPLETION_MASK_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_UNEXPECTED_COMPLETION_MASK_SHIFT 16
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_MASK :: COMPLETER_ABORT_MASK [15:15] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETER_ABORT_MASK_MASK 0x00008000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETER_ABORT_MASK_MASK  0x00008000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETER_ABORT_MASK_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETER_ABORT_MASK_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETER_ABORT_MASK_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETER_ABORT_MASK_SHIFT 15
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_MASK :: COMPLETION_TIMEOUT_MASK [14:14] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETION_TIMEOUT_MASK_MASK 0x00004000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETION_TIMEOUT_MASK_MASK  0x00004000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETION_TIMEOUT_MASK_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETION_TIMEOUT_MASK_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETION_TIMEOUT_MASK_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_COMPLETION_TIMEOUT_MASK_SHIFT 14
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_MASK :: FLOW_CONTROL_PROTOCOL_ERROR_MASK [13:13] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_FLOW_CONTROL_PROTOCOL_ERROR_MASK_MASK 0x00002000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_FLOW_CONTROL_PROTOCOL_ERROR_MASK_MASK  0x00002000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_FLOW_CONTROL_PROTOCOL_ERROR_MASK_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_FLOW_CONTROL_PROTOCOL_ERROR_MASK_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_FLOW_CONTROL_PROTOCOL_ERROR_MASK_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_FLOW_CONTROL_PROTOCOL_ERROR_MASK_SHIFT 13
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_MASK :: POISONED_TLP_MASK [12:12] */
@@ -2515,9 +2515,9 @@
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_RESERVED_1_SHIFT         5
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_MASK :: DATA_LINK_PROTOCOL_ERROR_MASK [04:04] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_DATA_LINK_PROTOCOL_ERROR_MASK_MASK 0x00000010
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_DATA_LINK_PROTOCOL_ERROR_MASK_MASK  0x00000010
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_DATA_LINK_PROTOCOL_ERROR_MASK_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_DATA_LINK_PROTOCOL_ERROR_MASK_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_DATA_LINK_PROTOCOL_ERROR_MASK_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_DATA_LINK_PROTOCOL_ERROR_MASK_SHIFT 4
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_MASK :: RESERVED_2 [03:01] */
@@ -2527,9 +2527,9 @@
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_RESERVED_2_SHIFT         1
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_MASK :: TRAINING_ERROR_MASK [00:00] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_TRAINING_ERROR_MASK_MASK 0x00000001
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_TRAINING_ERROR_MASK_MASK  0x00000001
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_TRAINING_ERROR_MASK_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_TRAINING_ERROR_MASK_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_TRAINING_ERROR_MASK_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_MASK_TRAINING_ERROR_MASK_SHIFT 0
 
 
@@ -2543,57 +2543,57 @@
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_RESERVED_0_SHIFT     21
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: UNSUPPORTED_REQUEST_ERROR_SEVERITY [20:20] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNSUPPORTED_REQUEST_ERROR_SEVERITY_MASK 0x00100000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNSUPPORTED_REQUEST_ERROR_SEVERITY_MASK  0x00100000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNSUPPORTED_REQUEST_ERROR_SEVERITY_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNSUPPORTED_REQUEST_ERROR_SEVERITY_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNSUPPORTED_REQUEST_ERROR_SEVERITY_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNSUPPORTED_REQUEST_ERROR_SEVERITY_SHIFT 20
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: ECRC_ERROR_SEVERITY [19:19] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_ECRC_ERROR_SEVERITY_MASK 0x00080000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_ECRC_ERROR_SEVERITY_MASK  0x00080000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_ECRC_ERROR_SEVERITY_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_ECRC_ERROR_SEVERITY_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_ECRC_ERROR_SEVERITY_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_ECRC_ERROR_SEVERITY_SHIFT 19
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: MALFORMED_TLP_SEVERITY [18:18] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_MALFORMED_TLP_SEVERITY_MASK 0x00040000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_MALFORMED_TLP_SEVERITY_MASK  0x00040000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_MALFORMED_TLP_SEVERITY_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_MALFORMED_TLP_SEVERITY_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_MALFORMED_TLP_SEVERITY_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_MALFORMED_TLP_SEVERITY_SHIFT 18
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: RECEIVER_OVERFLOW_ERROR_SEVERITY [17:17] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_RECEIVER_OVERFLOW_ERROR_SEVERITY_MASK 0x00020000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_RECEIVER_OVERFLOW_ERROR_SEVERITY_MASK  0x00020000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_RECEIVER_OVERFLOW_ERROR_SEVERITY_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_RECEIVER_OVERFLOW_ERROR_SEVERITY_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_RECEIVER_OVERFLOW_ERROR_SEVERITY_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_RECEIVER_OVERFLOW_ERROR_SEVERITY_SHIFT 17
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: UNEXPECTED_COMPLETION_ERROR_SEVERITY [16:16] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNEXPECTED_COMPLETION_ERROR_SEVERITY_MASK 0x00010000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNEXPECTED_COMPLETION_ERROR_SEVERITY_MASK  0x00010000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNEXPECTED_COMPLETION_ERROR_SEVERITY_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNEXPECTED_COMPLETION_ERROR_SEVERITY_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNEXPECTED_COMPLETION_ERROR_SEVERITY_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_UNEXPECTED_COMPLETION_ERROR_SEVERITY_SHIFT 16
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: COMPLETER_ABORT_ERROR_SEVERITY [15:15] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETER_ABORT_ERROR_SEVERITY_MASK 0x00008000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETER_ABORT_ERROR_SEVERITY_MASK  0x00008000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETER_ABORT_ERROR_SEVERITY_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETER_ABORT_ERROR_SEVERITY_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETER_ABORT_ERROR_SEVERITY_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETER_ABORT_ERROR_SEVERITY_SHIFT 15
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: COMPLETION_TIMEOUT_ERROR_SEVERITY [14:14] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETION_TIMEOUT_ERROR_SEVERITY_MASK 0x00004000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETION_TIMEOUT_ERROR_SEVERITY_MASK  0x00004000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETION_TIMEOUT_ERROR_SEVERITY_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETION_TIMEOUT_ERROR_SEVERITY_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETION_TIMEOUT_ERROR_SEVERITY_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_COMPLETION_TIMEOUT_ERROR_SEVERITY_SHIFT 14
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: FLOW_CONTROL_PROTOCOL_ERROR_SEVERITY [13:13] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_FLOW_CONTROL_PROTOCOL_ERROR_SEVERITY_MASK 0x00002000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_FLOW_CONTROL_PROTOCOL_ERROR_SEVERITY_MASK  0x00002000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_FLOW_CONTROL_PROTOCOL_ERROR_SEVERITY_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_FLOW_CONTROL_PROTOCOL_ERROR_SEVERITY_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_FLOW_CONTROL_PROTOCOL_ERROR_SEVERITY_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_FLOW_CONTROL_PROTOCOL_ERROR_SEVERITY_SHIFT 13
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: POISONED_TLP_SEVERITY [12:12] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_POISONED_TLP_SEVERITY_MASK 0x00001000
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_POISONED_TLP_SEVERITY_MASK  0x00001000
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_POISONED_TLP_SEVERITY_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_POISONED_TLP_SEVERITY_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_POISONED_TLP_SEVERITY_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_POISONED_TLP_SEVERITY_SHIFT 12
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: RESERVED_1 [11:05] */
@@ -2603,9 +2603,9 @@
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_RESERVED_1_SHIFT     5
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: DATA_LINK_PROTOCOL_ERROR_SEVERITY [04:04] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_DATA_LINK_PROTOCOL_ERROR_SEVERITY_MASK 0x00000010
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_DATA_LINK_PROTOCOL_ERROR_SEVERITY_MASK  0x00000010
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_DATA_LINK_PROTOCOL_ERROR_SEVERITY_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_DATA_LINK_PROTOCOL_ERROR_SEVERITY_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_DATA_LINK_PROTOCOL_ERROR_SEVERITY_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_DATA_LINK_PROTOCOL_ERROR_SEVERITY_SHIFT 4
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: RESERVED_2 [03:01] */
@@ -2615,9 +2615,9 @@
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_RESERVED_2_SHIFT     1
 
 /* PCIE_CFG :: UNCORRECTABLE_ERROR_SEVERITY :: TRAINING_ERROR_SEVERITY [00:00] */
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_TRAINING_ERROR_SEVERITY_MASK 0x00000001
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_TRAINING_ERROR_SEVERITY_MASK  0x00000001
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_TRAINING_ERROR_SEVERITY_ALIGN 0
-#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_TRAINING_ERROR_SEVERITY_BITS 1
+#define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_TRAINING_ERROR_SEVERITY_BITS  1
 #define PCIE_CFG_UNCORRECTABLE_ERROR_SEVERITY_TRAINING_ERROR_SEVERITY_SHIFT 0
 
 
@@ -2631,15 +2631,15 @@
 #define PCIE_CFG_CORRECTABLE_ERROR_STATUS_RESERVED_0_SHIFT         14
 
 /* PCIE_CFG :: CORRECTABLE_ERROR_STATUS :: ADVISORY_NON_FATAL_ERROR_STATUS [13:13] */
-#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_ADVISORY_NON_FATAL_ERROR_STATUS_MASK 0x00002000
+#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_ADVISORY_NON_FATAL_ERROR_STATUS_MASK  0x00002000
 #define PCIE_CFG_CORRECTABLE_ERROR_STATUS_ADVISORY_NON_FATAL_ERROR_STATUS_ALIGN 0
-#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_ADVISORY_NON_FATAL_ERROR_STATUS_BITS 1
+#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_ADVISORY_NON_FATAL_ERROR_STATUS_BITS  1
 #define PCIE_CFG_CORRECTABLE_ERROR_STATUS_ADVISORY_NON_FATAL_ERROR_STATUS_SHIFT 13
 
 /* PCIE_CFG :: CORRECTABLE_ERROR_STATUS :: REPLAY_TIMER_TIMEOUT_STATUS [12:12] */
-#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_TIMER_TIMEOUT_STATUS_MASK 0x00001000
+#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_TIMER_TIMEOUT_STATUS_MASK  0x00001000
 #define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_TIMER_TIMEOUT_STATUS_ALIGN 0
-#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_TIMER_TIMEOUT_STATUS_BITS 1
+#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_TIMER_TIMEOUT_STATUS_BITS  1
 #define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_TIMER_TIMEOUT_STATUS_SHIFT 12
 
 /* PCIE_CFG :: CORRECTABLE_ERROR_STATUS :: RESERVED_1 [11:09] */
@@ -2649,9 +2649,9 @@
 #define PCIE_CFG_CORRECTABLE_ERROR_STATUS_RESERVED_1_SHIFT         9
 
 /* PCIE_CFG :: CORRECTABLE_ERROR_STATUS :: REPLAY_NUM_ROLLOVER_STATUS [08:08] */
-#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_NUM_ROLLOVER_STATUS_MASK 0x00000100
+#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_NUM_ROLLOVER_STATUS_MASK  0x00000100
 #define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_NUM_ROLLOVER_STATUS_ALIGN 0
-#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_NUM_ROLLOVER_STATUS_BITS 1
+#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_NUM_ROLLOVER_STATUS_BITS  1
 #define PCIE_CFG_CORRECTABLE_ERROR_STATUS_REPLAY_NUM_ROLLOVER_STATUS_SHIFT 8
 
 /* PCIE_CFG :: CORRECTABLE_ERROR_STATUS :: BAD_DLLP_STATUS [07:07] */
@@ -2673,9 +2673,9 @@
 #define PCIE_CFG_CORRECTABLE_ERROR_STATUS_RESERVED_2_SHIFT         1
 
 /* PCIE_CFG :: CORRECTABLE_ERROR_STATUS :: RECEIVER_ERROR_STATUS [00:00] */
-#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_RECEIVER_ERROR_STATUS_MASK 0x00000001
+#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_RECEIVER_ERROR_STATUS_MASK  0x00000001
 #define PCIE_CFG_CORRECTABLE_ERROR_STATUS_RECEIVER_ERROR_STATUS_ALIGN 0
-#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_RECEIVER_ERROR_STATUS_BITS 1
+#define PCIE_CFG_CORRECTABLE_ERROR_STATUS_RECEIVER_ERROR_STATUS_BITS  1
 #define PCIE_CFG_CORRECTABLE_ERROR_STATUS_RECEIVER_ERROR_STATUS_SHIFT 0
 
 
@@ -2689,15 +2689,15 @@
 #define PCIE_CFG_CORRECTABLE_ERROR_MASK_RESERVED_0_SHIFT           14
 
 /* PCIE_CFG :: CORRECTABLE_ERROR_MASK :: ADVISORY_NON_FATAL_ERROR_MASK [13:13] */
-#define PCIE_CFG_CORRECTABLE_ERROR_MASK_ADVISORY_NON_FATAL_ERROR_MASK_MASK 0x00002000
+#define PCIE_CFG_CORRECTABLE_ERROR_MASK_ADVISORY_NON_FATAL_ERROR_MASK_MASK  0x00002000
 #define PCIE_CFG_CORRECTABLE_ERROR_MASK_ADVISORY_NON_FATAL_ERROR_MASK_ALIGN 0
-#define PCIE_CFG_CORRECTABLE_ERROR_MASK_ADVISORY_NON_FATAL_ERROR_MASK_BITS 1
+#define PCIE_CFG_CORRECTABLE_ERROR_MASK_ADVISORY_NON_FATAL_ERROR_MASK_BITS  1
 #define PCIE_CFG_CORRECTABLE_ERROR_MASK_ADVISORY_NON_FATAL_ERROR_MASK_SHIFT 13
 
 /* PCIE_CFG :: CORRECTABLE_ERROR_MASK :: REPLAY_TIMER_TIMEOUT_MASK [12:12] */
-#define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_TIMER_TIMEOUT_MASK_MASK 0x00001000
+#define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_TIMER_TIMEOUT_MASK_MASK  0x00001000
 #define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_TIMER_TIMEOUT_MASK_ALIGN 0
-#define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_TIMER_TIMEOUT_MASK_BITS 1
+#define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_TIMER_TIMEOUT_MASK_BITS  1
 #define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_TIMER_TIMEOUT_MASK_SHIFT 12
 
 /* PCIE_CFG :: CORRECTABLE_ERROR_MASK :: RESERVED_1 [11:09] */
@@ -2707,9 +2707,9 @@
 #define PCIE_CFG_CORRECTABLE_ERROR_MASK_RESERVED_1_SHIFT           9
 
 /* PCIE_CFG :: CORRECTABLE_ERROR_MASK :: REPLAY_NUM_ROLLOVER_MASK [08:08] */
-#define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_NUM_ROLLOVER_MASK_MASK 0x00000100
+#define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_NUM_ROLLOVER_MASK_MASK  0x00000100
 #define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_NUM_ROLLOVER_MASK_ALIGN 0
-#define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_NUM_ROLLOVER_MASK_BITS 1
+#define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_NUM_ROLLOVER_MASK_BITS  1
 #define PCIE_CFG_CORRECTABLE_ERROR_MASK_REPLAY_NUM_ROLLOVER_MASK_SHIFT 8
 
 /* PCIE_CFG :: CORRECTABLE_ERROR_MASK :: BAD_DLLP_MASK [07:07] */
@@ -2741,39 +2741,39 @@
  * PCIE_CFG :: ADVANCED_ERROR_CAPABILITIES_AND_CONTROL
  ***************************************************************************/
 /* PCIE_CFG :: ADVANCED_ERROR_CAPABILITIES_AND_CONTROL :: RESERVED_0 [31:09] */
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_RESERVED_0_MASK 0xfffffe00
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_RESERVED_0_MASK  0xfffffe00
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_RESERVED_0_ALIGN 0
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_RESERVED_0_BITS 23
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_RESERVED_0_BITS  23
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_RESERVED_0_SHIFT 9
 
 /* PCIE_CFG :: ADVANCED_ERROR_CAPABILITIES_AND_CONTROL :: ECRC_CHECK_ENABLE [08:08] */
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_ENABLE_MASK 0x00000100
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_ENABLE_MASK  0x00000100
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_ENABLE_ALIGN 0
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_ENABLE_BITS 1
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_ENABLE_BITS  1
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_ENABLE_SHIFT 8
 
 /* PCIE_CFG :: ADVANCED_ERROR_CAPABILITIES_AND_CONTROL :: ECRC_CHECK_CAPABLE [07:07] */
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_CAPABLE_MASK 0x00000080
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_CAPABLE_MASK  0x00000080
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_CAPABLE_ALIGN 0
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_CAPABLE_BITS 1
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_CAPABLE_BITS  1
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_CHECK_CAPABLE_SHIFT 7
 
 /* PCIE_CFG :: ADVANCED_ERROR_CAPABILITIES_AND_CONTROL :: ECRC_GENERATION_ENABLE [06:06] */
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_ENABLE_MASK 0x00000040
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_ENABLE_MASK  0x00000040
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_ENABLE_ALIGN 0
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_ENABLE_BITS 1
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_ENABLE_BITS  1
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_ENABLE_SHIFT 6
 
 /* PCIE_CFG :: ADVANCED_ERROR_CAPABILITIES_AND_CONTROL :: ECRC_GENERATION_CAPABLE [05:05] */
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_CAPABLE_MASK 0x00000020
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_CAPABLE_MASK  0x00000020
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_CAPABLE_ALIGN 0
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_CAPABLE_BITS 1
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_CAPABLE_BITS  1
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_ECRC_GENERATION_CAPABLE_SHIFT 5
 
 /* PCIE_CFG :: ADVANCED_ERROR_CAPABILITIES_AND_CONTROL :: FIRST_ERROR_POINTER [04:00] */
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_FIRST_ERROR_POINTER_MASK 0x0000001f
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_FIRST_ERROR_POINTER_MASK  0x0000001f
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_FIRST_ERROR_POINTER_ALIGN 0
-#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_FIRST_ERROR_POINTER_BITS 5
+#define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_FIRST_ERROR_POINTER_BITS  5
 #define PCIE_CFG_ADVANCED_ERROR_CAPABILITIES_AND_CONTROL_FIRST_ERROR_POINTER_SHIFT 0
 
 
@@ -2893,21 +2893,21 @@
  * PCIE_CFG :: VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER
  ***************************************************************************/
 /* PCIE_CFG :: VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER :: NEXT_CAPABILITY_OFFSET [31:20] */
-#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_MASK 0xfff00000
+#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_MASK  0xfff00000
 #define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_ALIGN 0
-#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_BITS 12
+#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_BITS  12
 #define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_SHIFT 20
 
 /* PCIE_CFG :: VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER :: CAPABILITY_VERSION [19:16] */
-#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_MASK 0x000f0000
+#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_MASK  0x000f0000
 #define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_ALIGN 0
-#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_BITS 4
+#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_BITS  4
 #define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_SHIFT 16
 
 /* PCIE_CFG :: VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER :: PCIE_EXTENDED_CAPABILITY_ID [15:00] */
-#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_MASK 0x0000ffff
+#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_MASK  0x0000ffff
 #define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_ALIGN 0
-#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_BITS 16
+#define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_BITS  16
 #define PCIE_CFG_VIRTUAL_CHANNEL_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_SHIFT 0
 
 
@@ -2939,9 +2939,9 @@
 #define PCIE_CFG_PORT_VC_CAPABILITY_RESERVED_1_SHIFT               7
 
 /* PCIE_CFG :: PORT_VC_CAPABILITY :: LOW_PRIORITY_EXTENDED_VC_COUNT [06:04] */
-#define PCIE_CFG_PORT_VC_CAPABILITY_LOW_PRIORITY_EXTENDED_VC_COUNT_MASK 0x00000070
+#define PCIE_CFG_PORT_VC_CAPABILITY_LOW_PRIORITY_EXTENDED_VC_COUNT_MASK  0x00000070
 #define PCIE_CFG_PORT_VC_CAPABILITY_LOW_PRIORITY_EXTENDED_VC_COUNT_ALIGN 0
-#define PCIE_CFG_PORT_VC_CAPABILITY_LOW_PRIORITY_EXTENDED_VC_COUNT_BITS 3
+#define PCIE_CFG_PORT_VC_CAPABILITY_LOW_PRIORITY_EXTENDED_VC_COUNT_BITS  3
 #define PCIE_CFG_PORT_VC_CAPABILITY_LOW_PRIORITY_EXTENDED_VC_COUNT_SHIFT 4
 
 /* PCIE_CFG :: PORT_VC_CAPABILITY :: RESERVED_2 [03:03] */
@@ -2961,9 +2961,9 @@
  * PCIE_CFG :: PORT_VC_CAPABILITY_2
  ***************************************************************************/
 /* PCIE_CFG :: PORT_VC_CAPABILITY_2 :: VC_ARBITRATION_TABLE_OFFSET [31:24] */
-#define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_TABLE_OFFSET_MASK 0xff000000
+#define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_TABLE_OFFSET_MASK  0xff000000
 #define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_TABLE_OFFSET_ALIGN 0
-#define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_TABLE_OFFSET_BITS 8
+#define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_TABLE_OFFSET_BITS  8
 #define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_TABLE_OFFSET_SHIFT 24
 
 /* PCIE_CFG :: PORT_VC_CAPABILITY_2 :: RESERVED_0 [23:08] */
@@ -2973,9 +2973,9 @@
 #define PCIE_CFG_PORT_VC_CAPABILITY_2_RESERVED_0_SHIFT             8
 
 /* PCIE_CFG :: PORT_VC_CAPABILITY_2 :: VC_ARBITRATION_CAPABILITY [07:00] */
-#define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_CAPABILITY_MASK 0x000000ff
+#define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_CAPABILITY_MASK  0x000000ff
 #define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_CAPABILITY_ALIGN 0
-#define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_CAPABILITY_BITS 8
+#define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_CAPABILITY_BITS  8
 #define PCIE_CFG_PORT_VC_CAPABILITY_2_VC_ARBITRATION_CAPABILITY_SHIFT 0
 
 
@@ -2989,9 +2989,9 @@
 #define PCIE_CFG_PORT_VC_STATUS_CONTROL_RESERVED_0_SHIFT           17
 
 /* PCIE_CFG :: PORT_VC_STATUS_CONTROL :: VC_ARBITRATION_TABLE_STATUS [16:16] */
-#define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_TABLE_STATUS_MASK 0x00010000
+#define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_TABLE_STATUS_MASK  0x00010000
 #define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_TABLE_STATUS_ALIGN 0
-#define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_TABLE_STATUS_BITS 1
+#define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_TABLE_STATUS_BITS  1
 #define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_TABLE_STATUS_SHIFT 16
 
 /* PCIE_CFG :: PORT_VC_STATUS_CONTROL :: RESERVED_1 [15:04] */
@@ -3001,15 +3001,15 @@
 #define PCIE_CFG_PORT_VC_STATUS_CONTROL_RESERVED_1_SHIFT           4
 
 /* PCIE_CFG :: PORT_VC_STATUS_CONTROL :: VC_ARBITRATION_SELECT [03:01] */
-#define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_SELECT_MASK 0x0000000e
+#define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_SELECT_MASK  0x0000000e
 #define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_SELECT_ALIGN 0
-#define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_SELECT_BITS 3
+#define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_SELECT_BITS  3
 #define PCIE_CFG_PORT_VC_STATUS_CONTROL_VC_ARBITRATION_SELECT_SHIFT 1
 
 /* PCIE_CFG :: PORT_VC_STATUS_CONTROL :: LOAD_VC_ARBITRATION_TABLE [00:00] */
-#define PCIE_CFG_PORT_VC_STATUS_CONTROL_LOAD_VC_ARBITRATION_TABLE_MASK 0x00000001
+#define PCIE_CFG_PORT_VC_STATUS_CONTROL_LOAD_VC_ARBITRATION_TABLE_MASK  0x00000001
 #define PCIE_CFG_PORT_VC_STATUS_CONTROL_LOAD_VC_ARBITRATION_TABLE_ALIGN 0
-#define PCIE_CFG_PORT_VC_STATUS_CONTROL_LOAD_VC_ARBITRATION_TABLE_BITS 1
+#define PCIE_CFG_PORT_VC_STATUS_CONTROL_LOAD_VC_ARBITRATION_TABLE_BITS  1
 #define PCIE_CFG_PORT_VC_STATUS_CONTROL_LOAD_VC_ARBITRATION_TABLE_SHIFT 0
 
 
@@ -3017,9 +3017,9 @@
  * PCIE_CFG :: VC_RESOURCE_CAPABILITY
  ***************************************************************************/
 /* PCIE_CFG :: VC_RESOURCE_CAPABILITY :: PORT_ARBITRATION_TABLE_OFFSET [31:24] */
-#define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_TABLE_OFFSET_MASK 0xff000000
+#define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_TABLE_OFFSET_MASK  0xff000000
 #define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_TABLE_OFFSET_ALIGN 0
-#define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_TABLE_OFFSET_BITS 8
+#define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_TABLE_OFFSET_BITS  8
 #define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_TABLE_OFFSET_SHIFT 24
 
 /* PCIE_CFG :: VC_RESOURCE_CAPABILITY :: RESERVED_0 [23:23] */
@@ -3035,15 +3035,15 @@
 #define PCIE_CFG_VC_RESOURCE_CAPABILITY_MAXIMUM_TIME_SLOTS_SHIFT   16
 
 /* PCIE_CFG :: VC_RESOURCE_CAPABILITY :: REJECT_SNOOP_TRANSACTIONS [15:15] */
-#define PCIE_CFG_VC_RESOURCE_CAPABILITY_REJECT_SNOOP_TRANSACTIONS_MASK 0x00008000
+#define PCIE_CFG_VC_RESOURCE_CAPABILITY_REJECT_SNOOP_TRANSACTIONS_MASK  0x00008000
 #define PCIE_CFG_VC_RESOURCE_CAPABILITY_REJECT_SNOOP_TRANSACTIONS_ALIGN 0
-#define PCIE_CFG_VC_RESOURCE_CAPABILITY_REJECT_SNOOP_TRANSACTIONS_BITS 1
+#define PCIE_CFG_VC_RESOURCE_CAPABILITY_REJECT_SNOOP_TRANSACTIONS_BITS  1
 #define PCIE_CFG_VC_RESOURCE_CAPABILITY_REJECT_SNOOP_TRANSACTIONS_SHIFT 15
 
 /* PCIE_CFG :: VC_RESOURCE_CAPABILITY :: ADVANCED_PACKET_SWITCHING [14:14] */
-#define PCIE_CFG_VC_RESOURCE_CAPABILITY_ADVANCED_PACKET_SWITCHING_MASK 0x00004000
+#define PCIE_CFG_VC_RESOURCE_CAPABILITY_ADVANCED_PACKET_SWITCHING_MASK  0x00004000
 #define PCIE_CFG_VC_RESOURCE_CAPABILITY_ADVANCED_PACKET_SWITCHING_ALIGN 0
-#define PCIE_CFG_VC_RESOURCE_CAPABILITY_ADVANCED_PACKET_SWITCHING_BITS 1
+#define PCIE_CFG_VC_RESOURCE_CAPABILITY_ADVANCED_PACKET_SWITCHING_BITS  1
 #define PCIE_CFG_VC_RESOURCE_CAPABILITY_ADVANCED_PACKET_SWITCHING_SHIFT 14
 
 /* PCIE_CFG :: VC_RESOURCE_CAPABILITY :: RESERVED_1 [13:08] */
@@ -3053,9 +3053,9 @@
 #define PCIE_CFG_VC_RESOURCE_CAPABILITY_RESERVED_1_SHIFT           8
 
 /* PCIE_CFG :: VC_RESOURCE_CAPABILITY :: PORT_ARBITRATION_CAPABILITY [07:00] */
-#define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_CAPABILITY_MASK 0x000000ff
+#define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_CAPABILITY_MASK  0x000000ff
 #define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_CAPABILITY_ALIGN 0
-#define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_CAPABILITY_BITS 8
+#define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_CAPABILITY_BITS  8
 #define PCIE_CFG_VC_RESOURCE_CAPABILITY_PORT_ARBITRATION_CAPABILITY_SHIFT 0
 
 
@@ -3093,9 +3093,9 @@
 #define PCIE_CFG_VC_RESOURCE_CONTROL_PORT_ARBITRATION_SELECT_SHIFT 17
 
 /* PCIE_CFG :: VC_RESOURCE_CONTROL :: LOAD_PORT_ARBITRATION_TABLE [16:16] */
-#define PCIE_CFG_VC_RESOURCE_CONTROL_LOAD_PORT_ARBITRATION_TABLE_MASK 0x00010000
+#define PCIE_CFG_VC_RESOURCE_CONTROL_LOAD_PORT_ARBITRATION_TABLE_MASK  0x00010000
 #define PCIE_CFG_VC_RESOURCE_CONTROL_LOAD_PORT_ARBITRATION_TABLE_ALIGN 0
-#define PCIE_CFG_VC_RESOURCE_CONTROL_LOAD_PORT_ARBITRATION_TABLE_BITS 1
+#define PCIE_CFG_VC_RESOURCE_CONTROL_LOAD_PORT_ARBITRATION_TABLE_BITS  1
 #define PCIE_CFG_VC_RESOURCE_CONTROL_LOAD_PORT_ARBITRATION_TABLE_SHIFT 16
 
 /* PCIE_CFG :: VC_RESOURCE_CONTROL :: RESERVED_2 [15:08] */
@@ -3127,9 +3127,9 @@
 #define PCIE_CFG_VC_RESOURCE_STATUS_VC_NEGOTIATION_PENDING_SHIFT   17
 
 /* PCIE_CFG :: VC_RESOURCE_STATUS :: PORT_ARBITRATION_TABLE_STATUS [16:16] */
-#define PCIE_CFG_VC_RESOURCE_STATUS_PORT_ARBITRATION_TABLE_STATUS_MASK 0x00010000
+#define PCIE_CFG_VC_RESOURCE_STATUS_PORT_ARBITRATION_TABLE_STATUS_MASK  0x00010000
 #define PCIE_CFG_VC_RESOURCE_STATUS_PORT_ARBITRATION_TABLE_STATUS_ALIGN 0
-#define PCIE_CFG_VC_RESOURCE_STATUS_PORT_ARBITRATION_TABLE_STATUS_BITS 1
+#define PCIE_CFG_VC_RESOURCE_STATUS_PORT_ARBITRATION_TABLE_STATUS_BITS  1
 #define PCIE_CFG_VC_RESOURCE_STATUS_PORT_ARBITRATION_TABLE_STATUS_SHIFT 16
 
 /* PCIE_CFG :: VC_RESOURCE_STATUS :: RESERVED_1 [15:00] */
@@ -3143,21 +3143,21 @@
  * PCIE_CFG :: DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER
  ***************************************************************************/
 /* PCIE_CFG :: DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER :: NEXT_CAPABILITY_OFFSET [31:20] */
-#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_MASK 0xfff00000
+#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_MASK  0xfff00000
 #define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_ALIGN 0
-#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_BITS 12
+#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_BITS  12
 #define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_SHIFT 20
 
 /* PCIE_CFG :: DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER :: CAPABILITY_VERSION [19:16] */
-#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_MASK 0x000f0000
+#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_MASK  0x000f0000
 #define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_ALIGN 0
-#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_BITS 4
+#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_BITS  4
 #define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_SHIFT 16
 
 /* PCIE_CFG :: DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER :: PCIE_EXTENDED_CAPABILITY_ID [15:00] */
-#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_MASK 0x0000ffff
+#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_MASK  0x0000ffff
 #define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_ALIGN 0
-#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_BITS 16
+#define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_BITS  16
 #define PCIE_CFG_DEVICE_SERIAL_NO_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_SHIFT 0
 
 
@@ -3185,21 +3185,21 @@
  * PCIE_CFG :: POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER
  ***************************************************************************/
 /* PCIE_CFG :: POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER :: NEXT_CAPABILITY_OFFSET [31:20] */
-#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_MASK 0xfff00000
+#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_MASK  0xfff00000
 #define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_ALIGN 0
-#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_BITS 12
+#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_BITS  12
 #define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_NEXT_CAPABILITY_OFFSET_SHIFT 20
 
 /* PCIE_CFG :: POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER :: CAPABILITY_VERSION [19:16] */
-#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_MASK 0x000f0000
+#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_MASK  0x000f0000
 #define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_ALIGN 0
-#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_BITS 4
+#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_BITS  4
 #define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_CAPABILITY_VERSION_SHIFT 16
 
 /* PCIE_CFG :: POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER :: PCIE_EXTENDED_CAPABILITY_ID [15:00] */
-#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_MASK 0x0000ffff
+#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_MASK  0x0000ffff
 #define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_ALIGN 0
-#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_BITS 16
+#define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_BITS  16
 #define PCIE_CFG_POWER_BUDGETING_ENHANCED_CAPABILITY_HEADER_PCIE_EXTENDED_CAPABILITY_ID_SHIFT 0
 
 

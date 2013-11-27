@@ -190,36 +190,36 @@ DtsGetDrvStat(
 
 DRVIFLIB_INT_API BC_STATUS
 DtsSendData(
-    HANDLE  hDevice ,
+    HANDLE   hDevice ,
     uint8_t *pUserData,
     uint32_t ulSizeInBytes,
     uint64_t timeStamp,
-    BOOL encrypted
+    BOOL     encrypted
 );
 
 DRVIFLIB_INT_API BC_STATUS
 DtsSetTemperatureMeasure(
-    HANDLE            hDevice,
-    BOOL            bTurnOn
+    HANDLE hDevice,
+    BOOL   bTurnOn
     );
 
 DRVIFLIB_INT_API BC_STATUS
 DtsGetCoreTemperature(
-    HANDLE        hDevice,
-    float        *pTemperature
+    HANDLE hDevice,
+    float  *pTemperature
     );
 
 DRVIFLIB_INT_API BC_STATUS
 DtsRstDrvStat(
-    HANDLE        hDevice
+    HANDLE hDevice
     );
 
 DRVIFLIB_INT_API BC_STATUS
 DtsGetFWFiles(
     HANDLE hDevice,
-    char *StreamFName,
-    char *VDecOuter,
-    char *VDecInner
+    char   *StreamFName,
+    char   *VDecOuter,
+    char   *VDecInner
     );
 
 DRVIFLIB_INT_API BC_STATUS
@@ -232,37 +232,37 @@ DtsDownloadFWBin(
 
 DRVIFLIB_INT_API BC_STATUS
 DtsCancelProcOutput(
-    HANDLE  hDevice,
-    PVOID    Context);
+    HANDLE hDevice,
+    PVOID  Context);
 
 DRVIFLIB_INT_API BC_STATUS
 DtsChkYUVSizes(
-    struct _DTS_LIB_CONTEXT    *Ctx,
-    BC_DTS_PROC_OUT *Vout,
-    BC_DTS_PROC_OUT *Vin);
+    struct _DTS_LIB_CONTEXT *Ctx,
+    BC_DTS_PROC_OUT         *Vout,
+    BC_DTS_PROC_OUT         *Vin);
 
 BC_STATUS DtsCopyRawDataToOutBuff(
-    struct _DTS_LIB_CONTEXT    *Ctx,
-    BC_DTS_PROC_OUT *Vout,
-    BC_DTS_PROC_OUT *Vin);
+    struct _DTS_LIB_CONTEXT *Ctx,
+    BC_DTS_PROC_OUT         *Vout,
+    BC_DTS_PROC_OUT         *Vin);
 
 BC_STATUS DtsCopyNV12ToYV12(
-    struct _DTS_LIB_CONTEXT    *Ctx,
-    BC_DTS_PROC_OUT *Vout,
-    BC_DTS_PROC_OUT *Vin);
+    struct _DTS_LIB_CONTEXT *Ctx,
+    BC_DTS_PROC_OUT         *Vout,
+    BC_DTS_PROC_OUT         *Vin);
 
 BC_STATUS DtsCopyNV12(
-    struct _DTS_LIB_CONTEXT    *Ctx,
-    BC_DTS_PROC_OUT *Vout,
-    BC_DTS_PROC_OUT *Vin);
+    struct _DTS_LIB_CONTEXT *Ctx,
+    BC_DTS_PROC_OUT         *Vout,
+    BC_DTS_PROC_OUT         *Vin);
 
 BC_STATUS DtsCopyFormat(
-    struct _DTS_LIB_CONTEXT    *Ctx,
-    BC_DTS_PROC_OUT *Vout,
-    BC_DTS_PROC_OUT *Vin);
+    struct _DTS_LIB_CONTEXT *Ctx,
+    BC_DTS_PROC_OUT         *Vout,
+    BC_DTS_PROC_OUT         *Vin);
 
 BC_STATUS DtsSendEOS(
-    HANDLE  hDevice,
+    HANDLE   hDevice,
     uint32_t Op
 );
 
