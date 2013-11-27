@@ -1,3 +1,7 @@
+LIBCRYSTALHD_VERSION_INFO = @LIBCRYSTALHD_VERSION_INFO@
+
+EXTRA_DIST = libcrystalhd.sym
+
 AM_CPPFLAGS = \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)/include/link \
@@ -5,7 +9,8 @@ AM_CPPFLAGS = \
 
 lib_LTLIBRARIES = libcrystalhd.la
 libcrystalhd_la_LDFLAGS = \
-        -version-info 9:6:3 \
+	-Wl,--version-script=$(srcdir)/libcrystalhd.sym \
+	-version-info $(LIBCRYSTALHD_VERSION_INFO)
 	-pthread
 
 libcrystalhd_la_SOURCES = \
