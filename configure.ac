@@ -16,7 +16,7 @@ dnl You should have received a copy of the GNU Lesser General Public
 dnl License along with this library.  If not, see
 dnl <http://www.gnu.org/licenses/>.
 
-AC_INIT([libcrystalhd], [0.0.0], [agx@sigxcpu.org], [], [])
+AC_INIT([libcrystalhd], [0.0.1], [agx@sigxcpu.org], [], [])
 AC_CONFIG_SRCDIR([src/libcrystalhd_if.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([m4])
@@ -25,7 +25,44 @@ dnl Make automake keep quiet about wildcards & other GNUmake-isms; also keep
 dnl quiet about the fact that we intentionally cater to automake 1.9
 AM_INIT_AUTOMAKE([-Wno-portability -Wno-obsolete tar-ustar subdir-objects])
 
-LIBCRYSTALHD_VERSION_INFO="6:3:0"
+LIBCRYSTALHD_MAJOR_VERSION=`echo $VERSION | awk -F. '{print $1}'`
+LIBCRYSTALHD_MINOR_VERSION=`echo $VERSION | awk -F. '{print $2}'`
+LIBCRYSTALHD_MICRO_VERSION=`echo $VERSION | awk -F. '{print $3}'`
+LIBCRYSTALHD_VERSION=$LIBCRYSTALHD_MAJOR_VERSION.$LIBCRYSTALHD_MINOR_VERSION.$LIBCRYSTALHD_MICRO_VERSION$LIBCRYSTALHD_MICRO_VERSION_SUFFIX
+LIBCRYSTALHD_VERSION_NUMBER=`expr $LIBCRYSTALHD_MAJOR_VERSION \* 1000000 + $LIBCRYSTALHD_MINOR_VERSION \* 1000 + $LIBCRYSTALHD_MICRO_VERSION`
+
+# In libtool terminology we need to figure out:
+#
+# CURRENT
+#     The most recent interface number that this library implements.
+#
+# REVISION
+#     The implementation number of the CURRENT interface.
+#
+# AGE
+#     The difference between the newest and oldest interfaces that this
+#     library implements.
+#
+# In other words, the library implements all the interface numbers
+# in the range from number `CURRENT - AGE' to `CURRENT'.
+#
+# Libtool assigns the soname version from `CURRENT - AGE', and we
+# don't want that to ever change in libcrystalhd, unless we need
+# to break ABI for some reason.
+#
+# The C++ versions used up to 6 so we bump the soname to 7 once.
+#
+# We would, however, like the libcrystalhd version number reflected
+# in the so version'd symlinks, and this is based on AGE.REVISION
+# eg  libcrystalhd.so.7.AGE.REVISION
+#
+# Assuming we do ever want to break soname version, this can
+# toggled. But seriously, don't ever touch this.
+LIBCRYSTALHD_SONUM=7
+AGE=`expr $LIBCRYSTALHD_MAJOR_VERSION '*' 1000 + $LIBCRYSTALHD_MINOR_VERSION`
+REVISION=$LIBCRYSTALHD_MICRO_VERSION
+CURRENT=`expr $LIBCRYSTALHD_SONUM + $AGE`
+LIBCRYSTALHD_VERSION_INFO=$CURRENT:$REVISION:$AGE
 AC_SUBST([LIBCRYSTALHD_VERSION_INFO])
 
 dnl Checks for C compiler.
