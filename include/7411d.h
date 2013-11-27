@@ -509,12 +509,12 @@ typedef enum
 /*  - eCMD_C011_DEC_CHAN_OPEN */
 typedef enum
 {
-    eC011_PAN_SCAN_MODE_OFF    = 0x00000000, // pan-scan disabled
-    eC011_PAN_SCAN_MODE_ON     = 0x00000001, // pan-scan enabled
-    eC011_PAN_SCAN_MODE_HOR_ON    = 0x00000002, //Horizontal pan-scan enabled, Vertical pan-scan disabled
-    eC011_PAN_SCAN_MODE_HOR_OFF    = 0x00000003, //Horizontal pan-scan disabled, Vertical pan-scan disabled
-    eC011_PAN_SCAN_MODE_VER_ON    = 0x00000004, //Horizontal pan-scan disabled, Vertical pan-scan enabled
-    eC011_PAN_SCAN_MODE_VER_OFF    = 0x00000005,  //Horizontal pan-scan disabled, Vertical pan-scan disabled
+    eC011_PAN_SCAN_MODE_OFF     = 0x00000000, // pan-scan disabled
+    eC011_PAN_SCAN_MODE_ON      = 0x00000001, // pan-scan enabled
+    eC011_PAN_SCAN_MODE_HOR_ON  = 0x00000002, // Horizontal pan-scan enabled, Vertical pan-scan disabled
+    eC011_PAN_SCAN_MODE_HOR_OFF = 0x00000003, // Horizontal pan-scan disabled, Vertical pan-scan disabled
+    eC011_PAN_SCAN_MODE_VER_ON  = 0x00000004, // Horizontal pan-scan disabled, Vertical pan-scan enabled
+    eC011_PAN_SCAN_MODE_VER_OFF = 0x00000005, // Horizontal pan-scan disabled, Vertical pan-scan disabled
 
 } eC011_PAN_SCAN_MODE;
 
@@ -537,21 +537,21 @@ typedef enum PTS_STATE {
 /* channel status structure */
 /*  - eCMD_C011_DEC_CHAN_OPEN response */
 typedef struct {
-    eC011_DISPLAY_TIMING_MODE displayTimingMode;   // current display timing mode in effect
-    int32_t     videoDisplayOffset;  // current video display offset in effect
-    uint32_t    currentPts;      // current PTS value
-    uint32_t    interpolatedPts;     // currentPts of type PTS_STATE
+    eC011_DISPLAY_TIMING_MODE displayTimingMode; // current display timing mode in effect
+    int32_t     videoDisplayOffset;              // current video display offset in effect
+    uint32_t    currentPts;                      // current PTS value
+    uint32_t    interpolatedPts;                 // currentPts of type PTS_STATE
     uint32_t    refCounter;
     uint32_t    pcrOffset;
     uint32_t    stcValue;
-    uint32_t    stcWritten;      // 1 -> host updated STC, 0 -> stream ARC ack
-    int32_t     ptsStcOffset;    // PTS - STC
-    uint32_t    pVdecStatusBlk;     /* pointer to vdec status block */ /* Change from void * to make it 64-bit safe */
-    uint32_t    lastPicture;     // 1 -> decoder last picture indication
-    uint32_t    pictureTag;      /* Picture Tag from VDEC */
-    uint32_t    tsmLockTime;         /* Time when the First Picture passed TSM */
-    uint32_t    firstPicRcvdTime;    /* Time when the First Picture was recieved */
-    uint32_t    picture_done_payload;/* Payload associated with the picture done marker interrupt */
+    uint32_t    stcWritten;                      // 1 -> host updated STC, 0 -> stream ARC ack
+    int32_t     ptsStcOffset;                    // PTS - STC
+    uint32_t    pVdecStatusBlk;                  /* pointer to vdec status block */ /* Change from void * to make it 64-bit safe */
+    uint32_t    lastPicture;                     // 1 -> decoder last picture indication
+    uint32_t    pictureTag;                      /* Picture Tag from VDEC */
+    uint32_t    tsmLockTime;                     /* Time when the First Picture passed TSM */
+    uint32_t    firstPicRcvdTime;                /* Time when the First Picture was recieved */
+    uint32_t    picture_done_payload;            /* Payload associated with the picture done marker interrupt */
 } sC011_CHAN_STATUS;
 
 /* picture information block (PIB) */

@@ -100,14 +100,14 @@ typedef struct _BC_REG_CONFIG{
 #endif
 
 /* mode
- * b[0]..b[7]    = _DtsDeviceOpenMode
+ * b[0]..b[7]  = _DtsDeviceOpenMode
  * b[8]        =  Load new FW
  * b[9]        =  Load file play back FW
- * b[10]    =  Disk format (0 for HD DVD and 1 for BLU ray)
- * b[11]-b[15]    =  default output resolution
- * b[16]    =  Skip TX CPB Buffer Check
- * b[17]    =  Adaptive Output Encrypt/Scramble Scheme
- * b[18]-b[31]    =  reserved for future use
+ * b[10]       =  Disk format (0 for HD DVD and 1 for BLU ray)
+ * b[11]-b[15] =  default output resolution
+ * b[16]       =  Skip TX CPB Buffer Check
+ * b[17]       =  Adaptive Output Encrypt/Scramble Scheme
+ * b[18]-b[31] =  reserved for future use
  */
 
 /* To allow multiple apps to open the device. */
